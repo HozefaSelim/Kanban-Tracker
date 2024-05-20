@@ -1,0 +1,25 @@
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.exe
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.deps.json
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.runtimeconfig.json
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.dll
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.pdb
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.csproj.GenerateResource.cache
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.AssemblyInfoInputs.cache
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.AssemblyInfo.cs
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.csproj.CoreCompileInputs.cache
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.dll
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\refint\Kanban Tracker.dll
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.pdb
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.genruntimeconfig.cache
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\ref\Kanban Tracker.dll
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.SignIn.resources
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Properties.Resources.resources
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Guna.UI2.dll
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.csproj.AssemblyReference.cache
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban T.6BB76DAD.Up2Date
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.MainBoard.resources
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Button1.resources
+C:\Users\Hozefa Selim\Desktop\Kanban Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.sourcelink.json
