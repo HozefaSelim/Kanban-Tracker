@@ -1,12 +1,82 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Hozefa Selim\\Desktop\\Kanban Tracker\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\mutez\\source\\repos\\kanban-tracker\\kanban tracker\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\mutez\\source\\repos\\kanban-tracker\\kanban tracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\mutez\\source\\repos\\kanban-tracker\\kanban tracker\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainBoard.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\MainBoard.cs",
+              "RelativeDocumentMoniker": "Kanban Tracker\\MainBoard.cs",
+              "ToolTip": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\MainBoard.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Kanban Tracker\\MainBoard.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T16:35:26.284Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Program.cs",
+              "RelativeDocumentMoniker": "Kanban Tracker\\Program.cs",
+              "ToolTip": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Program.cs",
+              "RelativeToolTip": "Kanban Tracker\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T16:35:19.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainBoard.cs",
+              "DocumentMoniker": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\MainBoard.cs",
+              "RelativeDocumentMoniker": "Kanban Tracker\\MainBoard.cs",
+              "ToolTip": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\MainBoard.cs",
+              "RelativeToolTip": "Kanban Tracker\\MainBoard.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAIA9wD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T16:39:02.116Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
