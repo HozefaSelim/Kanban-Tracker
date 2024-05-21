@@ -78,9 +78,8 @@
             container.Controls.Add(headerPnl);
             container.Dock = DockStyle.Fill;
             container.Location = new Point(0, 0);
-            container.Margin = new Padding(3, 4, 3, 4);
             container.Name = "container";
-            container.Size = new Size(1275, 903);
+            container.Size = new Size(1116, 559);
             container.TabIndex = 2;
             // 
             // sidebarPnl
@@ -93,11 +92,12 @@
             sidebarPnl.Controls.Add(guna2Button1);
             sidebarPnl.CustomizableEdges = customizableEdges11;
             sidebarPnl.Dock = DockStyle.Left;
-            sidebarPnl.Location = new Point(0, 116);
+            sidebarPnl.Location = new Point(0, 87);
+            sidebarPnl.Margin = new Padding(3, 2, 3, 2);
             sidebarPnl.Name = "sidebarPnl";
             sidebarPnl.ShadowDecoration.CustomizableEdges = customizableEdges12;
             sidebarPnl.ShadowDecoration.Shadow = new Padding(10);
-            sidebarPnl.Size = new Size(165, 785);
+            sidebarPnl.Size = new Size(144, 470);
             sidebarPnl.TabIndex = 0;
             // 
             // guna2Button4
@@ -117,10 +117,11 @@
             guna2Button4.Image = (Image)resources.GetObject("guna2Button4.Image");
             guna2Button4.ImageSize = new Size(60, 60);
             guna2Button4.ImeMode = ImeMode.On;
-            guna2Button4.Location = new Point(3, 616);
+            guna2Button4.Location = new Point(3, 462);
+            guna2Button4.Margin = new Padding(3, 2, 3, 2);
             guna2Button4.Name = "guna2Button4";
             guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button4.Size = new Size(165, 129);
+            guna2Button4.Size = new Size(144, 97);
             guna2Button4.TabIndex = 4;
             guna2Button4.Text = "hedefler";
             guna2Button4.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -143,10 +144,11 @@
             guna2Button3.Image = (Image)resources.GetObject("guna2Button3.Image");
             guna2Button3.ImageSize = new Size(50, 50);
             guna2Button3.ImeMode = ImeMode.On;
-            guna2Button3.Location = new Point(3, 471);
+            guna2Button3.Location = new Point(3, 353);
+            guna2Button3.Margin = new Padding(3, 2, 3, 2);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Button3.Size = new Size(165, 129);
+            guna2Button3.Size = new Size(144, 97);
             guna2Button3.TabIndex = 3;
             guna2Button3.Text = "TAKIM";
             guna2Button3.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -170,10 +172,11 @@
             guna2Button2.Image = (Image)resources.GetObject("guna2Button2.Image");
             guna2Button2.ImageSize = new Size(40, 40);
             guna2Button2.ImeMode = ImeMode.On;
-            guna2Button2.Location = new Point(0, 327);
+            guna2Button2.Location = new Point(0, 245);
+            guna2Button2.Margin = new Padding(3, 2, 3, 2);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Button2.Size = new Size(165, 129);
+            guna2Button2.Size = new Size(144, 97);
             guna2Button2.TabIndex = 2;
             guna2Button2.Text = "LISTE";
             guna2Button2.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -197,10 +200,11 @@
             boardBtn.Image = (Image)resources.GetObject("boardBtn.Image");
             boardBtn.ImageSize = new Size(60, 60);
             boardBtn.ImeMode = ImeMode.On;
-            boardBtn.Location = new Point(0, 183);
+            boardBtn.Location = new Point(0, 137);
+            boardBtn.Margin = new Padding(3, 2, 3, 2);
             boardBtn.Name = "boardBtn";
             boardBtn.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            boardBtn.Size = new Size(165, 129);
+            boardBtn.Size = new Size(144, 97);
             boardBtn.TabIndex = 1;
             boardBtn.Text = "Board";
             boardBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -222,14 +226,16 @@
             guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
             guna2Button1.ImageSize = new Size(50, 50);
             guna2Button1.ImeMode = ImeMode.On;
-            guna2Button1.Location = new Point(0, 39);
+            guna2Button1.Location = new Point(0, 29);
+            guna2Button1.Margin = new Padding(3, 2, 3, 2);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Button1.Size = new Size(165, 129);
+            guna2Button1.Size = new Size(144, 97);
             guna2Button1.TabIndex = 0;
             guna2Button1.Text = "Zaman Çizelgesi";
             guna2Button1.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             guna2Button1.Tile = true;
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // headerPnl
             // 
@@ -243,14 +249,16 @@
             headerPnl.Dock = DockStyle.Top;
             headerPnl.ImeMode = ImeMode.Disable;
             headerPnl.Location = new Point(0, 0);
+            headerPnl.Margin = new Padding(3, 2, 3, 2);
             headerPnl.Name = "headerPnl";
             headerPnl.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            headerPnl.Size = new Size(1273, 116);
+            headerPnl.Size = new Size(1114, 87);
             headerPnl.TabIndex = 2;
             // 
             // guna2Button7
             // 
             guna2Button7.Anchor = AnchorStyles.Right;
+            guna2Button7.BackColor = SystemColors.GradientInactiveCaption;
             guna2Button7.BorderRadius = 6;
             guna2Button7.Cursor = Cursors.Hand;
             guna2Button7.CustomizableEdges = customizableEdges13;
@@ -261,10 +269,11 @@
             guna2Button7.FillColor = SystemColors.GradientActiveCaption;
             guna2Button7.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button7.ForeColor = Color.Black;
-            guna2Button7.Location = new Point(470, 35);
+            guna2Button7.Location = new Point(411, 26);
+            guna2Button7.Margin = new Padding(3, 2, 3, 2);
             guna2Button7.Name = "guna2Button7";
             guna2Button7.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Button7.Size = new Size(225, 56);
+            guna2Button7.Size = new Size(197, 42);
             guna2Button7.TabIndex = 4;
             guna2Button7.Text = "Oluştur";
             // 
@@ -281,10 +290,11 @@
             guna2Button6.ForeColor = Color.White;
             guna2Button6.Image = (Image)resources.GetObject("guna2Button6.Image");
             guna2Button6.ImageSize = new Size(35, 35);
-            guna2Button6.Location = new Point(906, 36);
+            guna2Button6.Location = new Point(793, 27);
+            guna2Button6.Margin = new Padding(3, 2, 3, 2);
             guna2Button6.Name = "guna2Button6";
             guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2Button6.Size = new Size(55, 55);
+            guna2Button6.Size = new Size(48, 41);
             guna2Button6.TabIndex = 3;
             guna2Button6.Click += guna2Button6_Click;
             // 
@@ -301,10 +311,11 @@
             guna2Button5.ForeColor = Color.White;
             guna2Button5.Image = (Image)resources.GetObject("guna2Button5.Image");
             guna2Button5.ImageSize = new Size(35, 35);
-            guna2Button5.Location = new Point(967, 36);
+            guna2Button5.Location = new Point(846, 27);
+            guna2Button5.Margin = new Padding(3, 2, 3, 2);
             guna2Button5.Name = "guna2Button5";
             guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Button5.Size = new Size(55, 55);
+            guna2Button5.Size = new Size(48, 41);
             guna2Button5.TabIndex = 2;
             guna2Button5.Click += guna2Button5_Click;
             // 
@@ -314,9 +325,10 @@
             textBox1.BackColor = SystemColors.GradientInactiveCaption;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(1065, 50);
+            textBox1.Location = new Point(932, 38);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(135, 24);
+            textBox1.Size = new Size(118, 19);
             textBox1.TabIndex = 1;
             textBox1.Text = "Mutez Rahal";
             // 
@@ -326,22 +338,22 @@
             guna2PictureBox1.CustomizableEdges = customizableEdges19;
             guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(1182, 0);
+            guna2PictureBox1.Location = new Point(1034, 0);
+            guna2PictureBox1.Margin = new Padding(3, 2, 3, 2);
             guna2PictureBox1.Name = "guna2PictureBox1";
             guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            guna2PictureBox1.Size = new Size(80, 116);
+            guna2PictureBox1.Size = new Size(70, 87);
             guna2PictureBox1.TabIndex = 0;
             guna2PictureBox1.TabStop = false;
             // 
             // MainBoard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1275, 903);
+            ClientSize = new Size(1116, 559);
             Controls.Add(container);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "MainBoard";
             Text = "MainBoard";
