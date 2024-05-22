@@ -11,5 +11,10 @@ namespace Kanban_Tracker
         {
             password.UseSystemPasswordChar = !password.UseSystemPasswordChar;
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
