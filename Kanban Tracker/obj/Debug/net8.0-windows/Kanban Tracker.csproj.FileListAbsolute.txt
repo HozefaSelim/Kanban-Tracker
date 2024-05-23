@@ -48,3 +48,4 @@ C:\Users\Mutez\Source\Repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windo
 C:\Users\Mutez\Source\Repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban T.6BB76DAD.Up2Date
 C:\Users\Mutez\Source\Repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.genruntimeconfig.cache
 C:\Users\Mutez\Source\Repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\ref\Kanban Tracker.dll
+C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Resources.yeniProje.resources

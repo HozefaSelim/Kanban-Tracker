@@ -28,70 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             girisPnl = new Guna.UI2.WinForms.Guna2Panel();
-            label5 = new Label();
-            label6 = new Label();
+            giris = new Label();
+            hesapOlusturLbl = new Label();
             label7 = new Label();
             checkBox1 = new CheckBox();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            girisBtn = new Guna.UI2.WinForms.Guna2Button();
+            sifreTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
+            mailTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
             label8 = new Label();
             label9 = new Label();
-            label4 = new Label();
-            yenihesapLbl = new Label();
-            label3 = new Label();
-            checkBoxP = new CheckBox();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            password = new Guna.UI2.WinForms.Guna2TextBox();
-            email = new Guna.UI2.WinForms.Guna2TextBox();
-            label2 = new Label();
-            label1 = new Label();
-            logo = new PictureBox();
             olusturPnl = new Guna.UI2.WinForms.Guna2Panel();
+            geriGit = new Guna.UI2.WinForms.Guna2PictureBox();
+            label10 = new Label();
             checkBox3 = new CheckBox();
-            guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
+            sifreTekrarTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
             label15 = new Label();
-            guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            adSoyadTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
             label14 = new Label();
-            guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            olusturBtn = new Guna.UI2.WinForms.Guna2Button();
+            olusturSifreTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
+            olusturMailTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
             label12 = new Label();
             label13 = new Label();
-            label10 = new Label();
             panel1.SuspendLayout();
             girisPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
             olusturPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)geriGit).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -99,16 +86,7 @@
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.White;
             panel1.Controls.Add(girisPnl);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(yenihesapLbl);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(checkBoxP);
-            panel1.Controls.Add(guna2Button1);
-            panel1.Controls.Add(password);
-            panel1.Controls.Add(email);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(logo);
+            panel1.Controls.Add(olusturPnl);
             panel1.Location = new Point(1, 1);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
@@ -117,52 +95,52 @@
             // 
             // girisPnl
             // 
-            girisPnl.Controls.Add(olusturPnl);
-            girisPnl.Controls.Add(label5);
-            girisPnl.Controls.Add(label6);
+            girisPnl.Controls.Add(giris);
+            girisPnl.Controls.Add(hesapOlusturLbl);
             girisPnl.Controls.Add(label7);
             girisPnl.Controls.Add(checkBox1);
-            girisPnl.Controls.Add(guna2Button2);
-            girisPnl.Controls.Add(guna2TextBox1);
-            girisPnl.Controls.Add(guna2TextBox2);
+            girisPnl.Controls.Add(girisBtn);
+            girisPnl.Controls.Add(sifreTxtBox);
+            girisPnl.Controls.Add(mailTxtBox);
             girisPnl.Controls.Add(label8);
             girisPnl.Controls.Add(label9);
-            girisPnl.CustomizableEdges = customizableEdges19;
+            girisPnl.CustomizableEdges = customizableEdges7;
             girisPnl.Location = new Point(0, 0);
             girisPnl.Name = "girisPnl";
-            girisPnl.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            girisPnl.ShadowDecoration.CustomizableEdges = customizableEdges8;
             girisPnl.Size = new Size(579, 850);
             girisPnl.TabIndex = 10;
             // 
-            // label5
+            // giris
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Georgia", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.GradientActiveCaption;
-            label5.Location = new Point(208, 170);
-            label5.Name = "label5";
-            label5.Size = new Size(161, 69);
-            label5.TabIndex = 18;
-            label5.Text = "Giriş";
+            giris.AutoSize = true;
+            giris.Font = new Font("Georgia", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            giris.ForeColor = SystemColors.GradientActiveCaption;
+            giris.Location = new Point(208, 170);
+            giris.Name = "giris";
+            giris.Size = new Size(161, 69);
+            giris.TabIndex = 18;
+            giris.Text = "Giriş";
             // 
-            // label6
+            // hesapOlusturLbl
             // 
-            label6.AutoSize = true;
-            label6.Cursor = Cursors.Hand;
-            label6.Font = new Font("Arial Rounded MT Bold", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.ForeColor = SystemColors.GradientActiveCaption;
-            label6.Location = new Point(208, 654);
-            label6.Name = "label6";
-            label6.Size = new Size(169, 27);
-            label6.TabIndex = 17;
-            label6.Text = "Hesap Oluştur";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
+            hesapOlusturLbl.AutoSize = true;
+            hesapOlusturLbl.Cursor = Cursors.Hand;
+            hesapOlusturLbl.Font = new Font("Arial Rounded MT Bold", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            hesapOlusturLbl.ForeColor = SystemColors.GradientActiveCaption;
+            hesapOlusturLbl.Location = new Point(208, 654);
+            hesapOlusturLbl.Name = "hesapOlusturLbl";
+            hesapOlusturLbl.Size = new Size(169, 27);
+            hesapOlusturLbl.TabIndex = 17;
+            hesapOlusturLbl.Text = "Hesap Oluştur";
+            hesapOlusturLbl.TextAlign = ContentAlignment.MiddleCenter;
+            hesapOlusturLbl.Click += label6_Click;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(225, 628);
+            label7.Location = new Point(223, 637);
             label7.Name = "label7";
             label7.Size = new Size(136, 17);
             label7.TabIndex = 16;
@@ -182,84 +160,84 @@
             checkBox1.TextAlign = ContentAlignment.MiddleCenter;
             checkBox1.UseVisualStyleBackColor = true;
             // 
-            // guna2Button2
+            // girisBtn
             // 
-            guna2Button2.Anchor = AnchorStyles.Left;
-            guna2Button2.BackColor = Color.White;
-            guna2Button2.BorderRadius = 15;
-            guna2Button2.BorderThickness = 1;
-            guna2Button2.CustomizableEdges = customizableEdges13;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.FillColor = SystemColors.GradientActiveCaption;
-            guna2Button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(184, 553);
-            guna2Button2.Margin = new Padding(3, 4, 3, 4);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Button2.Size = new Size(206, 60);
-            guna2Button2.TabIndex = 14;
-            guna2Button2.Text = "Sign In";
+            girisBtn.Anchor = AnchorStyles.Left;
+            girisBtn.BackColor = Color.White;
+            girisBtn.BorderRadius = 15;
+            girisBtn.BorderThickness = 1;
+            girisBtn.CustomizableEdges = customizableEdges1;
+            girisBtn.DisabledState.BorderColor = Color.DarkGray;
+            girisBtn.DisabledState.CustomBorderColor = Color.DarkGray;
+            girisBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            girisBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            girisBtn.FillColor = SystemColors.GradientActiveCaption;
+            girisBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            girisBtn.ForeColor = Color.White;
+            girisBtn.Location = new Point(184, 553);
+            girisBtn.Margin = new Padding(3, 4, 3, 4);
+            girisBtn.Name = "girisBtn";
+            girisBtn.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            girisBtn.Size = new Size(206, 60);
+            girisBtn.TabIndex = 14;
+            girisBtn.Text = "Sign In";
             // 
-            // guna2TextBox1
+            // sifreTxtBox
             // 
-            guna2TextBox1.Anchor = AnchorStyles.Left;
-            guna2TextBox1.BorderColor = Color.Black;
-            guna2TextBox1.BorderRadius = 9;
-            guna2TextBox1.CustomizableEdges = customizableEdges15;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FillColor = SystemColors.GradientInactiveCaption;
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F);
-            guna2TextBox1.ForeColor = Color.Black;
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(109, 420);
-            guna2TextBox1.Margin = new Padding(3, 5, 3, 5);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '●';
-            guna2TextBox1.PlaceholderForeColor = Color.Gray;
-            guna2TextBox1.PlaceholderText = "●●●●●●●●";
-            guna2TextBox1.RightToLeft = RightToLeft.No;
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2TextBox1.Size = new Size(361, 48);
-            guna2TextBox1.TabIndex = 13;
-            guna2TextBox1.UseSystemPasswordChar = true;
+            sifreTxtBox.Anchor = AnchorStyles.Left;
+            sifreTxtBox.BorderColor = Color.Black;
+            sifreTxtBox.BorderRadius = 9;
+            sifreTxtBox.CustomizableEdges = customizableEdges3;
+            sifreTxtBox.DefaultText = "";
+            sifreTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            sifreTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            sifreTxtBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            sifreTxtBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            sifreTxtBox.FillColor = SystemColors.GradientInactiveCaption;
+            sifreTxtBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            sifreTxtBox.Font = new Font("Segoe UI", 9F);
+            sifreTxtBox.ForeColor = Color.Black;
+            sifreTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            sifreTxtBox.Location = new Point(109, 420);
+            sifreTxtBox.Margin = new Padding(3, 5, 3, 5);
+            sifreTxtBox.Name = "sifreTxtBox";
+            sifreTxtBox.PasswordChar = '●';
+            sifreTxtBox.PlaceholderForeColor = Color.Gray;
+            sifreTxtBox.PlaceholderText = "●●●●●●●●";
+            sifreTxtBox.RightToLeft = RightToLeft.No;
+            sifreTxtBox.SelectedText = "";
+            sifreTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            sifreTxtBox.Size = new Size(361, 48);
+            sifreTxtBox.TabIndex = 13;
+            sifreTxtBox.UseSystemPasswordChar = true;
             // 
-            // guna2TextBox2
+            // mailTxtBox
             // 
-            guna2TextBox2.Anchor = AnchorStyles.Left;
-            guna2TextBox2.BorderColor = Color.Black;
-            guna2TextBox2.BorderRadius = 9;
-            guna2TextBox2.CustomizableEdges = customizableEdges17;
-            guna2TextBox2.DefaultText = "";
-            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.FillColor = SystemColors.GradientInactiveCaption;
-            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Segoe UI", 9F);
-            guna2TextBox2.ForeColor = Color.Black;
-            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(109, 312);
-            guna2TextBox2.Margin = new Padding(3, 5, 3, 5);
-            guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PasswordChar = '\0';
-            guna2TextBox2.PlaceholderForeColor = Color.Gray;
-            guna2TextBox2.PlaceholderText = "you@example.com";
-            guna2TextBox2.RightToLeft = RightToLeft.No;
-            guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2TextBox2.Size = new Size(361, 48);
-            guna2TextBox2.TabIndex = 12;
+            mailTxtBox.Anchor = AnchorStyles.Left;
+            mailTxtBox.BorderColor = Color.Black;
+            mailTxtBox.BorderRadius = 9;
+            mailTxtBox.CustomizableEdges = customizableEdges5;
+            mailTxtBox.DefaultText = "";
+            mailTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            mailTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            mailTxtBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            mailTxtBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            mailTxtBox.FillColor = SystemColors.GradientInactiveCaption;
+            mailTxtBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            mailTxtBox.Font = new Font("Segoe UI", 9F);
+            mailTxtBox.ForeColor = Color.Black;
+            mailTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            mailTxtBox.Location = new Point(109, 312);
+            mailTxtBox.Margin = new Padding(3, 5, 3, 5);
+            mailTxtBox.Name = "mailTxtBox";
+            mailTxtBox.PasswordChar = '\0';
+            mailTxtBox.PlaceholderForeColor = Color.Gray;
+            mailTxtBox.PlaceholderText = "you@example.com";
+            mailTxtBox.RightToLeft = RightToLeft.No;
+            mailTxtBox.SelectedText = "";
+            mailTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            mailTxtBox.Size = new Size(361, 48);
+            mailTxtBox.TabIndex = 12;
             // 
             // label8
             // 
@@ -285,188 +263,54 @@
             label9.Text = "Email";
             label9.TextAlign = ContentAlignment.TopRight;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Georgia", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.GradientActiveCaption;
-            label4.Location = new Point(223, 239);
-            label4.Name = "label4";
-            label4.Size = new Size(161, 69);
-            label4.TabIndex = 9;
-            label4.Text = "Giriş";
-            // 
-            // yenihesapLbl
-            // 
-            yenihesapLbl.AutoSize = true;
-            yenihesapLbl.Cursor = Cursors.Hand;
-            yenihesapLbl.Font = new Font("Arial Rounded MT Bold", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            yenihesapLbl.ForeColor = SystemColors.GradientActiveCaption;
-            yenihesapLbl.Location = new Point(223, 723);
-            yenihesapLbl.Name = "yenihesapLbl";
-            yenihesapLbl.Size = new Size(169, 27);
-            yenihesapLbl.TabIndex = 8;
-            yenihesapLbl.Text = "Hesap Oluştur";
-            yenihesapLbl.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(240, 697);
-            label3.Name = "label3";
-            label3.Size = new Size(136, 17);
-            label3.TabIndex = 7;
-            label3.Text = "? Hesabın yok mu";
-            // 
-            // checkBoxP
-            // 
-            checkBoxP.Anchor = AnchorStyles.Left;
-            checkBoxP.AutoSize = true;
-            checkBoxP.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBoxP.Location = new Point(124, 545);
-            checkBoxP.Margin = new Padding(3, 4, 3, 4);
-            checkBoxP.Name = "checkBoxP";
-            checkBoxP.Size = new Size(164, 24);
-            checkBoxP.TabIndex = 6;
-            checkBoxP.Text = "Show Password";
-            checkBoxP.TextAlign = ContentAlignment.MiddleCenter;
-            checkBoxP.UseVisualStyleBackColor = true;
-            checkBoxP.CheckedChanged += checkBoxP_CheckedChanged;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.Anchor = AnchorStyles.Left;
-            guna2Button1.BackColor = Color.White;
-            guna2Button1.BorderRadius = 15;
-            guna2Button1.BorderThickness = 1;
-            guna2Button1.CustomizableEdges = customizableEdges21;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = SystemColors.GradientActiveCaption;
-            guna2Button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(199, 622);
-            guna2Button1.Margin = new Padding(3, 4, 3, 4);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            guna2Button1.Size = new Size(206, 60);
-            guna2Button1.TabIndex = 5;
-            guna2Button1.Text = "Sign In";
-            // 
-            // password
-            // 
-            password.Anchor = AnchorStyles.Left;
-            password.BorderColor = Color.Black;
-            password.BorderRadius = 9;
-            password.CustomizableEdges = customizableEdges23;
-            password.DefaultText = "";
-            password.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            password.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            password.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            password.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            password.FillColor = SystemColors.GradientInactiveCaption;
-            password.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            password.Font = new Font("Segoe UI", 9F);
-            password.ForeColor = Color.Black;
-            password.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            password.Location = new Point(124, 489);
-            password.Margin = new Padding(3, 5, 3, 5);
-            password.Name = "password";
-            password.PasswordChar = '●';
-            password.PlaceholderForeColor = Color.Gray;
-            password.PlaceholderText = "●●●●●●●●";
-            password.RightToLeft = RightToLeft.No;
-            password.SelectedText = "";
-            password.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            password.Size = new Size(361, 48);
-            password.TabIndex = 4;
-            password.UseSystemPasswordChar = true;
-            // 
-            // email
-            // 
-            email.Anchor = AnchorStyles.Left;
-            email.BorderColor = Color.Black;
-            email.BorderRadius = 9;
-            email.CustomizableEdges = customizableEdges25;
-            email.DefaultText = "";
-            email.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            email.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            email.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            email.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            email.FillColor = SystemColors.GradientInactiveCaption;
-            email.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            email.Font = new Font("Segoe UI", 9F);
-            email.ForeColor = Color.Black;
-            email.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            email.Location = new Point(124, 381);
-            email.Margin = new Padding(3, 5, 3, 5);
-            email.Name = "email";
-            email.PasswordChar = '\0';
-            email.PlaceholderForeColor = Color.Gray;
-            email.PlaceholderText = "you@example.com";
-            email.RightToLeft = RightToLeft.No;
-            email.SelectedText = "";
-            email.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            email.Size = new Size(361, 48);
-            email.TabIndex = 3;
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.Left;
-            label2.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(124, 455);
-            label2.Name = "label2";
-            label2.Size = new Size(139, 29);
-            label2.TabIndex = 2;
-            label2.Text = "Şifre";
-            label2.TextAlign = ContentAlignment.TopRight;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Left;
-            label1.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(124, 349);
-            label1.Name = "label1";
-            label1.Size = new Size(139, 27);
-            label1.TabIndex = 0;
-            label1.Text = "Email";
-            label1.TextAlign = ContentAlignment.TopRight;
-            // 
-            // logo
-            // 
-            logo.Anchor = AnchorStyles.Top;
-            logo.Location = new Point(153, 36);
-            logo.Margin = new Padding(3, 4, 3, 4);
-            logo.Name = "logo";
-            logo.Size = new Size(312, 142);
-            logo.TabIndex = 0;
-            logo.TabStop = false;
-            // 
             // olusturPnl
             // 
             olusturPnl.BackColor = Color.White;
+            olusturPnl.Controls.Add(geriGit);
             olusturPnl.Controls.Add(label10);
             olusturPnl.Controls.Add(checkBox3);
-            olusturPnl.Controls.Add(guna2TextBox6);
+            olusturPnl.Controls.Add(sifreTekrarTxtBox);
             olusturPnl.Controls.Add(label15);
-            olusturPnl.Controls.Add(guna2TextBox5);
+            olusturPnl.Controls.Add(adSoyadTxtBox);
             olusturPnl.Controls.Add(label14);
-            olusturPnl.Controls.Add(guna2Button3);
-            olusturPnl.Controls.Add(guna2TextBox3);
-            olusturPnl.Controls.Add(guna2TextBox4);
+            olusturPnl.Controls.Add(olusturBtn);
+            olusturPnl.Controls.Add(olusturSifreTxtBox);
+            olusturPnl.Controls.Add(olusturMailTxtBox);
             olusturPnl.Controls.Add(label12);
             olusturPnl.Controls.Add(label13);
-            olusturPnl.CustomizableEdges = customizableEdges11;
+            olusturPnl.CustomizableEdges = customizableEdges21;
             olusturPnl.Location = new Point(0, 0);
             olusturPnl.Name = "olusturPnl";
-            olusturPnl.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            olusturPnl.ShadowDecoration.CustomizableEdges = customizableEdges22;
             olusturPnl.Size = new Size(579, 850);
             olusturPnl.TabIndex = 19;
+            olusturPnl.Visible = false;
+            // 
+            // geriGit
+            // 
+            geriGit.Cursor = Cursors.Hand;
+            geriGit.CustomizableEdges = customizableEdges9;
+            geriGit.ErrorImage = null;
+            geriGit.Image = (Image)resources.GetObject("geriGit.Image");
+            geriGit.ImageRotate = 0F;
+            geriGit.Location = new Point(11, 786);
+            geriGit.Name = "geriGit";
+            geriGit.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            geriGit.Size = new Size(50, 50);
+            geriGit.TabIndex = 32;
+            geriGit.TabStop = false;
+            geriGit.Click += img_Click;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Georgia", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label10.ForeColor = SystemColors.GradientActiveCaption;
+            label10.Location = new Point(138, 182);
+            label10.Name = "label10";
+            label10.Size = new Size(304, 51);
+            label10.TabIndex = 31;
+            label10.Text = "Hesap Oluştur";
             // 
             // checkBox3
             // 
@@ -482,34 +326,34 @@
             checkBox3.TextAlign = ContentAlignment.MiddleCenter;
             checkBox3.UseVisualStyleBackColor = true;
             // 
-            // guna2TextBox6
+            // sifreTekrarTxtBox
             // 
-            guna2TextBox6.Anchor = AnchorStyles.Left;
-            guna2TextBox6.BorderColor = Color.Black;
-            guna2TextBox6.BorderRadius = 9;
-            guna2TextBox6.CustomizableEdges = customizableEdges1;
-            guna2TextBox6.DefaultText = "";
-            guna2TextBox6.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox6.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox6.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox6.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox6.FillColor = SystemColors.GradientInactiveCaption;
-            guna2TextBox6.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox6.Font = new Font("Segoe UI", 9F);
-            guna2TextBox6.ForeColor = Color.Black;
-            guna2TextBox6.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox6.Location = new Point(104, 590);
-            guna2TextBox6.Margin = new Padding(3, 5, 3, 5);
-            guna2TextBox6.Name = "guna2TextBox6";
-            guna2TextBox6.PasswordChar = '●';
-            guna2TextBox6.PlaceholderForeColor = Color.Gray;
-            guna2TextBox6.PlaceholderText = "●●●●●●●●";
-            guna2TextBox6.RightToLeft = RightToLeft.No;
-            guna2TextBox6.SelectedText = "";
-            guna2TextBox6.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2TextBox6.Size = new Size(361, 48);
-            guna2TextBox6.TabIndex = 29;
-            guna2TextBox6.UseSystemPasswordChar = true;
+            sifreTekrarTxtBox.Anchor = AnchorStyles.Left;
+            sifreTekrarTxtBox.BorderColor = Color.Black;
+            sifreTekrarTxtBox.BorderRadius = 9;
+            sifreTekrarTxtBox.CustomizableEdges = customizableEdges11;
+            sifreTekrarTxtBox.DefaultText = "";
+            sifreTekrarTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            sifreTekrarTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            sifreTekrarTxtBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            sifreTekrarTxtBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            sifreTekrarTxtBox.FillColor = SystemColors.GradientInactiveCaption;
+            sifreTekrarTxtBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            sifreTekrarTxtBox.Font = new Font("Segoe UI", 9F);
+            sifreTekrarTxtBox.ForeColor = Color.Black;
+            sifreTekrarTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            sifreTekrarTxtBox.Location = new Point(104, 590);
+            sifreTekrarTxtBox.Margin = new Padding(3, 5, 3, 5);
+            sifreTekrarTxtBox.Name = "sifreTekrarTxtBox";
+            sifreTekrarTxtBox.PasswordChar = '●';
+            sifreTekrarTxtBox.PlaceholderForeColor = Color.Gray;
+            sifreTekrarTxtBox.PlaceholderText = "●●●●●●●●";
+            sifreTekrarTxtBox.RightToLeft = RightToLeft.No;
+            sifreTekrarTxtBox.SelectedText = "";
+            sifreTekrarTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            sifreTekrarTxtBox.Size = new Size(361, 48);
+            sifreTekrarTxtBox.TabIndex = 29;
+            sifreTekrarTxtBox.UseSystemPasswordChar = true;
             // 
             // label15
             // 
@@ -523,33 +367,33 @@
             label15.Text = "Şifre Tekrar";
             label15.TextAlign = ContentAlignment.TopRight;
             // 
-            // guna2TextBox5
+            // adSoyadTxtBox
             // 
-            guna2TextBox5.Anchor = AnchorStyles.Left;
-            guna2TextBox5.BorderColor = Color.Black;
-            guna2TextBox5.BorderRadius = 9;
-            guna2TextBox5.CustomizableEdges = customizableEdges3;
-            guna2TextBox5.DefaultText = "";
-            guna2TextBox5.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox5.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox5.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox5.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox5.FillColor = SystemColors.GradientInactiveCaption;
-            guna2TextBox5.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox5.Font = new Font("Segoe UI", 9F);
-            guna2TextBox5.ForeColor = Color.Black;
-            guna2TextBox5.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox5.Location = new Point(104, 312);
-            guna2TextBox5.Margin = new Padding(3, 5, 3, 5);
-            guna2TextBox5.Name = "guna2TextBox5";
-            guna2TextBox5.PasswordChar = '\0';
-            guna2TextBox5.PlaceholderForeColor = Color.Gray;
-            guna2TextBox5.PlaceholderText = "Mutez Rahal";
-            guna2TextBox5.RightToLeft = RightToLeft.No;
-            guna2TextBox5.SelectedText = "";
-            guna2TextBox5.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox5.Size = new Size(361, 48);
-            guna2TextBox5.TabIndex = 27;
+            adSoyadTxtBox.Anchor = AnchorStyles.Left;
+            adSoyadTxtBox.BorderColor = Color.Black;
+            adSoyadTxtBox.BorderRadius = 9;
+            adSoyadTxtBox.CustomizableEdges = customizableEdges13;
+            adSoyadTxtBox.DefaultText = "";
+            adSoyadTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            adSoyadTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            adSoyadTxtBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            adSoyadTxtBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            adSoyadTxtBox.FillColor = SystemColors.GradientInactiveCaption;
+            adSoyadTxtBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            adSoyadTxtBox.Font = new Font("Segoe UI", 9F);
+            adSoyadTxtBox.ForeColor = Color.Black;
+            adSoyadTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            adSoyadTxtBox.Location = new Point(104, 312);
+            adSoyadTxtBox.Margin = new Padding(3, 5, 3, 5);
+            adSoyadTxtBox.Name = "adSoyadTxtBox";
+            adSoyadTxtBox.PasswordChar = '\0';
+            adSoyadTxtBox.PlaceholderForeColor = Color.Gray;
+            adSoyadTxtBox.PlaceholderText = "Mutez Rahal";
+            adSoyadTxtBox.RightToLeft = RightToLeft.No;
+            adSoyadTxtBox.SelectedText = "";
+            adSoyadTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            adSoyadTxtBox.Size = new Size(361, 48);
+            adSoyadTxtBox.TabIndex = 27;
             // 
             // label14
             // 
@@ -563,85 +407,85 @@
             label14.Text = "Ad-Soyad";
             label14.TextAlign = ContentAlignment.TopRight;
             // 
-            // guna2Button3
+            // olusturBtn
             // 
-            guna2Button3.Anchor = AnchorStyles.Left;
-            guna2Button3.BackColor = Color.White;
-            guna2Button3.BorderRadius = 15;
-            guna2Button3.BorderThickness = 1;
-            guna2Button3.CustomizableEdges = customizableEdges5;
-            guna2Button3.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button3.FillColor = SystemColors.GradientActiveCaption;
-            guna2Button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2Button3.ForeColor = Color.White;
-            guna2Button3.Location = new Point(178, 697);
-            guna2Button3.Margin = new Padding(3, 4, 3, 4);
-            guna2Button3.Name = "guna2Button3";
-            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Button3.Size = new Size(206, 60);
-            guna2Button3.TabIndex = 22;
-            guna2Button3.Text = "Oluştur";
-            guna2Button3.Click += guna2Button3_Click;
+            olusturBtn.Anchor = AnchorStyles.Left;
+            olusturBtn.BackColor = Color.White;
+            olusturBtn.BorderRadius = 15;
+            olusturBtn.BorderThickness = 1;
+            olusturBtn.CustomizableEdges = customizableEdges15;
+            olusturBtn.DisabledState.BorderColor = Color.DarkGray;
+            olusturBtn.DisabledState.CustomBorderColor = Color.DarkGray;
+            olusturBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            olusturBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            olusturBtn.FillColor = SystemColors.GradientActiveCaption;
+            olusturBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            olusturBtn.ForeColor = Color.White;
+            olusturBtn.Location = new Point(178, 697);
+            olusturBtn.Margin = new Padding(3, 4, 3, 4);
+            olusturBtn.Name = "olusturBtn";
+            olusturBtn.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            olusturBtn.Size = new Size(206, 60);
+            olusturBtn.TabIndex = 22;
+            olusturBtn.Text = "Oluştur";
+            olusturBtn.Click += guna2Button3_Click;
             // 
-            // guna2TextBox3
+            // olusturSifreTxtBox
             // 
-            guna2TextBox3.Anchor = AnchorStyles.Left;
-            guna2TextBox3.BorderColor = Color.Black;
-            guna2TextBox3.BorderRadius = 9;
-            guna2TextBox3.CustomizableEdges = customizableEdges7;
-            guna2TextBox3.DefaultText = "";
-            guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox3.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.FillColor = SystemColors.GradientInactiveCaption;
-            guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Font = new Font("Segoe UI", 9F);
-            guna2TextBox3.ForeColor = Color.Black;
-            guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(104, 495);
-            guna2TextBox3.Margin = new Padding(3, 5, 3, 5);
-            guna2TextBox3.Name = "guna2TextBox3";
-            guna2TextBox3.PasswordChar = '●';
-            guna2TextBox3.PlaceholderForeColor = Color.Gray;
-            guna2TextBox3.PlaceholderText = "●●●●●●●●";
-            guna2TextBox3.RightToLeft = RightToLeft.No;
-            guna2TextBox3.SelectedText = "";
-            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2TextBox3.Size = new Size(361, 48);
-            guna2TextBox3.TabIndex = 21;
-            guna2TextBox3.UseSystemPasswordChar = true;
+            olusturSifreTxtBox.Anchor = AnchorStyles.Left;
+            olusturSifreTxtBox.BorderColor = Color.Black;
+            olusturSifreTxtBox.BorderRadius = 9;
+            olusturSifreTxtBox.CustomizableEdges = customizableEdges17;
+            olusturSifreTxtBox.DefaultText = "";
+            olusturSifreTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            olusturSifreTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            olusturSifreTxtBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            olusturSifreTxtBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            olusturSifreTxtBox.FillColor = SystemColors.GradientInactiveCaption;
+            olusturSifreTxtBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            olusturSifreTxtBox.Font = new Font("Segoe UI", 9F);
+            olusturSifreTxtBox.ForeColor = Color.Black;
+            olusturSifreTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            olusturSifreTxtBox.Location = new Point(104, 495);
+            olusturSifreTxtBox.Margin = new Padding(3, 5, 3, 5);
+            olusturSifreTxtBox.Name = "olusturSifreTxtBox";
+            olusturSifreTxtBox.PasswordChar = '●';
+            olusturSifreTxtBox.PlaceholderForeColor = Color.Gray;
+            olusturSifreTxtBox.PlaceholderText = "●●●●●●●●";
+            olusturSifreTxtBox.RightToLeft = RightToLeft.No;
+            olusturSifreTxtBox.SelectedText = "";
+            olusturSifreTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            olusturSifreTxtBox.Size = new Size(361, 48);
+            olusturSifreTxtBox.TabIndex = 21;
+            olusturSifreTxtBox.UseSystemPasswordChar = true;
             // 
-            // guna2TextBox4
+            // olusturMailTxtBox
             // 
-            guna2TextBox4.Anchor = AnchorStyles.Left;
-            guna2TextBox4.BorderColor = Color.Black;
-            guna2TextBox4.BorderRadius = 9;
-            guna2TextBox4.CustomizableEdges = customizableEdges9;
-            guna2TextBox4.DefaultText = "";
-            guna2TextBox4.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox4.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox4.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox4.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox4.FillColor = SystemColors.GradientInactiveCaption;
-            guna2TextBox4.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox4.Font = new Font("Segoe UI", 9F);
-            guna2TextBox4.ForeColor = Color.Black;
-            guna2TextBox4.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox4.Location = new Point(104, 405);
-            guna2TextBox4.Margin = new Padding(3, 5, 3, 5);
-            guna2TextBox4.Name = "guna2TextBox4";
-            guna2TextBox4.PasswordChar = '\0';
-            guna2TextBox4.PlaceholderForeColor = Color.Gray;
-            guna2TextBox4.PlaceholderText = "you@example.com";
-            guna2TextBox4.RightToLeft = RightToLeft.No;
-            guna2TextBox4.SelectedText = "";
-            guna2TextBox4.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2TextBox4.Size = new Size(361, 48);
-            guna2TextBox4.TabIndex = 20;
+            olusturMailTxtBox.Anchor = AnchorStyles.Left;
+            olusturMailTxtBox.BorderColor = Color.Black;
+            olusturMailTxtBox.BorderRadius = 9;
+            olusturMailTxtBox.CustomizableEdges = customizableEdges19;
+            olusturMailTxtBox.DefaultText = "";
+            olusturMailTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            olusturMailTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            olusturMailTxtBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            olusturMailTxtBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            olusturMailTxtBox.FillColor = SystemColors.GradientInactiveCaption;
+            olusturMailTxtBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            olusturMailTxtBox.Font = new Font("Segoe UI", 9F);
+            olusturMailTxtBox.ForeColor = Color.Black;
+            olusturMailTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            olusturMailTxtBox.Location = new Point(104, 405);
+            olusturMailTxtBox.Margin = new Padding(3, 5, 3, 5);
+            olusturMailTxtBox.Name = "olusturMailTxtBox";
+            olusturMailTxtBox.PasswordChar = '\0';
+            olusturMailTxtBox.PlaceholderForeColor = Color.Gray;
+            olusturMailTxtBox.PlaceholderText = "you@example.com";
+            olusturMailTxtBox.RightToLeft = RightToLeft.No;
+            olusturMailTxtBox.SelectedText = "";
+            olusturMailTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            olusturMailTxtBox.Size = new Size(361, 48);
+            olusturMailTxtBox.TabIndex = 20;
             // 
             // label12
             // 
@@ -667,17 +511,6 @@
             label13.Text = "Email";
             label13.TextAlign = ContentAlignment.TopRight;
             // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.ForeColor = SystemColors.GradientActiveCaption;
-            label10.Location = new Point(138, 182);
-            label10.Name = "label10";
-            label10.Size = new Size(298, 46);
-            label10.TabIndex = 31;
-            label10.Text = "Hesap Oluştur";
-            // 
             // SignIn
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -692,13 +525,13 @@
             RightToLeft = RightToLeft.Yes;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Kanban Tracker";
+            Load += SignIn_Load;
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             girisPnl.ResumeLayout(false);
             girisPnl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             olusturPnl.ResumeLayout(false);
             olusturPnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)geriGit).EndInit();
             ResumeLayout(false);
         }
 
@@ -706,36 +539,32 @@
 
         private Panel panel1;
         private PictureBox logo;
-        private Label label1;
-        private Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox password;
-        private Guna.UI2.WinForms.Guna2TextBox email;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private CheckBox checkBoxP;
-        private Label label3;
-        private Label yenihesapLbl;
-        private Label label4;
-        private Guna.UI2.WinForms.Guna2Panel girisPnl;
         private Label label5;
         private Label label6;
-        private Label label7;
-        private CheckBox checkBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Label label8;
-        private Label label9;
         private Guna.UI2.WinForms.Guna2Panel olusturPnl;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2Button olusturBtn;
+        private Guna.UI2.WinForms.Guna2TextBox olusturSifreTxtBox;
+        private Guna.UI2.WinForms.Guna2TextBox olusturMailTxtBox;
         private Label label12;
         private Label label13;
         private CheckBox checkBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
+        private Guna.UI2.WinForms.Guna2TextBox sifreTekrarTxtBox;
         private Label label15;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox adSoyadTxtBox;
         private Label label14;
         private Label label10;
+        private Guna.UI2.WinForms.Guna2PictureBox geriGit;
+        private Guna.UI2.WinForms.Guna2Panel girisPnl;
+        private Label giris;
+        private Label hesapOlusturLbl;
+        private Label label7;
+        private CheckBox checkBox1;
+        private Guna.UI2.WinForms.Guna2Button girisBtn;
+        private Guna.UI2.WinForms.Guna2TextBox sifreTxtBox;
+        private Guna.UI2.WinForms.Guna2TextBox mailTxtBox;
+        private Label label8;
+        private Label label9;
     }
 }

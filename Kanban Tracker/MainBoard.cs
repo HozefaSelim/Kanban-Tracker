@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kanban_Tracker.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -62,6 +63,16 @@ namespace Kanban_Tracker
         private void guna2Button6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MainBoard_Load(object sender, EventArgs e)
+        {
+            olusturBtn.Visible = false;
+        }
+
+        private void projeOlusturBtn_Click(object sender, EventArgs e)
+        {
+            yeniProje1.Visible = true;           
         }
     }
 }
