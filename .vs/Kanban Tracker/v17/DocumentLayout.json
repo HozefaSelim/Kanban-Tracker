@@ -1,12 +1,135 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Hozefa Selim\\source\\repos\\HozefaSelim\\Kanban-Tracker\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Maky\\source\\repos\\Kanban-Tracker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\maky\\source\\repos\\kanban-tracker\\kanban tracker\\classes\\userproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\classes\\userproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\maky\\source\\repos\\kanban-tracker\\kanban tracker\\classes\\issue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\classes\\issue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\maky\\source\\repos\\kanban-tracker\\kanban tracker\\classes\\epic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\classes\\epic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\maky\\source\\repos\\kanban-tracker\\kanban tracker\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\maky\\source\\repos\\kanban-tracker\\kanban tracker\\classes\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\classes\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 580,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserProject.cs",
+              "DocumentMoniker": "C:\\Users\\Maky\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Classes\\UserProject.cs",
+              "RelativeDocumentMoniker": "Kanban Tracker\\Classes\\UserProject.cs",
+              "ToolTip": "C:\\Users\\Maky\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Classes\\UserProject.cs",
+              "RelativeToolTip": "Kanban Tracker\\Classes\\UserProject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:36:40.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Issue.cs",
+              "DocumentMoniker": "C:\\Users\\Maky\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Classes\\Issue.cs",
+              "RelativeDocumentMoniker": "Kanban Tracker\\Classes\\Issue.cs",
+              "ToolTip": "C:\\Users\\Maky\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Classes\\Issue.cs",
+              "RelativeToolTip": "Kanban Tracker\\Classes\\Issue.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:34:08.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Epic.cs",
+              "DocumentMoniker": "C:\\Users\\Maky\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Classes\\Epic.cs",
+              "RelativeDocumentMoniker": "Kanban Tracker\\Classes\\Epic.cs",
+              "ToolTip": "C:\\Users\\Maky\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Classes\\Epic.cs",
+              "RelativeToolTip": "Kanban Tracker\\Classes\\Epic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:33:30.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Maky\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Classes\\User.cs",
+              "RelativeDocumentMoniker": "Kanban Tracker\\Classes\\User.cs",
+              "ToolTip": "C:\\Users\\Maky\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Classes\\User.cs",
+              "RelativeToolTip": "Kanban Tracker\\Classes\\User.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:04:07.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\Maky\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Classes\\Project.cs",
+              "RelativeDocumentMoniker": "Kanban Tracker\\Classes\\Project.cs",
+              "ToolTip": "C:\\Users\\Maky\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Classes\\Project.cs",
+              "RelativeToolTip": "Kanban Tracker\\Classes\\Project.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T16:57:46.957Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 149,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
