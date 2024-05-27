@@ -17,31 +17,41 @@ namespace Kanban_Tracker
             InitializeComponent();
         }
 
-        private void BtnSlide_Click(object sender, EventArgs e)
+
+        private void boardBtn_Click(object sender, EventArgs e)
         {
-            if (sidebarPnl.Width == 200)
-            {
-                sidebarPnl.Width = 103;
-            }
-            else
-            {
-                sidebarPnl.Width = 200;
-            }
+            // Create an instance of the form you want to open
+            Board buttonForm = new Board();
+
+            // Call the method to open the form in a panel
+            AbrirFormEnPanel(buttonForm);
         }
-        private void AbrirFormEnPanel(object Formhijo)
+
+        private void AbrirFormEnPanel(Form form)
         {
-            if (this.container.Controls.Count > 0)
-                this.container.Controls.RemoveAt(0);
-            Form fh = Formhijo as Form;
-            fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
-            this.container.Controls.Add(fh);
-            this.container.Tag = fh;
-            fh.Show();
+            // Assuming you have a panel named mainPanel to add the form to
+            Panel mainPanel = this.container;
+
+            // Clear any existing controls from the panel
+            mainPanel.Controls.Clear();
+
+            // Set the form's properties
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None; // Remove the border for better appearance
+
+            // Calculate the center position
+            form.StartPosition = FormStartPosition.Manual; // Manually set the position
+            form.Location = new Point((mainPanel.Width - form.Width) / 2, (mainPanel.Height - form.Height) / 2);
+
+            // Add the form to the panel and show it
+            mainPanel.Controls.Add(form);
+            form.Show();
         }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new Button1());
+
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -68,5 +78,7 @@ namespace Kanban_Tracker
         {
 
         }
+
+       
     }
 }
