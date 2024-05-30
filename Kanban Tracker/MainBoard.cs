@@ -72,7 +72,12 @@ namespace Kanban_Tracker
 
         private void projeOlusturBtn_Click(object sender, EventArgs e)
         {
-            yeniProje1.Visible = true;           
+            yeniProje1.Visible = true;
+        }
+
+        private void olusturBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

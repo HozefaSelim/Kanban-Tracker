@@ -117,6 +117,7 @@
             projeEkleBtni.Size = new Size(225, 56);
             projeEkleBtni.TabIndex = 21;
             projeEkleBtni.Text = "Ekle";
+            projeEkleBtni.Click += projeEkleBtni_Click;
             // 
             // label6
             // 

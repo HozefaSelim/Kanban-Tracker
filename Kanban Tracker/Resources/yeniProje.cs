@@ -26,5 +26,10 @@ namespace Kanban_Tracker.Resources
         {
             this.Visible = false;
         }
+
+        private void projeEkleBtni_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

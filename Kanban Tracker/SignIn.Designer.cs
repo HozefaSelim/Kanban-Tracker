@@ -128,7 +128,7 @@
             hesapOlusturLbl.Cursor = Cursors.Hand;
             hesapOlusturLbl.Font = new Font("Arial Rounded MT Bold", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
             hesapOlusturLbl.ForeColor = SystemColors.GradientActiveCaption;
-            hesapOlusturLbl.Location = new Point(208, 654);
+            hesapOlusturLbl.Location = new Point(208, 664);
             hesapOlusturLbl.Name = "hesapOlusturLbl";
             hesapOlusturLbl.Size = new Size(169, 27);
             hesapOlusturLbl.TabIndex = 17;
@@ -306,7 +306,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Georgia", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, 162);
             label10.ForeColor = SystemColors.GradientActiveCaption;
-            label10.Location = new Point(138, 182);
+            label10.Location = new Point(143, 129);
             label10.Name = "label10";
             label10.Size = new Size(304, 51);
             label10.TabIndex = 31;
@@ -317,7 +317,7 @@
             checkBox3.Anchor = AnchorStyles.Left;
             checkBox3.AutoSize = true;
             checkBox3.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox3.Location = new Point(104, 646);
+            checkBox3.Location = new Point(109, 593);
             checkBox3.Margin = new Padding(3, 4, 3, 4);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(164, 24);
@@ -342,7 +342,7 @@
             sifreTekrarTxtBox.Font = new Font("Segoe UI", 9F);
             sifreTekrarTxtBox.ForeColor = Color.Black;
             sifreTekrarTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            sifreTekrarTxtBox.Location = new Point(104, 590);
+            sifreTekrarTxtBox.Location = new Point(109, 537);
             sifreTekrarTxtBox.Margin = new Padding(3, 5, 3, 5);
             sifreTekrarTxtBox.Name = "sifreTekrarTxtBox";
             sifreTekrarTxtBox.PasswordChar = '●';
@@ -360,7 +360,7 @@
             label15.Anchor = AnchorStyles.Left;
             label15.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label15.ForeColor = Color.Black;
-            label15.Location = new Point(104, 556);
+            label15.Location = new Point(109, 503);
             label15.Name = "label15";
             label15.Size = new Size(139, 29);
             label15.TabIndex = 28;
@@ -383,7 +383,7 @@
             adSoyadTxtBox.Font = new Font("Segoe UI", 9F);
             adSoyadTxtBox.ForeColor = Color.Black;
             adSoyadTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            adSoyadTxtBox.Location = new Point(104, 312);
+            adSoyadTxtBox.Location = new Point(109, 259);
             adSoyadTxtBox.Margin = new Padding(3, 5, 3, 5);
             adSoyadTxtBox.Name = "adSoyadTxtBox";
             adSoyadTxtBox.PasswordChar = '\0';
@@ -400,7 +400,7 @@
             label14.Anchor = AnchorStyles.Left;
             label14.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label14.ForeColor = Color.Black;
-            label14.Location = new Point(104, 274);
+            label14.Location = new Point(109, 221);
             label14.Name = "label14";
             label14.Size = new Size(154, 33);
             label14.TabIndex = 26;
@@ -421,7 +421,7 @@
             olusturBtn.FillColor = SystemColors.GradientActiveCaption;
             olusturBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             olusturBtn.ForeColor = Color.White;
-            olusturBtn.Location = new Point(178, 697);
+            olusturBtn.Location = new Point(183, 644);
             olusturBtn.Margin = new Padding(3, 4, 3, 4);
             olusturBtn.Name = "olusturBtn";
             olusturBtn.ShadowDecoration.CustomizableEdges = customizableEdges16;
@@ -446,7 +446,7 @@
             olusturSifreTxtBox.Font = new Font("Segoe UI", 9F);
             olusturSifreTxtBox.ForeColor = Color.Black;
             olusturSifreTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            olusturSifreTxtBox.Location = new Point(104, 495);
+            olusturSifreTxtBox.Location = new Point(109, 442);
             olusturSifreTxtBox.Margin = new Padding(3, 5, 3, 5);
             olusturSifreTxtBox.Name = "olusturSifreTxtBox";
             olusturSifreTxtBox.PasswordChar = '●';
@@ -475,7 +475,7 @@
             olusturMailTxtBox.Font = new Font("Segoe UI", 9F);
             olusturMailTxtBox.ForeColor = Color.Black;
             olusturMailTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            olusturMailTxtBox.Location = new Point(104, 405);
+            olusturMailTxtBox.Location = new Point(109, 352);
             olusturMailTxtBox.Margin = new Padding(3, 5, 3, 5);
             olusturMailTxtBox.Name = "olusturMailTxtBox";
             olusturMailTxtBox.PasswordChar = '\0';
@@ -492,7 +492,7 @@
             label12.Anchor = AnchorStyles.Left;
             label12.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label12.ForeColor = Color.Black;
-            label12.Location = new Point(104, 461);
+            label12.Location = new Point(109, 408);
             label12.Name = "label12";
             label12.Size = new Size(139, 29);
             label12.TabIndex = 19;
@@ -504,7 +504,7 @@
             label13.Anchor = AnchorStyles.Left;
             label13.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label13.ForeColor = Color.Black;
-            label13.Location = new Point(104, 373);
+            label13.Location = new Point(109, 320);
             label13.Name = "label13";
             label13.Size = new Size(139, 27);
             label13.TabIndex = 18;
