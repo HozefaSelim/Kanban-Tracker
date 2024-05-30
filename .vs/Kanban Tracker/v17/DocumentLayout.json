@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\hozefa selim\\source\\repos\\hozefaselim\\kanban-tracker\\kanban tracker\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\hozefa selim\\source\\repos\\hozefaselim\\kanban-tracker\\kanban tracker\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,20 +14,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Board.cs",
-              "DocumentMoniker": "C:\\Users\\Hozefa Selim\\source\\repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Board.cs",
-              "RelativeDocumentMoniker": "Kanban Tracker\\Board.cs",
-              "ToolTip": "C:\\Users\\Hozefa Selim\\source\\repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Board.cs*",
-              "RelativeToolTip": "Kanban Tracker\\Board.cs*",
-              "ViewState": "AQIAACUAAAAAAAAAAAAUwDsAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:44:54.217Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -39,10 +30,10 @@
               "Title": "Board.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Hozefa Selim\\source\\repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Board.cs",
               "RelativeDocumentMoniker": "Kanban Tracker\\Board.cs",
-              "ToolTip": "C:\\Users\\Hozefa Selim\\source\\repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Board.cs [Design]*",
-              "RelativeToolTip": "Kanban Tracker\\Board.cs [Design]*",
+              "ToolTip": "C:\\Users\\Hozefa Selim\\source\\repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Board.cs [Design]",
+              "RelativeToolTip": "Kanban Tracker\\Board.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:44:50.304Z",
+              "WhenOpened": "2024-05-27T15:39:52.532Z",
               "EditorCaption": " [Design]"
             }
           ]
