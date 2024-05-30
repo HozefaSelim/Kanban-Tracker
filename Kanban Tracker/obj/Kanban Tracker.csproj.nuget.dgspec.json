@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hozefa Selim\\Source\\Repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Kanban Tracker.csproj": {}
+    "C:\\Users\\Hozefa Selim\\source\\repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Kanban Tracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hozefa Selim\\Source\\Repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Kanban Tracker.csproj": {
+    "C:\\Users\\Hozefa Selim\\source\\repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Kanban Tracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hozefa Selim\\Source\\Repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Kanban Tracker.csproj",
+        "projectUniqueName": "C:\\Users\\Hozefa Selim\\source\\repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Kanban Tracker.csproj",
         "projectName": "Kanban Tracker",
-        "projectPath": "C:\\Users\\Hozefa Selim\\Source\\Repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Kanban Tracker.csproj",
+        "projectPath": "C:\\Users\\Hozefa Selim\\source\\repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Kanban Tracker.csproj",
         "packagesPath": "C:\\Users\\Hozefa Selim\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Hozefa Selim\\Source\\Repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\obj\\",
         "projectStyle": "PackageReference",
