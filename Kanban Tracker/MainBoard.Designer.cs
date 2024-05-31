@@ -59,14 +59,15 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             container = new Panel();
+            yeniProje1 = new Resources.yeniProje();
             projePnl = new Guna.UI2.WinForms.Guna2Panel();
             projeOlusturBtn = new Guna.UI2.WinForms.Guna2Button();
             label1 = new Label();
-            projeler = new Guna.UI2.WinForms.Guna2DataGridView();
-            projeAdi = new DataGridViewButtonColumn();
-            projeID = new DataGridViewLinkColumn();
-            projeAnahtari = new DataGridViewLinkColumn();
-            Column2 = new DataGridViewLinkColumn();
+            projelerDtaView = new Guna.UI2.WinForms.Guna2DataGridView();
+            projeAdi = new DataGridViewTextBoxColumn();
+            projeID = new DataGridViewTextBoxColumn();
+            projeAnahtari = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
             sidebarPnl = new Guna.UI2.WinForms.Guna2Panel();
             hedefBtn = new Guna.UI2.WinForms.Guna2Button();
             takimBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -79,10 +80,9 @@
             bildirimBtn = new Guna.UI2.WinForms.Guna2Button();
             isimTxt = new TextBox();
             kullaniciImg = new Guna.UI2.WinForms.Guna2PictureBox();
-            yeniProje1 = new Resources.yeniProje();
             container.SuspendLayout();
             projePnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)projeler).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)projelerDtaView).BeginInit();
             sidebarPnl.SuspendLayout();
             headerPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)kullaniciImg).BeginInit();
@@ -92,10 +92,10 @@
             // 
             container.BackColor = SystemColors.Control;
             container.BorderStyle = BorderStyle.FixedSingle;
+            container.Controls.Add(yeniProje1);
             container.Controls.Add(projePnl);
             container.Controls.Add(sidebarPnl);
             container.Controls.Add(headerPnl);
-            container.Controls.Add(yeniProje1);
             container.Dock = DockStyle.Fill;
             container.Location = new Point(0, 0);
             container.Margin = new Padding(3, 4, 3, 4);
@@ -103,13 +103,23 @@
             container.Size = new Size(1654, 1055);
             container.TabIndex = 2;
             // 
+            // yeniProje1
+            // 
+            yeniProje1.BorderStyle = BorderStyle.FixedSingle;
+            yeniProje1.Location = new Point(661, 86);
+            yeniProje1.Name = "yeniProje1";
+            yeniProje1.Size = new Size(573, 849);
+            yeniProje1.TabIndex = 6;
+            yeniProje1.Visible = false;
+            yeniProje1.Load += yeniProje1_Load;
+            // 
             // projePnl
             // 
             projePnl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             projePnl.BackColor = Color.White;
             projePnl.Controls.Add(projeOlusturBtn);
             projePnl.Controls.Add(label1);
-            projePnl.Controls.Add(projeler);
+            projePnl.Controls.Add(projelerDtaView);
             projePnl.CustomizableEdges = customizableEdges3;
             projePnl.Location = new Point(0, 116);
             projePnl.Name = "projePnl";
@@ -150,85 +160,98 @@
             label1.TabIndex = 1;
             label1.Text = "Projeler";
             // 
-            // projeler
+            // projelerDtaView
             // 
-            projeler.AllowUserToAddRows = false;
+            projelerDtaView.AllowUserToAddRows = false;
+            projelerDtaView.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = Color.White;
-            projeler.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            projeler.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            projelerDtaView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            projelerDtaView.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            projeler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            projeler.ColumnHeadersHeight = 40;
-            projeler.Columns.AddRange(new DataGridViewColumn[] { projeAdi, projeID, projeAnahtari, Column2 });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            projelerDtaView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            projelerDtaView.ColumnHeadersHeight = 40;
+            projelerDtaView.Columns.AddRange(new DataGridViewColumn[] { projeAdi, projeID, projeAnahtari, Column2 });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            projeler.DefaultCellStyle = dataGridViewCellStyle3;
-            projeler.GridColor = Color.FromArgb(231, 229, 255);
-            projeler.Location = new Point(19, 91);
-            projeler.MultiSelect = false;
-            projeler.Name = "projeler";
-            projeler.RowHeadersVisible = false;
-            projeler.RowHeadersWidth = 51;
-            projeler.Size = new Size(1630, 404);
-            projeler.TabIndex = 0;
-            projeler.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            projeler.ThemeStyle.AlternatingRowsStyle.Font = null;
-            projeler.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            projeler.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            projeler.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            projeler.ThemeStyle.BackColor = Color.White;
-            projeler.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
-            projeler.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            projeler.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            projeler.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
-            projeler.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            projeler.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            projeler.ThemeStyle.HeaderStyle.Height = 40;
-            projeler.ThemeStyle.ReadOnly = false;
-            projeler.ThemeStyle.RowsStyle.BackColor = Color.White;
-            projeler.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            projeler.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
-            projeler.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
-            projeler.ThemeStyle.RowsStyle.Height = 29;
-            projeler.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            projeler.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            projelerDtaView.DefaultCellStyle = dataGridViewCellStyle3;
+            projelerDtaView.GridColor = Color.DarkGray;
+            projelerDtaView.Location = new Point(19, 91);
+            projelerDtaView.MultiSelect = false;
+            projelerDtaView.Name = "projelerDtaView";
+            projelerDtaView.ReadOnly = true;
+            projelerDtaView.RowHeadersVisible = false;
+            projelerDtaView.RowHeadersWidth = 51;
+            projelerDtaView.Size = new Size(1630, 404);
+            projelerDtaView.TabIndex = 0;
+            projelerDtaView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            projelerDtaView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            projelerDtaView.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            projelerDtaView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            projelerDtaView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            projelerDtaView.ThemeStyle.BackColor = Color.White;
+            projelerDtaView.ThemeStyle.GridColor = Color.DarkGray;
+            projelerDtaView.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            projelerDtaView.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            projelerDtaView.ThemeStyle.HeaderStyle.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            projelerDtaView.ThemeStyle.HeaderStyle.ForeColor = Color.Black;
+            projelerDtaView.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            projelerDtaView.ThemeStyle.HeaderStyle.Height = 40;
+            projelerDtaView.ThemeStyle.ReadOnly = true;
+            projelerDtaView.ThemeStyle.RowsStyle.BackColor = Color.White;
+            projelerDtaView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            projelerDtaView.ThemeStyle.RowsStyle.Font = new Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            projelerDtaView.ThemeStyle.RowsStyle.ForeColor = Color.Black;
+            projelerDtaView.ThemeStyle.RowsStyle.Height = 29;
+            projelerDtaView.ThemeStyle.RowsStyle.SelectionBackColor = Color.Black;
+            projelerDtaView.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
+            projelerDtaView.CellDoubleClick += projelerDtaView_CellDoubleClick;
             // 
             // projeAdi
             // 
             projeAdi.HeaderText = "Ad";
             projeAdi.MinimumWidth = 6;
             projeAdi.Name = "projeAdi";
-            projeAdi.Text = "";
+            projeAdi.ReadOnly = true;
+            projeAdi.Resizable = DataGridViewTriState.True;
+            projeAdi.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // projeID
             // 
             projeID.HeaderText = "Proje ID";
             projeID.MinimumWidth = 6;
             projeID.Name = "projeID";
+            projeID.ReadOnly = true;
+            projeID.Resizable = DataGridViewTriState.True;
+            projeID.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // projeAnahtari
             // 
             projeAnahtari.HeaderText = "Anahtar";
             projeAnahtari.MinimumWidth = 6;
             projeAnahtari.Name = "projeAnahtari";
+            projeAnahtari.ReadOnly = true;
             projeAnahtari.Resizable = DataGridViewTriState.True;
+            projeAnahtari.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // Column2
             // 
-            Column2.HeaderText = "Column2";
-            Column2.MinimumWidth = 6;
+            Column2.HeaderText = "Başlangıç Tarihi";
+            Column2.MinimumWidth = 10;
             Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            Column2.Resizable = DataGridViewTriState.True;
+            Column2.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // sidebarPnl
             // 
@@ -482,14 +505,6 @@
             kullaniciImg.TabIndex = 0;
             kullaniciImg.TabStop = false;
             // 
-            // yeniProje1
-            // 
-            yeniProje1.Location = new Point(661, 86);
-            yeniProje1.Name = "yeniProje1";
-            yeniProje1.Size = new Size(580, 847);
-            yeniProje1.TabIndex = 6;
-            yeniProje1.Visible = false;
-            // 
             // MainBoard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -506,7 +521,7 @@
             container.ResumeLayout(false);
             projePnl.ResumeLayout(false);
             projePnl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)projeler).EndInit();
+            ((System.ComponentModel.ISupportInitialize)projelerDtaView).EndInit();
             sidebarPnl.ResumeLayout(false);
             headerPnl.ResumeLayout(false);
             headerPnl.PerformLayout();
@@ -529,13 +544,13 @@
         private Guna.UI2.WinForms.Guna2Button ayarlarBtn;
         private Guna.UI2.WinForms.Guna2Button olusturBtn;
         private Guna.UI2.WinForms.Guna2Panel projePnl;
-        private Guna.UI2.WinForms.Guna2DataGridView projeler;
+        private Guna.UI2.WinForms.Guna2DataGridView projelerDtaView;
         private Label label1;
-        private DataGridViewButtonColumn projeAdi;
-        private DataGridViewLinkColumn projeID;
-        private DataGridViewLinkColumn projeAnahtari;
-        private DataGridViewLinkColumn Column2;
         private Guna.UI2.WinForms.Guna2Button projeOlusturBtn;
         private Resources.yeniProje yeniProje1;
+        private DataGridViewTextBoxColumn projeAdi;
+        private DataGridViewTextBoxColumn projeID;
+        private DataGridViewTextBoxColumn projeAnahtari;
+        private DataGridViewTextBoxColumn Column2;
     }
 }

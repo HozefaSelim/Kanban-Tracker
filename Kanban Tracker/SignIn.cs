@@ -35,5 +35,20 @@ namespace Kanban_Tracker
             olusturPnl.Visible = false;
             girisPnl.Visible = true;
         }
+
+        private void girisBtn_Click(object sender, EventArgs e)
+        {
+            if (mailTxtBox.Text == "1" && sifreTxtBox.Text == "1")
+            {
+                MainBoard m = new MainBoard();
+                m.Show();
+                this.Hide();
+            }
+        }
+
+        private void mailTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

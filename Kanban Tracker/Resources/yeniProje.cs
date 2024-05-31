@@ -29,7 +29,13 @@ namespace Kanban_Tracker.Resources
 
         private void projeEkleBtni_Click(object sender, EventArgs e)
         {
+            string projeismi = projeAdi.Text;
+            string projeAciklamasi = aciklama.Text;
+            string baslangicTarihi = startDate.Text;
+            string bitisTarihi = endDate.Text;
 
+            MainBoard m = new MainBoard(projeismi, projeAciklamasi, baslangicTarihi, bitisTarihi);
+            
         }
     }
 }
