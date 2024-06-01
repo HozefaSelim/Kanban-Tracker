@@ -16,16 +16,6 @@ namespace Kanban_Tracker
         public MainBoard()
         {
             InitializeComponent();
-            fillDataGridView("Hello World", "P35220", "HW", "25.06.2025");
-            fillDataGridView("Hello World", "P35220", "HW", "25.06.2025");
-            fillDataGridView("Hello World", "P35220", "HW", "25.06.2025");
-            fillDataGridView("Hello World", "P35220", "HW", "25.06.2025");
-
-        }
-
-        public MainBoard(string isim, string aciklama, string start, string end)
-        {
-            fillDataGridView(isim, aciklama, start, end);
         }
 
         private void BtnSlide_Click(object sender, EventArgs e)
@@ -89,23 +79,10 @@ namespace Kanban_Tracker
         {
 
         }
-        //DataGridView'a veri ekleme metodu
-        public void fillDataGridView(string isim, string aciklama, string baslamaTarihi, string bitisTarihi)
-        {
-            
-            projelerDtaView.Rows.Add(isim, aciklama, baslamaTarihi, bitisTarihi);
-        }
 
         private void yeniProje1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void projelerDtaView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // çift tıklanan satırın numarasını alır
-            string satirNumarasi = projelerDtaView.Rows[e.RowIndex].ToString();
-            projePnl.Visible = false;
         }
     }
 }

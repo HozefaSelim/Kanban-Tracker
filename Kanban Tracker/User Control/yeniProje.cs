@@ -33,8 +33,6 @@ namespace Kanban_Tracker.Resources
             string projeAciklamasi = aciklama.Text;
             string baslangicTarihi = startDate.Text;
             string bitisTarihi = endDate.Text;
-
-            MainBoard m = new MainBoard(projeismi, projeAciklamasi, baslangicTarihi, bitisTarihi);
             
         }
     }
