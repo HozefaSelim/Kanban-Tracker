@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "01FEd0kqPOXzOsKtB2QAke8jzya3WWyZEH9tV+kGKb4+lHkp4U8NE24l34gr0VBUWB0zUuqZPesOCZa4TpPyjg==",
+  "dgSpecHash": "PEsXi/sY13s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hozefa Selim\\source\\repos\\HozefaSelim\\Kanban-Tracker\\Kanban Tracker\\Kanban Tracker.csproj",
+  "projectFilePath": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\Kanban Tracker.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Hozefa Selim\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
-    "C:\\Users\\Hozefa Selim\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
-    "C:\\Users\\Hozefa Selim\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
+    "C:\\Users\\Mutez\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
+    "C:\\Users\\Mutez\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\Mutez\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

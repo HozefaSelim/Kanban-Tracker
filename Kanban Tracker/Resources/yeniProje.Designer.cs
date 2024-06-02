@@ -48,12 +48,12 @@
             projeEkleBtni = new Guna.UI2.WinForms.Guna2Button();
             label6 = new Label();
             label5 = new Label();
-            guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            endDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            startDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             label4 = new Label();
             label3 = new Label();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            mailTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
+            aciklama = new Guna.UI2.WinForms.Guna2TextBox();
+            projeAdi = new Guna.UI2.WinForms.Guna2TextBox();
             label2 = new Label();
             yeniProjePnl.SuspendLayout();
             SuspendLayout();
@@ -65,12 +65,12 @@
             yeniProjePnl.Controls.Add(projeEkleBtni);
             yeniProjePnl.Controls.Add(label6);
             yeniProjePnl.Controls.Add(label5);
-            yeniProjePnl.Controls.Add(guna2DateTimePicker2);
-            yeniProjePnl.Controls.Add(guna2DateTimePicker1);
+            yeniProjePnl.Controls.Add(endDate);
+            yeniProjePnl.Controls.Add(startDate);
             yeniProjePnl.Controls.Add(label4);
             yeniProjePnl.Controls.Add(label3);
-            yeniProjePnl.Controls.Add(guna2TextBox1);
-            yeniProjePnl.Controls.Add(mailTxtBox);
+            yeniProjePnl.Controls.Add(aciklama);
+            yeniProjePnl.Controls.Add(projeAdi);
             yeniProjePnl.Controls.Add(label2);
             yeniProjePnl.CustomizableEdges = customizableEdges13;
             yeniProjePnl.Location = new Point(0, 0);
@@ -123,7 +123,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label6.Location = new Point(113, 582);
+            label6.Location = new Point(113, 562);
             label6.Name = "label6";
             label6.Size = new Size(113, 28);
             label6.TabIndex = 20;
@@ -133,43 +133,43 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label5.Location = new Point(113, 472);
+            label5.Location = new Point(113, 452);
             label5.Name = "label5";
             label5.Size = new Size(161, 28);
             label5.TabIndex = 19;
             label5.Text = "Başlangıç Tarihi";
             // 
-            // guna2DateTimePicker2
+            // endDate
             // 
-            guna2DateTimePicker2.Checked = true;
-            guna2DateTimePicker2.CustomizableEdges = customizableEdges5;
-            guna2DateTimePicker2.FillColor = SystemColors.GradientActiveCaption;
-            guna2DateTimePicker2.Font = new Font("Segoe UI", 9F);
-            guna2DateTimePicker2.Format = DateTimePickerFormat.Long;
-            guna2DateTimePicker2.Location = new Point(113, 613);
-            guna2DateTimePicker2.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker2.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            guna2DateTimePicker2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2DateTimePicker2.Size = new Size(250, 45);
-            guna2DateTimePicker2.TabIndex = 18;
-            guna2DateTimePicker2.Value = new DateTime(2024, 5, 23, 19, 52, 5, 568);
+            endDate.Checked = true;
+            endDate.CustomizableEdges = customizableEdges5;
+            endDate.FillColor = SystemColors.GradientActiveCaption;
+            endDate.Font = new Font("Segoe UI", 9F);
+            endDate.Format = DateTimePickerFormat.Long;
+            endDate.Location = new Point(113, 593);
+            endDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            endDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            endDate.Name = "endDate";
+            endDate.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            endDate.Size = new Size(250, 45);
+            endDate.TabIndex = 18;
+            endDate.Value = new DateTime(2024, 5, 23, 19, 52, 5, 568);
             // 
-            // guna2DateTimePicker1
+            // startDate
             // 
-            guna2DateTimePicker1.Checked = true;
-            guna2DateTimePicker1.CustomizableEdges = customizableEdges7;
-            guna2DateTimePicker1.FillColor = SystemColors.GradientActiveCaption;
-            guna2DateTimePicker1.Font = new Font("Segoe UI", 9F);
-            guna2DateTimePicker1.Format = DateTimePickerFormat.Long;
-            guna2DateTimePicker1.Location = new Point(113, 503);
-            guna2DateTimePicker1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2DateTimePicker1.Size = new Size(250, 45);
-            guna2DateTimePicker1.TabIndex = 17;
-            guna2DateTimePicker1.Value = new DateTime(2024, 5, 23, 19, 52, 5, 568);
+            startDate.Checked = true;
+            startDate.CustomizableEdges = customizableEdges7;
+            startDate.FillColor = SystemColors.GradientActiveCaption;
+            startDate.Font = new Font("Segoe UI", 9F);
+            startDate.Format = DateTimePickerFormat.Long;
+            startDate.Location = new Point(113, 483);
+            startDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            startDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            startDate.Name = "startDate";
+            startDate.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            startDate.Size = new Size(250, 45);
+            startDate.TabIndex = 17;
+            startDate.Value = new DateTime(2024, 5, 23, 19, 52, 5, 568);
             // 
             // label4
             // 
@@ -191,61 +191,61 @@
             label3.TabIndex = 15;
             label3.Text = "Proje Adı";
             // 
-            // guna2TextBox1
+            // aciklama
             // 
-            guna2TextBox1.Anchor = AnchorStyles.Left;
-            guna2TextBox1.BorderColor = Color.Black;
-            guna2TextBox1.BorderRadius = 9;
-            guna2TextBox1.CustomizableEdges = customizableEdges9;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FillColor = SystemColors.GradientInactiveCaption;
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F);
-            guna2TextBox1.ForeColor = Color.Black;
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(113, 278);
-            guna2TextBox1.Margin = new Padding(3, 5, 3, 5);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderForeColor = Color.Gray;
-            guna2TextBox1.PlaceholderText = "";
-            guna2TextBox1.RightToLeft = RightToLeft.No;
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2TextBox1.Size = new Size(361, 155);
-            guna2TextBox1.TabIndex = 14;
+            aciklama.Anchor = AnchorStyles.Left;
+            aciklama.BorderColor = Color.Black;
+            aciklama.BorderRadius = 9;
+            aciklama.CustomizableEdges = customizableEdges9;
+            aciklama.DefaultText = "";
+            aciklama.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            aciklama.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            aciklama.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            aciklama.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            aciklama.FillColor = SystemColors.GradientInactiveCaption;
+            aciklama.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            aciklama.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            aciklama.ForeColor = Color.Black;
+            aciklama.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            aciklama.Location = new Point(113, 277);
+            aciklama.Margin = new Padding(3, 4, 3, 4);
+            aciklama.Name = "aciklama";
+            aciklama.PasswordChar = '\0';
+            aciklama.PlaceholderForeColor = Color.Gray;
+            aciklama.PlaceholderText = "";
+            aciklama.RightToLeft = RightToLeft.No;
+            aciklama.SelectedText = "";
+            aciklama.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            aciklama.Size = new Size(406, 132);
+            aciklama.TabIndex = 14;
             // 
-            // mailTxtBox
+            // projeAdi
             // 
-            mailTxtBox.Anchor = AnchorStyles.Left;
-            mailTxtBox.BorderColor = Color.Black;
-            mailTxtBox.BorderRadius = 9;
-            mailTxtBox.CustomizableEdges = customizableEdges11;
-            mailTxtBox.DefaultText = "";
-            mailTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            mailTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            mailTxtBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            mailTxtBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            mailTxtBox.FillColor = SystemColors.GradientInactiveCaption;
-            mailTxtBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            mailTxtBox.Font = new Font("Segoe UI", 9F);
-            mailTxtBox.ForeColor = Color.Black;
-            mailTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            mailTxtBox.Location = new Point(113, 172);
-            mailTxtBox.Margin = new Padding(3, 5, 3, 5);
-            mailTxtBox.Name = "mailTxtBox";
-            mailTxtBox.PasswordChar = '\0';
-            mailTxtBox.PlaceholderForeColor = Color.Gray;
-            mailTxtBox.PlaceholderText = "";
-            mailTxtBox.RightToLeft = RightToLeft.No;
-            mailTxtBox.SelectedText = "";
-            mailTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            mailTxtBox.Size = new Size(361, 48);
-            mailTxtBox.TabIndex = 13;
+            projeAdi.Anchor = AnchorStyles.Left;
+            projeAdi.BorderColor = Color.Black;
+            projeAdi.BorderRadius = 9;
+            projeAdi.CustomizableEdges = customizableEdges11;
+            projeAdi.DefaultText = "";
+            projeAdi.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            projeAdi.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            projeAdi.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            projeAdi.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            projeAdi.FillColor = SystemColors.GradientInactiveCaption;
+            projeAdi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            projeAdi.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            projeAdi.ForeColor = Color.Black;
+            projeAdi.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            projeAdi.Location = new Point(113, 171);
+            projeAdi.Margin = new Padding(3, 4, 3, 4);
+            projeAdi.Name = "projeAdi";
+            projeAdi.PasswordChar = '\0';
+            projeAdi.PlaceholderForeColor = Color.Gray;
+            projeAdi.PlaceholderText = "";
+            projeAdi.RightToLeft = RightToLeft.No;
+            projeAdi.SelectedText = "";
+            projeAdi.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            projeAdi.Size = new Size(406, 41);
+            projeAdi.TabIndex = 13;
             // 
             // label2
             // 
@@ -264,9 +264,10 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BorderStyle = BorderStyle.FixedSingle;
             Controls.Add(yeniProjePnl);
             Name = "yeniProje";
-            Size = new Size(579, 850);
+            Size = new Size(577, 848);
             yeniProjePnl.ResumeLayout(false);
             yeniProjePnl.PerformLayout();
             ResumeLayout(false);
@@ -277,12 +278,12 @@
         private Guna.UI2.WinForms.Guna2Panel yeniProjePnl;
         private Label label6;
         private Label label5;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker endDate;
+        private Guna.UI2.WinForms.Guna2DateTimePicker startDate;
         private Label label4;
         private Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox mailTxtBox;
+        private Guna.UI2.WinForms.Guna2TextBox aciklama;
+        private Guna.UI2.WinForms.Guna2TextBox projeAdi;
         private Label label2;
         private Guna.UI2.WinForms.Guna2Button projeEkleBtni;
         private Guna.UI2.WinForms.Guna2Button closeBtn;

@@ -181,6 +181,7 @@
             girisBtn.Size = new Size(206, 60);
             girisBtn.TabIndex = 14;
             girisBtn.Text = "Sign In";
+            girisBtn.Click += girisBtn_Click;
             // 
             // sifreTxtBox
             // 
@@ -238,6 +239,7 @@
             mailTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
             mailTxtBox.Size = new Size(361, 48);
             mailTxtBox.TabIndex = 12;
+            mailTxtBox.TextChanged += mailTxtBox_TextChanged;
             // 
             // label8
             // 
