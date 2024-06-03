@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Mutez\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Mutez\\.nuget\\packages",
+      "C:\\Users\\Maky\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Maky\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {

@@ -75,3 +75,35 @@ C:\Users\Hozefa Selim\Source\Repos\HozefaSelim\Kanban-Tracker\Kanban Tracker\obj
 C:\Users\Hozefa Selim\source\repos\HozefaSelim\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Resources.yeniProje.resources
 C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Board.resources
 C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Resources.yeniProje.resources
+C:\Users\Maky\Source\Repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.exe
+C:\Users\Maky\Source\Repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.dll
+C:\Users\Maky\Source\Repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Guna.UI2.dll
+C:\Users\Maky\Source\Repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Maky\Source\Repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.csproj.AssemblyReference.cache
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Board.resources
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.MainBoard.resources
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Properties.Resources.resources
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Resources.yeniProje.resources
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.SignIn.resources
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.csproj.GenerateResource.cache
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.AssemblyInfoInputs.cache
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.AssemblyInfo.cs
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.csproj.CoreCompileInputs.cache
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.sourcelink.json
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban T.6BB76DAD.Up2Date
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.dll
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\refint\Kanban Tracker.dll
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.pdb
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.deps.json
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.runtimeconfig.json
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.pdb
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.genruntimeconfig.cache
+C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\ref\Kanban Tracker.dll
