@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Maky\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Maky\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\Hozefa Selim\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Hozefa Selim\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
