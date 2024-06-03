@@ -99,16 +99,14 @@ namespace Kanban_Tracker
             }
             else
             {
-<<<<<<< HEAD
+
                 MainBoard m = new MainBoard();
                 m.Show();
 
                 this.Hide();
 
                 m.FormClosed += (s, args) => this.Close();
-=======
-                //Email error
->>>>>>> main
+
             }
         }
 
@@ -143,11 +141,11 @@ namespace Kanban_Tracker
                             if (hesapSayisi == 1) return true;
                             else if ( hesapSayisi == 0)
                             {
-                                MessageBox.Show("Öyle bir hesap yok");
+                                MessageBox.Show("Ã–yle bir hesap yok");
                             }
                             else
                             {
-                                MessageBox.Show("Ayný mail'e sahip birden fazla hesap var - "+hesapSayisi);
+                                MessageBox.Show("AynÃ½ mail'e sahip birden fazla hesap var - "+hesapSayisi);
                             }
                             return false;
                         }
