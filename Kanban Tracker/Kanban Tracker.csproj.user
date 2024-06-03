@@ -7,13 +7,13 @@
     <Compile Update="MainBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="User Control\Liste.cs">
+    <Compile Update="User__Control\Liste.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Control\proje.cs">
+    <Compile Update="User__Control\projects_.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Control\yeniProje.cs">
+    <Compile Update="User__Control\yeniProje.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="SignIn.cs">

@@ -84,5 +84,10 @@ namespace Kanban_Tracker
         {
 
         }
+
+        private void sidebarPnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

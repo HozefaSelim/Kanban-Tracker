@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Kanban_Tracker
-build_property.ProjectDir = C:\Users\Hozefa Selim\Source\Repos\Kanban-Tracker\Kanban Tracker\
+build_property.ProjectDir = C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\mutez\\source\\repos\\kanban-tracker\\kanban tracker\\user control\\liste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\user control\\liste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\kanban tracker\\user control\\proje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\user control\\proje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|c:\\users\\mutez\\source\\repos\\kanban-tracker\\kanban tracker\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\kanban tracker\\user__control\\projects_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1C4EE8F-044C-430F-944C-63E8A1D3B2E1}|Kanban Tracker\\Kanban Tracker.csproj|solutionrelative:kanban tracker\\user__control\\projects_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 289,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,38 +34,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Liste.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\User Control\\Liste.cs",
-              "RelativeDocumentMoniker": "Kanban Tracker\\User Control\\Liste.cs",
-              "ToolTip": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\User Control\\Liste.cs [Tasar\u0131m]",
-              "RelativeToolTip": "Kanban Tracker\\User Control\\Liste.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T15:05:11.148Z",
-              "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "proje.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\User Control\\proje.cs",
-              "RelativeDocumentMoniker": "Kanban Tracker\\User Control\\proje.cs",
-              "ToolTip": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\User Control\\proje.cs [Tasar\u0131m]",
-              "RelativeToolTip": "Kanban Tracker\\User Control\\proje.cs [Tasar\u0131m]",
+              "Title": "projects_.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\User__Control\\projects_.cs",
+              "RelativeDocumentMoniker": "Kanban Tracker\\User__Control\\projects_.cs",
+              "ToolTip": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\User__Control\\projects_.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Kanban Tracker\\User__Control\\projects_.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T14:55:46.525Z",
+              "WhenOpened": "2024-06-03T05:34:12.681Z",
               "EditorCaption": " [Tasar\u0131m]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainBoard.cs [Tasar\u0131m]",
               "DocumentMoniker": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\MainBoard.cs",
               "RelativeDocumentMoniker": "Kanban Tracker\\MainBoard.cs",
               "ToolTip": "C:\\Users\\Mutez\\source\\repos\\Kanban-Tracker\\Kanban Tracker\\MainBoard.cs [Tasar\u0131m]",
               "RelativeToolTip": "Kanban Tracker\\MainBoard.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T13:58:03.184Z",
+              "WhenOpened": "2024-06-03T05:30:10.594Z",
               "EditorCaption": " [Tasar\u0131m]"
             }
           ]

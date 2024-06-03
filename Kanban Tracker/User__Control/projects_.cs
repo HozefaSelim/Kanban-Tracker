@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kanban_Tracker.User_Control
+namespace Kanban_Tracker.User__Control
 {
-    public partial class proje : UserControl
+    public partial class projects_ : UserControl
     {
-        public proje()
+        public projects_()
         {
             InitializeComponent();
         }

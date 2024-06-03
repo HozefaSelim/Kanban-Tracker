@@ -76,4 +76,4 @@ C:\Users\Hozefa Selim\source\repos\HozefaSelim\Kanban-Tracker\Kanban Tracker\obj
 C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Board.resources
 C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Resources.yeniProje.resources
 C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.User_Control.Liste.resources
-C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.User_Control.UserControl1.resources
+C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.User__Control.projects_.resources
