@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kanban_Tracker.User__Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,24 +17,20 @@ namespace Kanban_Tracker.Resources
         {
             InitializeComponent();
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void closeBtn_Click(object sender, EventArgs e)
         {
             this.Visible = false;
         }
-
         private void projeEkleBtni_Click(object sender, EventArgs e)
         {
             string projeismi = projeAdi.Text;
             string projeAciklamasi = aciklama.Text;
             string baslangicTarihi = startDate.Text;
             string bitisTarihi = endDate.Text;
-            
+
+            projects_ p = new projects_();
+          //  p.addData(projeismi, projeAciklamasi, baslangicTarihi, bitisTarihi);
+
         }
     }
 }

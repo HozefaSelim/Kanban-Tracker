@@ -42,7 +42,10 @@ namespace Kanban_Tracker
             {
                 MainBoard m = new MainBoard();
                 m.Show();
+
                 this.Hide();
+
+                m.FormClosed += (s, args) => this.Close();
             }
         }
 

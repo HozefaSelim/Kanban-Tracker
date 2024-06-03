@@ -77,3 +77,5 @@ C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windo
 C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Resources.yeniProje.resources
 C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.User_Control.Liste.resources
 C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.User__Control.projects_.resources
+C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.issueOlustur.resources
+C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.TaskBoardControl.resources

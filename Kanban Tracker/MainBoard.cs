@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,18 +18,6 @@ namespace Kanban_Tracker
         {
             InitializeComponent();
         }
-
-        private void BtnSlide_Click(object sender, EventArgs e)
-        {
-            if (sidebarPnl.Width == 200)
-            {
-                sidebarPnl.Width = 103;
-            }
-            else
-            {
-                sidebarPnl.Width = 200;
-            }
-        }
         private void AbrirFormEnPanel(object Formhijo)
         {
             if (this.container.Controls.Count > 0)
@@ -39,6 +28,14 @@ namespace Kanban_Tracker
             this.container.Controls.Add(fh);
             this.container.Tag = fh;
             fh.Show();
+        }
+        //This method used to show yeniProje UserControl
+        public void LoadYeniProje()
+        {
+            yeniProje yp = new yeniProje();
+            yp.BringToFront();
+            yp.Visible = true;
+            Debug.WriteLine("hhhsd");
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -54,17 +51,6 @@ namespace Kanban_Tracker
         {
 
         }
-
-        private void guna2Button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void MainBoard_Load(object sender, EventArgs e)
         {
             olusturBtn.Visible = false;
@@ -79,12 +65,6 @@ namespace Kanban_Tracker
         {
 
         }
-
-        private void yeniProje1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void sidebarPnl_Paint(object sender, PaintEventArgs e)
         {
 

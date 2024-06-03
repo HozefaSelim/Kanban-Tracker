@@ -258,7 +258,6 @@
             label2.TabIndex = 0;
             label2.Text = "Proje Ekle";
             label2.Visible = false;
-            label2.Click += label2_Click;
             // 
             // yeniProje
             // 
