@@ -13,6 +13,9 @@
     <Compile Update="User__Control\projects_.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="User__Control\takimListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="User__Control\TaskBoardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

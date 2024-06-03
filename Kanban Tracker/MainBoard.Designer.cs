@@ -52,8 +52,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             container = new Panel();
-            liste2 = new User_Control.Liste();
             taskBoardControl1 = new TaskBoardControl();
+            takimListesi2 = new User__Control.takimListesi();
+            liste2 = new User_Control.Liste();
             sidebarPnl = new Guna.UI2.WinForms.Guna2Panel();
             hedefBtn = new Guna.UI2.WinForms.Guna2Button();
             takimBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -61,10 +62,10 @@
             boardBtn = new Guna.UI2.WinForms.Guna2Button();
             timeBtn = new Guna.UI2.WinForms.Guna2Button();
             headerPnl = new Guna.UI2.WinForms.Guna2Panel();
+            userName = new Label();
             olusturBtn = new Guna.UI2.WinForms.Guna2Button();
             ayarlarBtn = new Guna.UI2.WinForms.Guna2Button();
             bildirimBtn = new Guna.UI2.WinForms.Guna2Button();
-            isimTxt = new TextBox();
             kullaniciImg = new Guna.UI2.WinForms.Guna2PictureBox();
             projects_1 = new User__Control.projects_();
             yeniProje1 = new Resources.yeniProje();
@@ -78,8 +79,9 @@
             // 
             container.BackColor = SystemColors.Control;
             container.BorderStyle = BorderStyle.FixedSingle;
-            container.Controls.Add(liste2);
             container.Controls.Add(taskBoardControl1);
+            container.Controls.Add(takimListesi2);
+            container.Controls.Add(liste2);
             container.Controls.Add(sidebarPnl);
             container.Controls.Add(headerPnl);
             container.Controls.Add(projects_1);
@@ -91,16 +93,6 @@
             container.Size = new Size(1654, 1055);
             container.TabIndex = 2;
             // 
-            // liste2
-            // 
-            liste2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            liste2.BackColor = Color.White;
-            liste2.Location = new Point(170, 116);
-            liste2.Name = "liste2";
-            liste2.Size = new Size(1479, 1060);
-            liste2.TabIndex = 5;
-            liste2.Visible = false;
-            // 
             // taskBoardControl1
             // 
             taskBoardControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -110,6 +102,26 @@
             taskBoardControl1.Name = "taskBoardControl1";
             taskBoardControl1.Size = new Size(1475, 937);
             taskBoardControl1.TabIndex = 8;
+            // 
+            // takimListesi2
+            // 
+            takimListesi2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            takimListesi2.BackColor = Color.White;
+            takimListesi2.Location = new Point(170, 116);
+            takimListesi2.Name = "takimListesi2";
+            takimListesi2.Size = new Size(1479, 934);
+            takimListesi2.TabIndex = 9;
+            takimListesi2.Visible = false;
+            // 
+            // liste2
+            // 
+            liste2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            liste2.BackColor = Color.White;
+            liste2.Location = new Point(170, 116);
+            liste2.Name = "liste2";
+            liste2.Size = new Size(1479, 1060);
+            liste2.TabIndex = 5;
+            liste2.Visible = false;
             // 
             // sidebarPnl
             // 
@@ -267,9 +279,9 @@
             // 
             headerPnl.BackColor = SystemColors.GradientInactiveCaption;
             headerPnl.Controls.Add(olusturBtn);
+            headerPnl.Controls.Add(userName);
             headerPnl.Controls.Add(ayarlarBtn);
             headerPnl.Controls.Add(bildirimBtn);
-            headerPnl.Controls.Add(isimTxt);
             headerPnl.Controls.Add(kullaniciImg);
             headerPnl.CustomizableEdges = customizableEdges21;
             headerPnl.Dock = DockStyle.Top;
@@ -280,9 +292,20 @@
             headerPnl.Size = new Size(1652, 116);
             headerPnl.TabIndex = 2;
             // 
+            // userName
+            // 
+            userName.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            userName.AutoSize = true;
+            userName.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            userName.Location = new Point(1425, 51);
+            userName.Name = "userName";
+            userName.Size = new Size(130, 23);
+            userName.TabIndex = 5;
+            userName.Text = "Kullanıcı Adı";
+            // 
             // olusturBtn
             // 
-            olusturBtn.Anchor = AnchorStyles.Right;
+            olusturBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             olusturBtn.BorderRadius = 6;
             olusturBtn.Cursor = Cursors.Hand;
             olusturBtn.CustomizableEdges = customizableEdges13;
@@ -293,13 +316,12 @@
             olusturBtn.FillColor = SystemColors.GradientActiveCaption;
             olusturBtn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             olusturBtn.ForeColor = Color.Black;
-            olusturBtn.Location = new Point(849, 35);
+            olusturBtn.Location = new Point(938, 35);
             olusturBtn.Name = "olusturBtn";
             olusturBtn.ShadowDecoration.CustomizableEdges = customizableEdges14;
             olusturBtn.Size = new Size(225, 56);
             olusturBtn.TabIndex = 4;
             olusturBtn.Text = "Oluştur";
-            olusturBtn.Visible = false;
             olusturBtn.Click += olusturBtn_Click;
             // 
             // ayarlarBtn
@@ -339,18 +361,6 @@
             bildirimBtn.ShadowDecoration.CustomizableEdges = customizableEdges18;
             bildirimBtn.Size = new Size(55, 55);
             bildirimBtn.TabIndex = 2;
-            // 
-            // isimTxt
-            // 
-            isimTxt.Anchor = AnchorStyles.Right;
-            isimTxt.BackColor = SystemColors.GradientInactiveCaption;
-            isimTxt.BorderStyle = BorderStyle.None;
-            isimTxt.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            isimTxt.Location = new Point(1444, 50);
-            isimTxt.Name = "isimTxt";
-            isimTxt.Size = new Size(135, 24);
-            isimTxt.TabIndex = 1;
-            isimTxt.Text = "Mutez Rahal";
             // 
             // kullaniciImg
             // 
@@ -415,7 +425,6 @@
         private Guna.UI2.WinForms.Guna2Button takimBtn;
         private Guna.UI2.WinForms.Guna2Button hedefBtn;
         private Guna.UI2.WinForms.Guna2PictureBox kullaniciImg;
-        private TextBox isimTxt;
         private Guna.UI2.WinForms.Guna2Button bildirimBtn;
         private Guna.UI2.WinForms.Guna2Button ayarlarBtn;
         private Guna.UI2.WinForms.Guna2Button olusturBtn;
@@ -424,5 +433,7 @@
         private User__Control.projects_ projects_1;
         private TaskBoardControl taskBoardControl1;
         private User_Control.Liste liste2;
+        private User__Control.takimListesi takimListesi2;
+        private Label userName;
     }
 }

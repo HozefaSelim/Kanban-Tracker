@@ -27,9 +27,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             backlog = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            label2 = new Label();
             label7 = new Label();
             label3 = new Label();
-            label2 = new Label();
             todo = new Guna.UI2.WinForms.Guna2Panel();
             label4 = new Label();
             doing = new Guna.UI2.WinForms.Guna2Panel();
@@ -71,14 +71,22 @@
             guna2Panel1.Size = new Size(250, 125);
             guna2Panel1.TabIndex = 38;
             // 
+            // label2
+            // 
+            label2.Location = new Point(53, 33);
+            label2.Name = "label2";
+            label2.Size = new Size(128, 54);
+            label2.TabIndex = 1;
+            label2.Text = "label2";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // label7
             // 
-            label7.AutoSize = true;
             label7.BackColor = Color.FromArgb(237, 245, 252);
             label7.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.Location = new Point(85, 9);
             label7.Name = "label7";
-            label7.Size = new Size(127, 32);
+            label7.Size = new Size(127, 70);
             label7.TabIndex = 37;
             label7.Text = "Backlog";
             // 
@@ -90,15 +98,6 @@
             label3.Size = new Size(50, 20);
             label3.TabIndex = 2;
             label3.Text = "label3";
-            // 
-            // label2
-            // 
-            label2.Location = new Point(53, 33);
-            label2.Name = "label2";
-            label2.Size = new Size(128, 54);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // todo
             // 
@@ -118,12 +117,11 @@
             // 
             // label4
             // 
-            label4.AutoSize = true;
             label4.BackColor = Color.FromArgb(237, 245, 252);
             label4.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.Location = new Point(103, 9);
             label4.Name = "label4";
-            label4.Size = new Size(94, 32);
+            label4.Size = new Size(94, 70);
             label4.TabIndex = 38;
             label4.Text = "To Do";
             // 
@@ -145,12 +143,11 @@
             // 
             // label5
             // 
-            label5.AutoSize = true;
             label5.BackColor = Color.FromArgb(237, 245, 252);
             label5.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.Location = new Point(106, 12);
             label5.Name = "label5";
-            label5.Size = new Size(95, 32);
+            label5.Size = new Size(95, 70);
             label5.TabIndex = 39;
             label5.Text = "Donig";
             // 
@@ -172,12 +169,11 @@
             // 
             // label6
             // 
-            label6.AutoSize = true;
             label6.BackColor = Color.FromArgb(237, 245, 252);
             label6.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.Location = new Point(123, 12);
             label6.Name = "label6";
-            label6.Size = new Size(86, 32);
+            label6.Size = new Size(86, 70);
             label6.TabIndex = 40;
             label6.Text = "Done";
             // 
@@ -197,11 +193,8 @@
             backlog.PerformLayout();
             guna2Panel1.ResumeLayout(false);
             todo.ResumeLayout(false);
-            todo.PerformLayout();
             doing.ResumeLayout(false);
-            doing.PerformLayout();
             done.ResumeLayout(false);
-            done.PerformLayout();
             ResumeLayout(false);
         }
 
