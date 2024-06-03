@@ -10,6 +10,9 @@
     <Compile Update="User Control\Liste.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="User Control\proje.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="User Control\yeniProje.cs">
       <SubType>UserControl</SubType>
     </Compile>
