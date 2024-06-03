@@ -1,5 +1,8 @@
+using Kanban_Tracker.Classes;
 using System.Data;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Kanban_Tracker
 {
@@ -20,7 +23,45 @@ namespace Kanban_Tracker
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-
+            if (checkNameSurnameField(adSoyadTxtBox.Text.Trim()))
+            {
+                if (checkEmailField(olusturMailTxtBox.Text))
+                {
+                    if (!checkUserEmail(olusturMailTxtBox.Text))
+                    {
+                        if (olusturSifreTxtBox.Text == sifreTekrarTxtBox.Text)
+                        {
+                            User newUser = new User(adSoyadTxtBox.Text.Trim(), olusturMailTxtBox.Text, olusturSifreTxtBox.Text);
+                            if (AddUser(newUser))
+                            {
+                                olusturPnl.Visible = false;
+                                girisPnl.Visible = true;
+                                //User created sucessfuly
+                            }
+                            else
+                            {
+                                //User did not get created
+                            }
+                        }
+                        else
+                        {
+                            //Password does not match
+                        }
+                    }
+                    else
+                    {
+                        //Email already exsists
+                    }
+                }
+                else
+                {
+                    //Email Typing Error
+                }
+            }
+            else
+            {
+                //Name Surname Typing Error
+            }
         }
 
         private void SignIn_Load(object sender, EventArgs e)
@@ -139,6 +180,48 @@ namespace Kanban_Tracker
                             }
                             return false;
                         }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("An error occurred: " + ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        private bool checkNameSurnameField(string nameSurname)
+        {
+            if (nameSurname.Length <= 0) return false;
+            string nameSurnamePattern = @"^[a-zA-Z\s\-]+$";
+            return Regex.IsMatch(nameSurname, nameSurnamePattern);
+        }
+
+        private bool checkEmailField(string email)
+        {
+            if (email.Length <= 0) return false;
+            string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, emailPattern);
+        }
+
+        private bool AddUser(User newUser)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand("AddUser", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.Add(new SqlParameter("@username", newUser.Username));
+                        command.Parameters.Add(new SqlParameter("@email", newUser.Email));
+                        command.Parameters.Add(new SqlParameter("@password", newUser.Password));
+
+                        command.ExecuteNonQuery();
+                        return true;
                     }
                 }
                 catch (Exception ex)
