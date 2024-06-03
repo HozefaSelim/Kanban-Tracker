@@ -39,7 +39,7 @@ namespace Kanban_Tracker
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new Board());
+            
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
