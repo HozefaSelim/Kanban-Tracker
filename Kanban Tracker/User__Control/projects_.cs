@@ -63,6 +63,9 @@ namespace Kanban_Tracker.User__Control
         private void projelerDataGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             this.Visible = false;
+            TaskBoardControl t = new TaskBoardControl();
+            t.BringToFront();
+            t.Visible = true;
         }
     }
 }
