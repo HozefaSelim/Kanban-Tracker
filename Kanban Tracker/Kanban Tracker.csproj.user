@@ -7,7 +7,19 @@
     <Compile Update="MainBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Resources\yeniProje.cs">
+    <Compile Update="User__Control\issueOlustur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="User__Control\Liste.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="User__Control\projects_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="User__Control\TaskBoardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="User__Control\yeniProje.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="SignIn.cs">

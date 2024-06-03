@@ -99,7 +99,16 @@ namespace Kanban_Tracker
             }
             else
             {
+<<<<<<< HEAD
+                MainBoard m = new MainBoard();
+                m.Show();
+
+                this.Hide();
+
+                m.FormClosed += (s, args) => this.Close();
+=======
                 //Email error
+>>>>>>> main
             }
         }
 

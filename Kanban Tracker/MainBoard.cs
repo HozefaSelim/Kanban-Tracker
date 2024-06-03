@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,28 +17,6 @@ namespace Kanban_Tracker
         public MainBoard()
         {
             InitializeComponent();
-            fillDataGridView("Hello World", "P35220", "HW", "25.06.2025");
-            fillDataGridView("Hello World", "P35220", "HW", "25.06.2025");
-            fillDataGridView("Hello World", "P35220", "HW", "25.06.2025");
-            fillDataGridView("Hello World", "P35220", "HW", "25.06.2025");
-
-        }
-
-        public MainBoard(string isim, string aciklama, string start, string end)
-        {
-            fillDataGridView(isim, aciklama, start, end);
-        }
-
-        private void BtnSlide_Click(object sender, EventArgs e)
-        {
-            if (sidebarPnl.Width == 200)
-            {
-                sidebarPnl.Width = 103;
-            }
-            else
-            {
-                sidebarPnl.Width = 200;
-            }
         }
         private void AbrirFormEnPanel(object Formhijo)
         {
@@ -49,6 +28,14 @@ namespace Kanban_Tracker
             this.container.Controls.Add(fh);
             this.container.Tag = fh;
             fh.Show();
+        }
+        //This method used to show yeniProje UserControl
+        public void LoadYeniProje()
+        {
+            yeniProje yp = new yeniProje();
+            yp.BringToFront();
+            yp.Visible = true;
+            Debug.WriteLine("hhhsd");
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -64,17 +51,6 @@ namespace Kanban_Tracker
         {
 
         }
-
-        private void guna2Button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void MainBoard_Load(object sender, EventArgs e)
         {
             olusturBtn.Visible = false;
@@ -89,23 +65,9 @@ namespace Kanban_Tracker
         {
 
         }
-        //DataGridView'a veri ekleme metodu
-        public void fillDataGridView(string isim, string aciklama, string baslamaTarihi, string bitisTarihi)
-        {
-            
-            projelerDtaView.Rows.Add(isim, aciklama, baslamaTarihi, bitisTarihi);
-        }
-
-        private void yeniProje1_Load(object sender, EventArgs e)
+        private void sidebarPnl_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void projelerDtaView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // çift tıklanan satırın numarasını alır
-            string satirNumarasi = projelerDtaView.Rows[e.RowIndex].ToString();
-            projePnl.Visible = false;
         }
     }
 }

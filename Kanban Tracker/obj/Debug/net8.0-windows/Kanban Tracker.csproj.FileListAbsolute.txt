@@ -75,6 +75,12 @@ C:\Users\Hozefa Selim\Source\Repos\HozefaSelim\Kanban-Tracker\Kanban Tracker\obj
 C:\Users\Hozefa Selim\source\repos\HozefaSelim\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Resources.yeniProje.resources
 C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Board.resources
 C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.Resources.yeniProje.resources
+<<<<<<< HEAD
+C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.User_Control.Liste.resources
+C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.User__Control.projects_.resources
+C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.issueOlustur.resources
+C:\Users\Mutez\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban_Tracker.TaskBoardControl.resources
+=======
 C:\Users\Maky\Source\Repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.exe
 C:\Users\Maky\Source\Repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.dll
 C:\Users\Maky\Source\Repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Guna.UI2.dll
@@ -107,3 +113,4 @@ C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-window
 C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\bin\Debug\net8.0-windows\Kanban Tracker.pdb
 C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\Kanban Tracker.genruntimeconfig.cache
 C:\Users\Maky\source\repos\Kanban-Tracker\Kanban Tracker\obj\Debug\net8.0-windows\ref\Kanban Tracker.dll
+>>>>>>> main
