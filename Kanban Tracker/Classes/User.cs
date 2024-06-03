@@ -24,6 +24,13 @@ namespace Kanban_Tracker.Classes
             Password = password;
             UserProjects = new List<UserProject>();
         }
+        public User(string username, string email, string password)
+        {
+            Username = username;
+            Email = email;
+            Password = password;
+            UserProjects = new List<UserProject>();
+        }
 
         public int GetProjectIndex(Project project)
         {
