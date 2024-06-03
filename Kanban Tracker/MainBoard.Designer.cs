@@ -52,6 +52,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             container = new Panel();
+            liste2 = new User_Control.Liste();
             taskBoardControl1 = new TaskBoardControl();
             sidebarPnl = new Guna.UI2.WinForms.Guna2Panel();
             hedefBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -77,6 +78,7 @@
             // 
             container.BackColor = SystemColors.Control;
             container.BorderStyle = BorderStyle.FixedSingle;
+            container.Controls.Add(liste2);
             container.Controls.Add(taskBoardControl1);
             container.Controls.Add(sidebarPnl);
             container.Controls.Add(headerPnl);
@@ -89,31 +91,43 @@
             container.Size = new Size(1654, 1055);
             container.TabIndex = 2;
             // 
+            // liste2
+            // 
+            liste2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            liste2.BackColor = Color.White;
+            liste2.Location = new Point(170, 116);
+            liste2.Name = "liste2";
+            liste2.Size = new Size(1479, 1060);
+            liste2.TabIndex = 5;
+            liste2.Visible = false;
+            // 
             // taskBoardControl1
             // 
             taskBoardControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             taskBoardControl1.BackColor = Color.White;
-            taskBoardControl1.Location = new Point(157, 116);
+            taskBoardControl1.Location = new Point(174, 116);
             taskBoardControl1.Margin = new Padding(3, 4, 3, 4);
             taskBoardControl1.Name = "taskBoardControl1";
-            taskBoardControl1.Size = new Size(1492, 937);
+            taskBoardControl1.Size = new Size(1475, 937);
             taskBoardControl1.TabIndex = 8;
             // 
             // sidebarPnl
             // 
             sidebarPnl.BackColor = SystemColors.Window;
+            sidebarPnl.BorderThickness = 2;
             sidebarPnl.Controls.Add(hedefBtn);
             sidebarPnl.Controls.Add(takimBtn);
             sidebarPnl.Controls.Add(listBtn);
             sidebarPnl.Controls.Add(boardBtn);
             sidebarPnl.Controls.Add(timeBtn);
+            sidebarPnl.CustomBorderColor = Color.Black;
             sidebarPnl.CustomizableEdges = customizableEdges11;
             sidebarPnl.Dock = DockStyle.Left;
             sidebarPnl.Location = new Point(0, 116);
             sidebarPnl.Name = "sidebarPnl";
             sidebarPnl.ShadowDecoration.CustomizableEdges = customizableEdges12;
             sidebarPnl.ShadowDecoration.Shadow = new Padding(10);
-            sidebarPnl.Size = new Size(165, 937);
+            sidebarPnl.Size = new Size(164, 937);
             sidebarPnl.TabIndex = 0;
             // 
             // hedefBtn
@@ -141,6 +155,7 @@
             hedefBtn.Text = "hedefler";
             hedefBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             hedefBtn.Tile = true;
+            hedefBtn.Click += hedefBtn_Click;
             // 
             // takimBtn
             // 
@@ -167,7 +182,7 @@
             takimBtn.Text = "TAKIM";
             takimBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             takimBtn.Tile = true;
-            takimBtn.Click += guna2Button3_Click;
+            takimBtn.Click += takimBtn_Click;
             // 
             // listBtn
             // 
@@ -194,7 +209,7 @@
             listBtn.Text = "LISTE";
             listBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             listBtn.Tile = true;
-            listBtn.Click += guna2Button2_Click;
+            listBtn.Click += listBtn_Click;
             // 
             // boardBtn
             // 
@@ -221,6 +236,7 @@
             boardBtn.Text = "Board";
             boardBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             boardBtn.Tile = true;
+            boardBtn.Click += boardBtn_Click;
             // 
             // timeBtn
             // 
@@ -407,5 +423,6 @@
         private User_Control.Liste liste1;
         private User__Control.projects_ projects_1;
         private TaskBoardControl taskBoardControl1;
+        private User_Control.Liste liste2;
     }
 }
