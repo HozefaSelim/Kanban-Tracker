@@ -84,9 +84,9 @@ namespace Kanban_Tracker
         private void girisBtn_Click(object sender, EventArgs e)
         {
 
-            if(checkUserEmail(mailTxtBox.Text.Trim()))
-            { 
-                if(checkUserPassword(mailTxtBox.Text.Trim(), sifreTxtBox.Text))
+            if (checkUserEmail(mailTxtBox.Text.Trim()))
+            {
+                if (checkUserPassword(mailTxtBox.Text.Trim(), sifreTxtBox.Text))
                 {
                     MainBoard m = new MainBoard();
                     m.Show();
@@ -99,16 +99,14 @@ namespace Kanban_Tracker
             }
             else
             {
-<<<<<<< HEAD
+
                 MainBoard m = new MainBoard();
                 m.Show();
 
                 this.Hide();
 
                 m.FormClosed += (s, args) => this.Close();
-=======
-                //Email error
->>>>>>> main
+
             }
         }
 
@@ -136,18 +134,18 @@ namespace Kanban_Tracker
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             int hesapSayisi = 0;
-                            while(reader.Read())
+                            while (reader.Read())
                             {
                                 hesapSayisi++;
                             }
                             if (hesapSayisi == 1) return true;
-                            else if ( hesapSayisi == 0)
+                            else if (hesapSayisi == 0)
                             {
-                                MessageBox.Show("Öyle bir hesap yok");
+                                MessageBox.Show("Ã–yle bir hesap yok");
                             }
                             else
                             {
-                                MessageBox.Show("Ayný mail'e sahip birden fazla hesap var - "+hesapSayisi);
+                                MessageBox.Show("AynÃ½ mail'e sahip birden fazla hesap var - " + hesapSayisi);
                             }
                             return false;
                         }
@@ -159,7 +157,7 @@ namespace Kanban_Tracker
                     return false;
                 }
             }
-            
+
         }
 
         private bool checkUserPassword(string email, string password)
@@ -182,7 +180,7 @@ namespace Kanban_Tracker
                         {
                             while (reader.Read())
                             {
-                                if(reader.GetValue(3).ToString() == password)
+                                if (reader.GetValue(3).ToString() == password)
                                 {
                                     return true;
                                 }

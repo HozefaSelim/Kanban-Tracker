@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
             label1 = new Label();
             ListeDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
-            issueTuru = new DataGridViewTextBoxColumn();
-            issueAdi = new DataGridViewTextBoxColumn();
-            issueDurumu = new DataGridViewTextBoxColumn();
+            epicID = new DataGridViewTextBoxColumn();
+            epicAdi = new DataGridViewTextBoxColumn();
+            epicDurumu = new DataGridViewTextBoxColumn();
             tarih = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)ListeDataGrid).BeginInit();
             SuspendLayout();
@@ -46,7 +46,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.GradientActiveCaption;
-            label1.Location = new Point(31, 29);
+            label1.Location = new Point(22, 39);
             label1.Name = "label1";
             label1.Size = new Size(97, 39);
             label1.TabIndex = 0;
@@ -57,43 +57,43 @@
             // 
             ListeDataGrid.AllowUserToAddRows = false;
             ListeDataGrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = Color.White;
-            ListeDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = Color.White;
+            ListeDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             ListeDataGrid.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Arial Rounded MT Bold", 11F);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            ListeDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle6.Font = new Font("Arial Rounded MT Bold", 11F);
+            dataGridViewCellStyle6.ForeColor = Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            ListeDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             ListeDataGrid.ColumnHeadersHeight = 40;
             ListeDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            ListeDataGrid.Columns.AddRange(new DataGridViewColumn[] { issueTuru, issueAdi, issueDurumu, tarih });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            ListeDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            ListeDataGrid.Columns.AddRange(new DataGridViewColumn[] { epicID, epicAdi, epicDurumu, tarih });
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = Color.White;
+            dataGridViewCellStyle7.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle7.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle7.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.False;
+            ListeDataGrid.DefaultCellStyle = dataGridViewCellStyle7;
             ListeDataGrid.GridColor = Color.FromArgb(231, 229, 255);
-            ListeDataGrid.Location = new Point(31, 98);
+            ListeDataGrid.Location = new Point(22, 99);
             ListeDataGrid.Name = "ListeDataGrid";
             ListeDataGrid.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = SystemColors.Control;
-            dataGridViewCellStyle4.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            ListeDataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = SystemColors.Control;
+            dataGridViewCellStyle8.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle8.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
+            ListeDataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             ListeDataGrid.RowHeadersVisible = false;
             ListeDataGrid.RowHeadersWidth = 51;
-            ListeDataGrid.Size = new Size(1034, 469);
+            ListeDataGrid.Size = new Size(1034, 713);
             ListeDataGrid.TabIndex = 1;
             ListeDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             ListeDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -117,26 +117,26 @@
             ListeDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             ListeDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
-            // issueTuru
+            // epicID
             // 
-            issueTuru.HeaderText = "Tür";
-            issueTuru.MinimumWidth = 6;
-            issueTuru.Name = "issueTuru";
-            issueTuru.ReadOnly = true;
+            epicID.HeaderText = "ID";
+            epicID.MinimumWidth = 6;
+            epicID.Name = "epicID";
+            epicID.ReadOnly = true;
             // 
-            // issueAdi
+            // epicAdi
             // 
-            issueAdi.HeaderText = "Ad";
-            issueAdi.MinimumWidth = 6;
-            issueAdi.Name = "issueAdi";
-            issueAdi.ReadOnly = true;
+            epicAdi.HeaderText = "Ad";
+            epicAdi.MinimumWidth = 6;
+            epicAdi.Name = "epicAdi";
+            epicAdi.ReadOnly = true;
             // 
-            // issueDurumu
+            // epicDurumu
             // 
-            issueDurumu.HeaderText = "Durum";
-            issueDurumu.MinimumWidth = 6;
-            issueDurumu.Name = "issueDurumu";
-            issueDurumu.ReadOnly = true;
+            epicDurumu.HeaderText = "Durum";
+            epicDurumu.MinimumWidth = 6;
+            epicDurumu.Name = "epicDurumu";
+            epicDurumu.ReadOnly = true;
             // 
             // tarih
             // 
@@ -163,9 +163,9 @@
 
         private Label label1;
         private Guna.UI2.WinForms.Guna2DataGridView ListeDataGrid;
-        private DataGridViewTextBoxColumn issueTuru;
-        private DataGridViewTextBoxColumn issueAdi;
-        private DataGridViewTextBoxColumn issueDurumu;
+        private DataGridViewTextBoxColumn epicID;
+        private DataGridViewTextBoxColumn epicAdi;
+        private DataGridViewTextBoxColumn epicDurumu;
         private DataGridViewTextBoxColumn tarih;
     }
 }

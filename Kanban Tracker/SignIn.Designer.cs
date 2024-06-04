@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             girisPnl = new Guna.UI2.WinForms.Guna2Panel();
             giris = new Label();
@@ -85,8 +85,8 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(girisPnl);
             panel1.Controls.Add(olusturPnl);
+            panel1.Controls.Add(girisPnl);
             panel1.Location = new Point(1, 1);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
@@ -104,10 +104,10 @@
             girisPnl.Controls.Add(mailTxtBox);
             girisPnl.Controls.Add(label8);
             girisPnl.Controls.Add(label9);
-            girisPnl.CustomizableEdges = customizableEdges7;
+            girisPnl.CustomizableEdges = customizableEdges21;
             girisPnl.Location = new Point(0, 0);
             girisPnl.Name = "girisPnl";
-            girisPnl.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            girisPnl.ShadowDecoration.CustomizableEdges = customizableEdges22;
             girisPnl.Size = new Size(579, 850);
             girisPnl.TabIndex = 10;
             // 
@@ -166,7 +166,7 @@
             girisBtn.BackColor = Color.White;
             girisBtn.BorderRadius = 15;
             girisBtn.BorderThickness = 1;
-            girisBtn.CustomizableEdges = customizableEdges1;
+            girisBtn.CustomizableEdges = customizableEdges15;
             girisBtn.DisabledState.BorderColor = Color.DarkGray;
             girisBtn.DisabledState.CustomBorderColor = Color.DarkGray;
             girisBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -177,7 +177,7 @@
             girisBtn.Location = new Point(184, 553);
             girisBtn.Margin = new Padding(3, 4, 3, 4);
             girisBtn.Name = "girisBtn";
-            girisBtn.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            girisBtn.ShadowDecoration.CustomizableEdges = customizableEdges16;
             girisBtn.Size = new Size(206, 60);
             girisBtn.TabIndex = 14;
             girisBtn.Text = "Sign In";
@@ -188,7 +188,7 @@
             sifreTxtBox.Anchor = AnchorStyles.Left;
             sifreTxtBox.BorderColor = Color.Black;
             sifreTxtBox.BorderRadius = 9;
-            sifreTxtBox.CustomizableEdges = customizableEdges3;
+            sifreTxtBox.CustomizableEdges = customizableEdges17;
             sifreTxtBox.DefaultText = "";
             sifreTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             sifreTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -207,7 +207,7 @@
             sifreTxtBox.PlaceholderText = "●●●●●●●●";
             sifreTxtBox.RightToLeft = RightToLeft.No;
             sifreTxtBox.SelectedText = "";
-            sifreTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            sifreTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
             sifreTxtBox.Size = new Size(361, 48);
             sifreTxtBox.TabIndex = 13;
             sifreTxtBox.UseSystemPasswordChar = true;
@@ -217,7 +217,7 @@
             mailTxtBox.Anchor = AnchorStyles.Left;
             mailTxtBox.BorderColor = Color.Black;
             mailTxtBox.BorderRadius = 9;
-            mailTxtBox.CustomizableEdges = customizableEdges5;
+            mailTxtBox.CustomizableEdges = customizableEdges19;
             mailTxtBox.DefaultText = "";
             mailTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             mailTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -236,7 +236,7 @@
             mailTxtBox.PlaceholderText = "you@example.com";
             mailTxtBox.RightToLeft = RightToLeft.No;
             mailTxtBox.SelectedText = "";
-            mailTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            mailTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges20;
             mailTxtBox.Size = new Size(361, 48);
             mailTxtBox.TabIndex = 12;
             mailTxtBox.TextChanged += mailTxtBox_TextChanged;
@@ -280,10 +280,10 @@
             olusturPnl.Controls.Add(olusturMailTxtBox);
             olusturPnl.Controls.Add(label12);
             olusturPnl.Controls.Add(label13);
-            olusturPnl.CustomizableEdges = customizableEdges21;
+            olusturPnl.CustomizableEdges = customizableEdges13;
             olusturPnl.Location = new Point(0, 0);
             olusturPnl.Name = "olusturPnl";
-            olusturPnl.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            olusturPnl.ShadowDecoration.CustomizableEdges = customizableEdges14;
             olusturPnl.Size = new Size(579, 850);
             olusturPnl.TabIndex = 19;
             olusturPnl.Visible = false;
@@ -291,13 +291,13 @@
             // geriGit
             // 
             geriGit.Cursor = Cursors.Hand;
-            geriGit.CustomizableEdges = customizableEdges9;
+            geriGit.CustomizableEdges = customizableEdges1;
             geriGit.ErrorImage = null;
             geriGit.Image = (Image)resources.GetObject("geriGit.Image");
             geriGit.ImageRotate = 0F;
             geriGit.Location = new Point(11, 786);
             geriGit.Name = "geriGit";
-            geriGit.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            geriGit.ShadowDecoration.CustomizableEdges = customizableEdges2;
             geriGit.Size = new Size(50, 50);
             geriGit.TabIndex = 32;
             geriGit.TabStop = false;
@@ -333,7 +333,7 @@
             sifreTekrarTxtBox.Anchor = AnchorStyles.Left;
             sifreTekrarTxtBox.BorderColor = Color.Black;
             sifreTekrarTxtBox.BorderRadius = 9;
-            sifreTekrarTxtBox.CustomizableEdges = customizableEdges11;
+            sifreTekrarTxtBox.CustomizableEdges = customizableEdges3;
             sifreTekrarTxtBox.DefaultText = "";
             sifreTekrarTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             sifreTekrarTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -352,9 +352,9 @@
             sifreTekrarTxtBox.PlaceholderText = "●●●●●●●●";
             sifreTekrarTxtBox.RightToLeft = RightToLeft.No;
             sifreTekrarTxtBox.SelectedText = "";
-            sifreTekrarTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            sifreTekrarTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
             sifreTekrarTxtBox.Size = new Size(361, 48);
-            sifreTekrarTxtBox.TabIndex = 29;
+            sifreTekrarTxtBox.TabIndex = 4;
             sifreTekrarTxtBox.UseSystemPasswordChar = true;
             // 
             // label15
@@ -374,7 +374,7 @@
             adSoyadTxtBox.Anchor = AnchorStyles.Left;
             adSoyadTxtBox.BorderColor = Color.Black;
             adSoyadTxtBox.BorderRadius = 9;
-            adSoyadTxtBox.CustomizableEdges = customizableEdges13;
+            adSoyadTxtBox.CustomizableEdges = customizableEdges5;
             adSoyadTxtBox.DefaultText = "";
             adSoyadTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             adSoyadTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -393,9 +393,9 @@
             adSoyadTxtBox.PlaceholderText = "Mutez Rahal";
             adSoyadTxtBox.RightToLeft = RightToLeft.No;
             adSoyadTxtBox.SelectedText = "";
-            adSoyadTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            adSoyadTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
             adSoyadTxtBox.Size = new Size(361, 48);
-            adSoyadTxtBox.TabIndex = 27;
+            adSoyadTxtBox.TabIndex = 1;
             // 
             // label14
             // 
@@ -415,7 +415,7 @@
             olusturBtn.BackColor = Color.White;
             olusturBtn.BorderRadius = 15;
             olusturBtn.BorderThickness = 1;
-            olusturBtn.CustomizableEdges = customizableEdges15;
+            olusturBtn.CustomizableEdges = customizableEdges7;
             olusturBtn.DisabledState.BorderColor = Color.DarkGray;
             olusturBtn.DisabledState.CustomBorderColor = Color.DarkGray;
             olusturBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -426,9 +426,9 @@
             olusturBtn.Location = new Point(183, 644);
             olusturBtn.Margin = new Padding(3, 4, 3, 4);
             olusturBtn.Name = "olusturBtn";
-            olusturBtn.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            olusturBtn.ShadowDecoration.CustomizableEdges = customizableEdges8;
             olusturBtn.Size = new Size(206, 60);
-            olusturBtn.TabIndex = 22;
+            olusturBtn.TabIndex = 5;
             olusturBtn.Text = "Oluştur";
             olusturBtn.Click += guna2Button3_Click;
             // 
@@ -437,7 +437,7 @@
             olusturSifreTxtBox.Anchor = AnchorStyles.Left;
             olusturSifreTxtBox.BorderColor = Color.Black;
             olusturSifreTxtBox.BorderRadius = 9;
-            olusturSifreTxtBox.CustomizableEdges = customizableEdges17;
+            olusturSifreTxtBox.CustomizableEdges = customizableEdges9;
             olusturSifreTxtBox.DefaultText = "";
             olusturSifreTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             olusturSifreTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -456,9 +456,9 @@
             olusturSifreTxtBox.PlaceholderText = "●●●●●●●●";
             olusturSifreTxtBox.RightToLeft = RightToLeft.No;
             olusturSifreTxtBox.SelectedText = "";
-            olusturSifreTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            olusturSifreTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
             olusturSifreTxtBox.Size = new Size(361, 48);
-            olusturSifreTxtBox.TabIndex = 21;
+            olusturSifreTxtBox.TabIndex = 3;
             olusturSifreTxtBox.UseSystemPasswordChar = true;
             // 
             // olusturMailTxtBox
@@ -466,7 +466,7 @@
             olusturMailTxtBox.Anchor = AnchorStyles.Left;
             olusturMailTxtBox.BorderColor = Color.Black;
             olusturMailTxtBox.BorderRadius = 9;
-            olusturMailTxtBox.CustomizableEdges = customizableEdges19;
+            olusturMailTxtBox.CustomizableEdges = customizableEdges11;
             olusturMailTxtBox.DefaultText = "";
             olusturMailTxtBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             olusturMailTxtBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -485,9 +485,9 @@
             olusturMailTxtBox.PlaceholderText = "you@example.com";
             olusturMailTxtBox.RightToLeft = RightToLeft.No;
             olusturMailTxtBox.SelectedText = "";
-            olusturMailTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            olusturMailTxtBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
             olusturMailTxtBox.Size = new Size(361, 48);
-            olusturMailTxtBox.TabIndex = 20;
+            olusturMailTxtBox.TabIndex = 2;
             // 
             // label12
             // 

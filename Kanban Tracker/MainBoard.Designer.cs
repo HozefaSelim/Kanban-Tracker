@@ -52,6 +52,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             container = new Panel();
+            liste2 = new User_Control.Liste();
             taskBoardControl1 = new TaskBoardControl();
             sidebarPnl = new Guna.UI2.WinForms.Guna2Panel();
             hedefBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -77,6 +78,7 @@
             // 
             container.BackColor = SystemColors.Control;
             container.BorderStyle = BorderStyle.FixedSingle;
+            container.Controls.Add(liste2);
             container.Controls.Add(taskBoardControl1);
             container.Controls.Add(sidebarPnl);
             container.Controls.Add(headerPnl);
@@ -84,36 +86,58 @@
             container.Controls.Add(yeniProje1);
             container.Dock = DockStyle.Fill;
             container.Location = new Point(0, 0);
-            container.Margin = new Padding(3, 4, 3, 4);
             container.Name = "container";
-            container.Size = new Size(1654, 1055);
+            container.Size = new Size(1447, 562);
             container.TabIndex = 2;
+            // 
+            // liste2
+            // 
+            liste2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            liste2.BackColor = Color.White;
+            liste2.Location = new Point(170, 116);
+            liste2.Name = "liste2";
+            liste2.Size = new Size(1479, 1060);
+            liste2.TabIndex = 5;
+            liste2.Visible = false;
             // 
             // taskBoardControl1
             // 
             taskBoardControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             taskBoardControl1.BackColor = Color.White;
-            taskBoardControl1.Location = new Point(157, 116);
+<<<<<<< HEAD
+            taskBoardControl1.Location = new Point(137, 87);
+            taskBoardControl1.Name = "taskBoardControl1";
+            taskBoardControl1.Size = new Size(1309, 473);
+=======
+            taskBoardControl1.Location = new Point(174, 116);
             taskBoardControl1.Margin = new Padding(3, 4, 3, 4);
             taskBoardControl1.Name = "taskBoardControl1";
-            taskBoardControl1.Size = new Size(1492, 937);
+            taskBoardControl1.Size = new Size(1475, 937);
+>>>>>>> main
             taskBoardControl1.TabIndex = 8;
             // 
             // sidebarPnl
             // 
             sidebarPnl.BackColor = SystemColors.Window;
+            sidebarPnl.BorderThickness = 2;
             sidebarPnl.Controls.Add(hedefBtn);
             sidebarPnl.Controls.Add(takimBtn);
             sidebarPnl.Controls.Add(listBtn);
             sidebarPnl.Controls.Add(boardBtn);
             sidebarPnl.Controls.Add(timeBtn);
+            sidebarPnl.CustomBorderColor = Color.Black;
             sidebarPnl.CustomizableEdges = customizableEdges11;
             sidebarPnl.Dock = DockStyle.Left;
-            sidebarPnl.Location = new Point(0, 116);
+            sidebarPnl.Location = new Point(0, 87);
+            sidebarPnl.Margin = new Padding(3, 2, 3, 2);
             sidebarPnl.Name = "sidebarPnl";
             sidebarPnl.ShadowDecoration.CustomizableEdges = customizableEdges12;
             sidebarPnl.ShadowDecoration.Shadow = new Padding(10);
-            sidebarPnl.Size = new Size(165, 937);
+<<<<<<< HEAD
+            sidebarPnl.Size = new Size(144, 473);
+=======
+            sidebarPnl.Size = new Size(164, 937);
+>>>>>>> main
             sidebarPnl.TabIndex = 0;
             // 
             // hedefBtn
@@ -133,14 +157,16 @@
             hedefBtn.Image = (Image)resources.GetObject("hedefBtn.Image");
             hedefBtn.ImageSize = new Size(60, 60);
             hedefBtn.ImeMode = ImeMode.On;
-            hedefBtn.Location = new Point(3, 616);
+            hedefBtn.Location = new Point(3, 462);
+            hedefBtn.Margin = new Padding(3, 2, 3, 2);
             hedefBtn.Name = "hedefBtn";
             hedefBtn.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            hedefBtn.Size = new Size(165, 129);
+            hedefBtn.Size = new Size(144, 97);
             hedefBtn.TabIndex = 4;
             hedefBtn.Text = "hedefler";
             hedefBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             hedefBtn.Tile = true;
+            hedefBtn.Click += hedefBtn_Click;
             // 
             // takimBtn
             // 
@@ -159,15 +185,16 @@
             takimBtn.Image = (Image)resources.GetObject("takimBtn.Image");
             takimBtn.ImageSize = new Size(50, 50);
             takimBtn.ImeMode = ImeMode.On;
-            takimBtn.Location = new Point(3, 471);
+            takimBtn.Location = new Point(3, 353);
+            takimBtn.Margin = new Padding(3, 2, 3, 2);
             takimBtn.Name = "takimBtn";
             takimBtn.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            takimBtn.Size = new Size(165, 129);
+            takimBtn.Size = new Size(144, 97);
             takimBtn.TabIndex = 3;
             takimBtn.Text = "TAKIM";
             takimBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             takimBtn.Tile = true;
-            takimBtn.Click += guna2Button3_Click;
+            takimBtn.Click += takimBtn_Click;
             // 
             // listBtn
             // 
@@ -186,15 +213,16 @@
             listBtn.Image = (Image)resources.GetObject("listBtn.Image");
             listBtn.ImageSize = new Size(40, 40);
             listBtn.ImeMode = ImeMode.On;
-            listBtn.Location = new Point(0, 327);
+            listBtn.Location = new Point(0, 245);
+            listBtn.Margin = new Padding(3, 2, 3, 2);
             listBtn.Name = "listBtn";
             listBtn.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            listBtn.Size = new Size(165, 129);
+            listBtn.Size = new Size(144, 97);
             listBtn.TabIndex = 2;
             listBtn.Text = "LISTE";
             listBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             listBtn.Tile = true;
-            listBtn.Click += guna2Button2_Click;
+            listBtn.Click += listBtn_Click;
             // 
             // boardBtn
             // 
@@ -213,14 +241,16 @@
             boardBtn.Image = (Image)resources.GetObject("boardBtn.Image");
             boardBtn.ImageSize = new Size(60, 60);
             boardBtn.ImeMode = ImeMode.On;
-            boardBtn.Location = new Point(0, 183);
+            boardBtn.Location = new Point(0, 137);
+            boardBtn.Margin = new Padding(3, 2, 3, 2);
             boardBtn.Name = "boardBtn";
             boardBtn.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            boardBtn.Size = new Size(165, 129);
+            boardBtn.Size = new Size(144, 97);
             boardBtn.TabIndex = 1;
             boardBtn.Text = "Board";
             boardBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             boardBtn.Tile = true;
+            boardBtn.Click += boardBtn_Click;
             // 
             // timeBtn
             // 
@@ -238,10 +268,11 @@
             timeBtn.Image = (Image)resources.GetObject("timeBtn.Image");
             timeBtn.ImageSize = new Size(50, 50);
             timeBtn.ImeMode = ImeMode.On;
-            timeBtn.Location = new Point(0, 39);
+            timeBtn.Location = new Point(0, 29);
+            timeBtn.Margin = new Padding(3, 2, 3, 2);
             timeBtn.Name = "timeBtn";
             timeBtn.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            timeBtn.Size = new Size(165, 129);
+            timeBtn.Size = new Size(144, 97);
             timeBtn.TabIndex = 0;
             timeBtn.Text = "Zaman Çizelgesi";
             timeBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -259,9 +290,10 @@
             headerPnl.Dock = DockStyle.Top;
             headerPnl.ImeMode = ImeMode.Disable;
             headerPnl.Location = new Point(0, 0);
+            headerPnl.Margin = new Padding(3, 2, 3, 2);
             headerPnl.Name = "headerPnl";
             headerPnl.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            headerPnl.Size = new Size(1652, 116);
+            headerPnl.Size = new Size(1445, 87);
             headerPnl.TabIndex = 2;
             // 
             // olusturBtn
@@ -277,10 +309,11 @@
             olusturBtn.FillColor = SystemColors.GradientActiveCaption;
             olusturBtn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             olusturBtn.ForeColor = Color.Black;
-            olusturBtn.Location = new Point(849, 35);
+            olusturBtn.Location = new Point(742, 26);
+            olusturBtn.Margin = new Padding(3, 2, 3, 2);
             olusturBtn.Name = "olusturBtn";
             olusturBtn.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            olusturBtn.Size = new Size(225, 56);
+            olusturBtn.Size = new Size(197, 42);
             olusturBtn.TabIndex = 4;
             olusturBtn.Text = "Oluştur";
             olusturBtn.Visible = false;
@@ -299,10 +332,11 @@
             ayarlarBtn.ForeColor = Color.White;
             ayarlarBtn.Image = (Image)resources.GetObject("ayarlarBtn.Image");
             ayarlarBtn.ImageSize = new Size(35, 35);
-            ayarlarBtn.Location = new Point(1285, 36);
+            ayarlarBtn.Location = new Point(1123, 27);
+            ayarlarBtn.Margin = new Padding(3, 2, 3, 2);
             ayarlarBtn.Name = "ayarlarBtn";
             ayarlarBtn.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            ayarlarBtn.Size = new Size(55, 55);
+            ayarlarBtn.Size = new Size(48, 41);
             ayarlarBtn.TabIndex = 3;
             // 
             // bildirimBtn
@@ -318,10 +352,11 @@
             bildirimBtn.ForeColor = Color.White;
             bildirimBtn.Image = (Image)resources.GetObject("bildirimBtn.Image");
             bildirimBtn.ImageSize = new Size(35, 35);
-            bildirimBtn.Location = new Point(1346, 36);
+            bildirimBtn.Location = new Point(1177, 27);
+            bildirimBtn.Margin = new Padding(3, 2, 3, 2);
             bildirimBtn.Name = "bildirimBtn";
             bildirimBtn.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            bildirimBtn.Size = new Size(55, 55);
+            bildirimBtn.Size = new Size(48, 41);
             bildirimBtn.TabIndex = 2;
             // 
             // isimTxt
@@ -330,9 +365,10 @@
             isimTxt.BackColor = SystemColors.GradientInactiveCaption;
             isimTxt.BorderStyle = BorderStyle.None;
             isimTxt.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            isimTxt.Location = new Point(1444, 50);
+            isimTxt.Location = new Point(1263, 38);
+            isimTxt.Margin = new Padding(3, 2, 3, 2);
             isimTxt.Name = "isimTxt";
-            isimTxt.Size = new Size(135, 24);
+            isimTxt.Size = new Size(118, 19);
             isimTxt.TabIndex = 1;
             isimTxt.Text = "Mutez Rahal";
             // 
@@ -342,10 +378,11 @@
             kullaniciImg.CustomizableEdges = customizableEdges19;
             kullaniciImg.Image = (Image)resources.GetObject("kullaniciImg.Image");
             kullaniciImg.ImageRotate = 0F;
-            kullaniciImg.Location = new Point(1561, 0);
+            kullaniciImg.Location = new Point(1365, 0);
+            kullaniciImg.Margin = new Padding(3, 2, 3, 2);
             kullaniciImg.Name = "kullaniciImg";
             kullaniciImg.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            kullaniciImg.Size = new Size(80, 116);
+            kullaniciImg.Size = new Size(70, 87);
             kullaniciImg.TabIndex = 0;
             kullaniciImg.TabStop = false;
             // 
@@ -353,29 +390,30 @@
             // 
             projects_1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             projects_1.BackColor = Color.White;
-            projects_1.Location = new Point(-1, 116);
+            projects_1.Location = new Point(-1, 87);
+            projects_1.Margin = new Padding(3, 2, 3, 2);
             projects_1.Name = "projects_1";
-            projects_1.Size = new Size(1654, 1171);
+            projects_1.Size = new Size(1446, 878);
             projects_1.TabIndex = 7;
             // 
             // yeniProje1
             // 
             yeniProje1.AccessibleName = "hh";
             yeniProje1.BorderStyle = BorderStyle.FixedSingle;
-            yeniProje1.Location = new Point(661, 86);
+            yeniProje1.Location = new Point(578, 64);
+            yeniProje1.Margin = new Padding(3, 2, 3, 2);
             yeniProje1.Name = "yeniProje1";
-            yeniProje1.Size = new Size(573, 849);
+            yeniProje1.Size = new Size(502, 637);
             yeniProje1.TabIndex = 6;
             yeniProje1.Visible = false;
             // 
             // MainBoard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1654, 1055);
+            ClientSize = new Size(1447, 562);
             Controls.Add(container);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "MainBoard";
             Text = "MainBoard";
@@ -407,5 +445,6 @@
         private User_Control.Liste liste1;
         private User__Control.projects_ projects_1;
         private TaskBoardControl taskBoardControl1;
+        private User_Control.Liste liste2;
     }
 }
