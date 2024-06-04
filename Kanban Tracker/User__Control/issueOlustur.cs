@@ -17,9 +17,17 @@ namespace Kanban_Tracker
             InitializeComponent();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void closeBtn_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
 
+        }
+
+        private void projeEkleBtni_Click(object sender, EventArgs e)
+        {
+            string projeadi = projeAdiLbl.Text;
+            string issueTipi = issueType.SelectedText;
+            
         }
     }
 }

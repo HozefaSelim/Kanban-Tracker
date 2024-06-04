@@ -26,10 +26,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             backlog = new Guna.UI2.WinForms.Guna2Panel();
-            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            label2 = new Label();
+            guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            label10 = new Label();
             label7 = new Label();
-            label3 = new Label();
             todo = new Guna.UI2.WinForms.Guna2Panel();
             label4 = new Label();
             doing = new Guna.UI2.WinForms.Guna2Panel();
@@ -37,7 +36,7 @@
             done = new Guna.UI2.WinForms.Guna2Panel();
             label6 = new Label();
             backlog.SuspendLayout();
-            guna2Panel1.SuspendLayout();
+            guna2Panel6.SuspendLayout();
             todo.SuspendLayout();
             doing.SuspendLayout();
             done.SuspendLayout();
@@ -46,12 +45,12 @@
             // backlog
             // 
             backlog.AllowDrop = true;
+            backlog.AutoScroll = true;
             backlog.BorderColor = Color.Black;
             backlog.BorderRadius = 10;
             backlog.BorderThickness = 1;
-            backlog.Controls.Add(guna2Panel1);
+            backlog.Controls.Add(guna2Panel6);
             backlog.Controls.Add(label7);
-            backlog.Controls.Add(label3);
             backlog.CustomizableEdges = customizableEdges3;
             backlog.FillColor = Color.FromArgb(237, 245, 252);
             backlog.Location = new Point(122, 79);
@@ -61,47 +60,39 @@
             backlog.Size = new Size(309, 733);
             backlog.TabIndex = 0;
             // 
-            // guna2Panel1
+            // guna2Panel6
             // 
-            guna2Panel1.Controls.Add(label2);
-            guna2Panel1.CustomizableEdges = customizableEdges1;
-            guna2Panel1.Location = new Point(31, 82);
-            guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel1.Size = new Size(250, 125);
-            guna2Panel1.TabIndex = 38;
+            guna2Panel6.Controls.Add(label10);
+            guna2Panel6.CustomizableEdges = customizableEdges1;
+            guna2Panel6.Location = new Point(32, 73);
+            guna2Panel6.Name = "guna2Panel6";
+            guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Panel6.Size = new Size(250, 125);
+            guna2Panel6.TabIndex = 43;
             // 
-            // label2
+            // label10
             // 
-            label2.Location = new Point(53, 33);
-            label2.Name = "label2";
-            label2.Size = new Size(128, 54);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            label10.Location = new Point(53, 33);
+            label10.Name = "label10";
+            label10.Size = new Size(128, 54);
+            label10.TabIndex = 1;
+            label10.Text = "label10";
+            label10.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
             label7.BackColor = Color.FromArgb(237, 245, 252);
             label7.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(85, 9);
+            label7.Location = new Point(84, 9);
             label7.Name = "label7";
-            label7.Size = new Size(127, 70);
-            label7.TabIndex = 37;
+            label7.Size = new Size(128, 61);
+            label7.TabIndex = 39;
             label7.Text = "Backlog";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(31, 252);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 2;
-            label3.Text = "label3";
             // 
             // todo
             // 
             todo.AllowDrop = true;
+            todo.AutoScroll = true;
             todo.BorderColor = Color.Black;
             todo.BorderRadius = 10;
             todo.BorderThickness = 1;
@@ -121,13 +112,14 @@
             label4.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.Location = new Point(103, 9);
             label4.Name = "label4";
-            label4.Size = new Size(94, 70);
+            label4.Size = new Size(94, 61);
             label4.TabIndex = 38;
             label4.Text = "To Do";
             // 
             // doing
             // 
             doing.AllowDrop = true;
+            doing.AutoScroll = true;
             doing.BorderColor = Color.Black;
             doing.BorderRadius = 10;
             doing.BorderThickness = 1;
@@ -147,13 +139,14 @@
             label5.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.Location = new Point(106, 12);
             label5.Name = "label5";
-            label5.Size = new Size(95, 70);
+            label5.Size = new Size(95, 61);
             label5.TabIndex = 39;
             label5.Text = "Donig";
             // 
             // done
             // 
             done.AllowDrop = true;
+            done.AutoScroll = true;
             done.BorderColor = Color.Black;
             done.BorderRadius = 10;
             done.BorderThickness = 1;
@@ -173,7 +166,7 @@
             label6.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.Location = new Point(123, 12);
             label6.Name = "label6";
-            label6.Size = new Size(86, 70);
+            label6.Size = new Size(86, 61);
             label6.TabIndex = 40;
             label6.Text = "Done";
             // 
@@ -181,6 +174,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.White;
             Controls.Add(done);
             Controls.Add(doing);
@@ -190,8 +184,7 @@
             Name = "TaskBoardControl";
             Size = new Size(1540, 937);
             backlog.ResumeLayout(false);
-            backlog.PerformLayout();
-            guna2Panel1.ResumeLayout(false);
+            guna2Panel6.ResumeLayout(false);
             todo.ResumeLayout(false);
             doing.ResumeLayout(false);
             done.ResumeLayout(false);
@@ -202,12 +195,11 @@
         private Guna.UI2.WinForms.Guna2Panel todo;
         private Guna.UI2.WinForms.Guna2Panel doing;
         private Guna.UI2.WinForms.Guna2Panel done;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private Label label7;
         private Label label4;
         private Label label5;
         private Label label6;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private Label label10;
+        private Label label7;
     }
 }
