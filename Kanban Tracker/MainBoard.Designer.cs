@@ -126,7 +126,18 @@
             container.Size = new Size(1654, 1055);
             container.TabIndex = 2;
             // 
-            // boardUserControl
+            // taskBoardControl1
+            // 
+            taskBoardControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            taskBoardControl1.BackColor = Color.White;
+
+
+            taskBoardControl1.Location = new Point(137, 87);
+            taskBoardControl1.Name = "taskBoardControl1";
+            taskBoardControl1.Size = new Size(1309, 473);
+
+            taskBoardControl1.TabIndex = 8;
+
             // 
             boardUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             boardUserControl.AutoScroll = true;
@@ -164,7 +175,11 @@
             sidebarPnl.Name = "sidebarPnl";
             sidebarPnl.ShadowDecoration.CustomizableEdges = customizableEdges14;
             sidebarPnl.ShadowDecoration.Shadow = new Padding(10);
-            sidebarPnl.Size = new Size(164, 937);
+
+
+            sidebarPnl.Size = new Size(144, 473);
+
+
             sidebarPnl.TabIndex = 0;
             // 
             // backBtn
