@@ -43,21 +43,19 @@ namespace Kanban_Tracker
         }
         private void MainBoard_Load(object sender, EventArgs e)
         {
-            olusturBtn.Visible = false;
-            projects_1.BringToFront();
-            projects_1.Visible = true;
-
-            boardBtn.Checked = true;
+            olusturBtn.Visible = true;
+            ProjectsUserControl.BringToFront();
+            ProjectsUserControl.Visible = true;
         }
 
         private void projeOlusturBtn_Click(object sender, EventArgs e)
         {
-            yeniProje1.Visible = true;
         }
 
         private void olusturBtn_Click(object sender, EventArgs e)
         {
-
+            issueOlusturPnl.Visible = true;
+            issueOlusturPnl.BringToFront();
         }
         private void sidebarPnl_Paint(object sender, PaintEventArgs e)
         {
@@ -66,28 +64,55 @@ namespace Kanban_Tracker
 
         private void boardBtn_Click(object sender, EventArgs e)
         {
-            taskBoardControl1.Visible = true;
-            taskBoardControl1.BringToFront();
+            boardUserControl.Visible = true;
+            boardUserControl.BringToFront();
             //boardBtn.Checked = true;
         }
 
         private void listBtn_Click(object sender, EventArgs e)
         {
             // listBtn.Checked = true;
-            liste2.Visible = true;
-            liste2.BringToFront();
+            ListeUserControl.Visible = true;
+            ListeUserControl.BringToFront();
         }
 
         private void takimBtn_Click(object sender, EventArgs e)
         {
             //takimBtn.Checked = true;
-            takimListesi2.Visible = true;
-            takimListesi2.BringToFront();
+            TakimListesiUserControl.Visible = true;
+            TakimListesiUserControl.BringToFront();
+        }
+        private void projeEkleBtni_Click(object sender, EventArgs e)
+        {
+            string projeAdi = projeAdiLbl.Text;
+            string ad = issueAdi.Text;
+            string issueTipi = issueType.SelectedText;
+            string issueDurum = durum.SelectedText;
+            string issueAciklama = aciklamaTxtBox.Text;
+
+            issueAdi.Text = "";
+            aciklamaTxtBox.Text = "";
+            issueType.SelectedIndex = -1;
+            durum.SelectedIndex = -1;
+            projeAdiLbl.Text = "";
         }
 
-        private void hedefBtn_Click(object sender, EventArgs e)
+        private void closeBtn_Click(object sender, EventArgs e)
         {
-            //hedefBtn.Checked = true;
+            issueOlusturPnl.Visible = false;
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            sidebarPnl.BringToFront();
+            ProjectsUserControl.BringToFront();
+            ProjectsUserControl.Visible = true;
+        }
+
+        private void kapsamBtn_Click(object sender, EventArgs e)
+        {
+            KapsamListeuserControl.Visible = true;
+            KapsamListeuserControl.BringToFront();
         }
     }
 }

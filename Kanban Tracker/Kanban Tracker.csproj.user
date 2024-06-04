@@ -7,6 +7,9 @@
     <Compile Update="User__Control\issueOlustur.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="User__Control\KapsamListe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="User__Control\Liste.cs">
       <SubType>UserControl</SubType>
     </Compile>
