@@ -68,8 +68,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             container = new Panel();
-            boardUserControl = new TaskBoardControl();
+            ListeUserControl = new User_Control.Liste();
+            TakimListesiUserControl = new User__Control.takimListesi();
             KapsamListeuserControl = new User__Control.KapsamListe();
+            boardUserControl = new TaskBoardControl();
             sidebarPnl = new Guna.UI2.WinForms.Guna2Panel();
             backBtn = new Guna.UI2.WinForms.Guna2Button();
             kapsamBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -97,8 +99,6 @@
             label3 = new Label();
             aciklamaTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
             label2 = new Label();
-            TakimListesiUserControl = new User__Control.takimListesi();
-            ListeUserControl = new User_Control.Liste();
             ProjectsUserControl = new User__Control.projects_();
             container.SuspendLayout();
             sidebarPnl.SuspendLayout();
@@ -111,13 +111,13 @@
             // 
             container.BackColor = SystemColors.Control;
             container.BorderStyle = BorderStyle.FixedSingle;
-            container.Controls.Add(boardUserControl);
+            container.Controls.Add(ListeUserControl);
+            container.Controls.Add(TakimListesiUserControl);
             container.Controls.Add(KapsamListeuserControl);
+            container.Controls.Add(boardUserControl);
             container.Controls.Add(sidebarPnl);
             container.Controls.Add(headerPnl);
             container.Controls.Add(issueOlusturPnl);
-            container.Controls.Add(TakimListesiUserControl);
-            container.Controls.Add(ListeUserControl);
             container.Controls.Add(ProjectsUserControl);
             container.Dock = DockStyle.Fill;
             container.Location = new Point(0, 0);
@@ -126,37 +126,46 @@
             container.Size = new Size(1654, 1055);
             container.TabIndex = 2;
             // 
-            // taskBoardControl1
+            // ListeUserControl
             // 
-            taskBoardControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            taskBoardControl1.BackColor = Color.White;
-
-
-            taskBoardControl1.Location = new Point(137, 87);
-            taskBoardControl1.Name = "taskBoardControl1";
-            taskBoardControl1.Size = new Size(1309, 473);
-
-            taskBoardControl1.TabIndex = 8;
-
+            ListeUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            ListeUserControl.BackColor = Color.White;
+            ListeUserControl.Location = new Point(146, 116);
+            ListeUserControl.Name = "ListeUserControl";
+            ListeUserControl.Size = new Size(1479, 1060);
+            ListeUserControl.TabIndex = 5;
+            ListeUserControl.Visible = false;
             // 
-            boardUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            boardUserControl.AutoScroll = true;
-            boardUserControl.BackColor = Color.White;
-            boardUserControl.Location = new Point(174, 116);
-            boardUserControl.Margin = new Padding(3, 4, 3, 4);
-            boardUserControl.Name = "boardUserControl";
-            boardUserControl.Size = new Size(1475, 937);
-            boardUserControl.TabIndex = 8;
+            // TakimListesiUserControl
+            // 
+            TakimListesiUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            TakimListesiUserControl.BackColor = Color.White;
+            TakimListesiUserControl.Location = new Point(146, 116);
+            TakimListesiUserControl.Name = "TakimListesiUserControl";
+            TakimListesiUserControl.Size = new Size(1479, 934);
+            TakimListesiUserControl.TabIndex = 9;
+            TakimListesiUserControl.Visible = false;
             // 
             // KapsamListeuserControl
             // 
             KapsamListeuserControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             KapsamListeuserControl.BackColor = Color.White;
-            KapsamListeuserControl.Location = new Point(171, 116);
+            KapsamListeuserControl.Location = new Point(147, 116);
             KapsamListeuserControl.Name = "KapsamListeuserControl";
             KapsamListeuserControl.Size = new Size(1478, 934);
             KapsamListeuserControl.TabIndex = 6;
             KapsamListeuserControl.Visible = false;
+            // 
+            // boardUserControl
+            // 
+            boardUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            boardUserControl.AutoScroll = true;
+            boardUserControl.BackColor = Color.White;
+            boardUserControl.Location = new Point(150, 116);
+            boardUserControl.Margin = new Padding(3, 4, 3, 4);
+            boardUserControl.Name = "boardUserControl";
+            boardUserControl.Size = new Size(1475, 937);
+            boardUserControl.TabIndex = 8;
             // 
             // sidebarPnl
             // 
@@ -175,11 +184,7 @@
             sidebarPnl.Name = "sidebarPnl";
             sidebarPnl.ShadowDecoration.CustomizableEdges = customizableEdges14;
             sidebarPnl.ShadowDecoration.Shadow = new Padding(10);
-
-
-            sidebarPnl.Size = new Size(144, 473);
-
-
+            sidebarPnl.Size = new Size(144, 937);
             sidebarPnl.TabIndex = 0;
             // 
             // backBtn
@@ -195,11 +200,11 @@
             backBtn.ForeColor = SystemColors.GradientActiveCaption;
             backBtn.Image = Properties.Resources.icons8_arrow_50__1_;
             backBtn.ImageSize = new Size(40, 40);
-            backBtn.Location = new Point(21, 818);
+            backBtn.Location = new Point(11, 799);
             backBtn.Name = "backBtn";
             backBtn.PressedColor = Color.White;
             backBtn.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            backBtn.Size = new Size(125, 45);
+            backBtn.Size = new Size(119, 45);
             backBtn.TabIndex = 6;
             backBtn.Text = "Projeler";
             backBtn.Click += backBtn_Click;
@@ -675,26 +680,6 @@
             label2.Size = new Size(236, 39);
             label2.TabIndex = 43;
             label2.Text = "Issue Oluştur";
-            // 
-            // TakimListesiUserControl
-            // 
-            TakimListesiUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            TakimListesiUserControl.BackColor = Color.White;
-            TakimListesiUserControl.Location = new Point(170, 116);
-            TakimListesiUserControl.Name = "TakimListesiUserControl";
-            TakimListesiUserControl.Size = new Size(1479, 934);
-            TakimListesiUserControl.TabIndex = 9;
-            TakimListesiUserControl.Visible = false;
-            // 
-            // ListeUserControl
-            // 
-            ListeUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            ListeUserControl.BackColor = Color.White;
-            ListeUserControl.Location = new Point(170, 116);
-            ListeUserControl.Name = "ListeUserControl";
-            ListeUserControl.Size = new Size(1479, 1060);
-            ListeUserControl.TabIndex = 5;
-            ListeUserControl.Visible = false;
             // 
             // ProjectsUserControl
             // 

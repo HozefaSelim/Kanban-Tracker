@@ -170,7 +170,7 @@
             yeniProjeBtn.ForeColor = Color.Black;
             yeniProjeBtn.Location = new Point(1423, 26);
             yeniProjeBtn.Name = "yeniProjeBtn";
-            yeniProjeBtn.PressedColor = SystemColors.GradientInactiveCaption;
+            yeniProjeBtn.PressedColor = SystemColors.GradientActiveCaption;
             yeniProjeBtn.ShadowDecoration.CustomizableEdges = customizableEdges2;
             yeniProjeBtn.Size = new Size(184, 45);
             yeniProjeBtn.TabIndex = 4;
@@ -212,7 +212,7 @@
             closeBtn.DisabledState.CustomBorderColor = Color.DarkGray;
             closeBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             closeBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            closeBtn.FillColor = Color.GhostWhite;
+            closeBtn.FillColor = Color.White;
             closeBtn.Font = new Font("Segoe UI", 9F);
             closeBtn.ForeColor = Color.GhostWhite;
             closeBtn.HoverState.FillColor = Color.GhostWhite;
@@ -220,7 +220,7 @@
             closeBtn.ImageSize = new Size(50, 50);
             closeBtn.Location = new Point(516, 13);
             closeBtn.Name = "closeBtn";
-            closeBtn.PressedColor = Color.GhostWhite;
+            closeBtn.PressedColor = Color.White;
             closeBtn.ShadowDecoration.CustomizableEdges = customizableEdges4;
             closeBtn.Size = new Size(50, 50);
             closeBtn.TabIndex = 22;
