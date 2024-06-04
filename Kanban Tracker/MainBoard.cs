@@ -81,6 +81,8 @@ namespace Kanban_Tracker
         private void takimBtn_Click(object sender, EventArgs e)
         {
             //takimBtn.Checked = true;
+            takimListesi2.Visible = true;
+            takimListesi2.BringToFront();
         }
 
         private void hedefBtn_Click(object sender, EventArgs e)
