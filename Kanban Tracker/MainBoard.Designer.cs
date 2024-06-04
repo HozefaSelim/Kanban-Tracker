@@ -97,10 +97,12 @@
             // 
             taskBoardControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             taskBoardControl1.BackColor = Color.White;
-            taskBoardControl1.Location = new Point(174, 116);
-            taskBoardControl1.Margin = new Padding(3, 4, 3, 4);
+
+
+            taskBoardControl1.Location = new Point(137, 87);
             taskBoardControl1.Name = "taskBoardControl1";
-            taskBoardControl1.Size = new Size(1475, 937);
+            taskBoardControl1.Size = new Size(1309, 473);
+
             taskBoardControl1.TabIndex = 8;
             // 
             // takimListesi2
@@ -139,7 +141,11 @@
             sidebarPnl.Name = "sidebarPnl";
             sidebarPnl.ShadowDecoration.CustomizableEdges = customizableEdges12;
             sidebarPnl.ShadowDecoration.Shadow = new Padding(10);
-            sidebarPnl.Size = new Size(164, 937);
+
+
+            sidebarPnl.Size = new Size(144, 473);
+
+
             sidebarPnl.TabIndex = 0;
             // 
             // hedefBtn
