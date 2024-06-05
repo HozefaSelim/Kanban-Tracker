@@ -15,7 +15,7 @@ namespace Kanban_Tracker
 {
     public partial class MainBoard : Form
     {
-        User user;
+        public User user { get; set; }
         public MainBoard()
         {
             InitializeComponent();
@@ -26,6 +26,7 @@ namespace Kanban_Tracker
             InitializeComponent();
             this.user = user;
             userName.Text = user.Username;
+            ProjectsUserControl.user = user;
         }
         private void AbrirFormEnPanel(object Formhijo)
         {

@@ -8,7 +8,7 @@ namespace Kanban_Tracker
 {
     public partial class SignIn : Form
     {
-        string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=Kanban_Tracker;Integrated Security=true";
+        private string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
         public SignIn()
         {
             InitializeComponent();
@@ -99,14 +99,7 @@ namespace Kanban_Tracker
             }
             else
             {
-
-                MainBoard m = new MainBoard();
-                m.Show();
-
-                this.Hide();
-
-                m.FormClosed += (s, args) => this.Close();
-
+                // Email error
             }
         }
 
@@ -198,7 +191,6 @@ namespace Kanban_Tracker
             }
 
         }
-
 
         private bool checkUserPassword(string email, string password)
         {

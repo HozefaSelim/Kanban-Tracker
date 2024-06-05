@@ -28,9 +28,6 @@ namespace Kanban_Tracker.Resources
             string baslangicTarihi = startDate.Text;
             string bitisTarihi = endDate.Text;
 
-            projects_ p = new projects_();
-          //  p.addData(projeismi, projeAciklamasi, baslangicTarihi, bitisTarihi);
-
         }
     }
 }
