@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Kanban_Tracker.Classes;
+using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -8,10 +10,25 @@ namespace Kanban_Tracker
 {
     public partial class TaskBoardControl : UserControl
     {
+        private string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        MainBoard parentForm;
+
         public TaskBoardControl()
         {
             InitializeComponent();
+            this.Load += UserControlLoad;
             InitializeDragDrop();
+        }
+        private void UserControlLoad(object sender, EventArgs e)
+        {
+            try
+            {
+                parentForm = (MainBoard)this.FindForm();
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+            }
         }
 
         private void InitializeDragDrop()
@@ -38,7 +55,6 @@ namespace Kanban_Tracker
             done.DragEnter += new DragEventHandler(mainPanel_DragEnter);
             done.DragDrop += new DragEventHandler(mainPanel_DragDrop);
         }
-
         private void panel_MouseDown(object sender, MouseEventArgs e)
         {
             Guna.UI2.WinForms.Guna2Panel pnl = sender as Guna.UI2.WinForms.Guna2Panel;
@@ -48,7 +64,6 @@ namespace Kanban_Tracker
                 DoDragDrop(pnl, DragDropEffects.Move);
             }
         }
-
         private void mainPanel_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(typeof(Guna.UI2.WinForms.Guna2Panel)))
@@ -101,7 +116,6 @@ namespace Kanban_Tracker
                 SortPanels(targetPanel);
             }
         }
-
         private int GetNextPanelYPosition(Panel targetPanel)
         {
             // Calculate the starting y position considering any existing labels at the top
@@ -125,7 +139,6 @@ namespace Kanban_Tracker
 
             return y;
         }
-
         private void SortPanels(Panel targetPanel)
         {
             // Create a list of panels excluding labels
