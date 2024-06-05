@@ -1,4 +1,5 @@
-﻿using Kanban_Tracker.Resources;
+﻿using Kanban_Tracker.Classes;
+using Kanban_Tracker.Resources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +15,17 @@ namespace Kanban_Tracker
 {
     public partial class MainBoard : Form
     {
+        User user;
         public MainBoard()
         {
             InitializeComponent();
+        }
+
+        public MainBoard(User user)
+        {
+            InitializeComponent();
+            this.user = user;
+            userName.Text = user.Username;
         }
         private void AbrirFormEnPanel(object Formhijo)
         {

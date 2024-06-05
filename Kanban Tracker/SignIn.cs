@@ -88,7 +88,7 @@ namespace Kanban_Tracker
             {
                 if (checkUserPassword(mailTxtBox.Text.Trim(), sifreTxtBox.Text))
                 {
-                    MainBoard m = new MainBoard();
+                    MainBoard m = new MainBoard(getUserByEmail(mailTxtBox.Text.Trim()));
                     m.Show();
                     this.Hide();
                 }
@@ -145,7 +145,7 @@ namespace Kanban_Tracker
                             }
                             else
                             {
-                                MessageBox.Show("Ayný mail'e sahip birden fazla hesap var - " + hesapSayisi);
+                                MessageBox.Show("Ayni mail'e sahip birden fazla hesap var - " + hesapSayisi);
                             }
                             return false;
                         }
@@ -159,6 +159,46 @@ namespace Kanban_Tracker
             }
 
         }
+
+        private User getUserByEmail(string email)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand("getUserByEmail", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.Add(new SqlParameter("@userEmail", email));
+
+                        command.ExecuteNonQuery();
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string userID = reader.GetValue(0).ToString();
+                                string username = reader.GetValue(1).ToString();
+                                string mail = reader.GetValue(2).ToString();
+                                string password = reader.GetValue(3).ToString();
+                                return new User(userID, username, mail, password);
+                            }
+                            return new User("ERROR", "ERROR", "ERROR", "ERROR");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("An error occurred: " + ex.Message);
+                    return new User("ERROR", "ERROR", "ERROR", "ERROR");
+                }
+            }
+
+        }
+
 
         private bool checkUserPassword(string email, string password)
         {
