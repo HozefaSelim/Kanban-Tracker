@@ -229,7 +229,7 @@
             kapsamBtn.Location = new Point(3, 616);
             kapsamBtn.Name = "kapsamBtn";
             kapsamBtn.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            kapsamBtn.Size = new Size(165, 129);
+            kapsamBtn.Size = new Size(141, 129);
             kapsamBtn.TabIndex = 4;
             kapsamBtn.Text = "Kapsam";
             kapsamBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -256,7 +256,7 @@
             takimBtn.Location = new Point(3, 471);
             takimBtn.Name = "takimBtn";
             takimBtn.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            takimBtn.Size = new Size(165, 129);
+            takimBtn.Size = new Size(141, 129);
             takimBtn.TabIndex = 3;
             takimBtn.Text = "TAKIM";
             takimBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -283,7 +283,7 @@
             listBtn.Location = new Point(0, 327);
             listBtn.Name = "listBtn";
             listBtn.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            listBtn.Size = new Size(165, 129);
+            listBtn.Size = new Size(144, 129);
             listBtn.TabIndex = 2;
             listBtn.Text = "LISTE";
             listBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -310,7 +310,7 @@
             boardBtn.Location = new Point(0, 183);
             boardBtn.Name = "boardBtn";
             boardBtn.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            boardBtn.Size = new Size(165, 129);
+            boardBtn.Size = new Size(144, 129);
             boardBtn.TabIndex = 1;
             boardBtn.Text = "Board";
             boardBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -336,7 +336,7 @@
             timeBtn.Location = new Point(0, 39);
             timeBtn.Name = "timeBtn";
             timeBtn.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            timeBtn.Size = new Size(165, 129);
+            timeBtn.Size = new Size(144, 129);
             timeBtn.TabIndex = 0;
             timeBtn.Text = "Zaman Çizelgesi";
             timeBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
