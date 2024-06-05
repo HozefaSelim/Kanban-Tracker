@@ -81,7 +81,7 @@
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             projelerDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -166,13 +166,13 @@
             yeniProjeBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             yeniProjeBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             yeniProjeBtn.FillColor = SystemColors.GradientActiveCaption;
-            yeniProjeBtn.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            yeniProjeBtn.ForeColor = Color.White;
-            yeniProjeBtn.Location = new Point(1423, 32);
+            yeniProjeBtn.Font = new Font("Arial Rounded MT Bold", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            yeniProjeBtn.ForeColor = Color.Black;
+            yeniProjeBtn.Location = new Point(1423, 26);
             yeniProjeBtn.Name = "yeniProjeBtn";
-            yeniProjeBtn.PressedColor = SystemColors.GradientInactiveCaption;
+            yeniProjeBtn.PressedColor = SystemColors.GradientActiveCaption;
             yeniProjeBtn.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            yeniProjeBtn.Size = new Size(184, 39);
+            yeniProjeBtn.Size = new Size(184, 45);
             yeniProjeBtn.TabIndex = 4;
             yeniProjeBtn.Text = "Yeni Proje";
             yeniProjeBtn.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -181,10 +181,10 @@
             // yeniProjePnl
             // 
             yeniProjePnl.Anchor = AnchorStyles.Top;
-            yeniProjePnl.BackColor = Color.GhostWhite;
+            yeniProjePnl.BackColor = Color.White;
             yeniProjePnl.BorderColor = Color.Black;
-            yeniProjePnl.BorderRadius = 5;
-            yeniProjePnl.BorderThickness = 1;
+            yeniProjePnl.BorderRadius = 10;
+            yeniProjePnl.BorderThickness = 2;
             yeniProjePnl.Controls.Add(closeBtn);
             yeniProjePnl.Controls.Add(projeEkleBtni);
             yeniProjePnl.Controls.Add(label6);
@@ -212,7 +212,7 @@
             closeBtn.DisabledState.CustomBorderColor = Color.DarkGray;
             closeBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             closeBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            closeBtn.FillColor = Color.GhostWhite;
+            closeBtn.FillColor = Color.White;
             closeBtn.Font = new Font("Segoe UI", 9F);
             closeBtn.ForeColor = Color.GhostWhite;
             closeBtn.HoverState.FillColor = Color.GhostWhite;
@@ -220,7 +220,7 @@
             closeBtn.ImageSize = new Size(50, 50);
             closeBtn.Location = new Point(516, 13);
             closeBtn.Name = "closeBtn";
-            closeBtn.PressedColor = Color.GhostWhite;
+            closeBtn.PressedColor = Color.White;
             closeBtn.ShadowDecoration.CustomizableEdges = customizableEdges4;
             closeBtn.Size = new Size(50, 50);
             closeBtn.TabIndex = 22;
