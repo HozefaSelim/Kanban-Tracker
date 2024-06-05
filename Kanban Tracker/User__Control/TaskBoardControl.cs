@@ -70,7 +70,6 @@ namespace Kanban_Tracker
                 e.Effect = DragDropEffects.None;
             }
         }
-
         private void mainPanel_DragDrop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(typeof(Guna.UI2.WinForms.Guna2Panel)))
@@ -78,11 +77,11 @@ namespace Kanban_Tracker
                 Guna.UI2.WinForms.Guna2Panel draggedPanel = (Guna.UI2.WinForms.Guna2Panel)e.Data.GetData(typeof(Guna.UI2.WinForms.Guna2Panel));
                 Panel targetPanel = (Panel)sender;
 
+                // Store the original parent panel
+                Panel originalPanel = (Panel)draggedPanel.Parent;
+
                 // Remove the panel from its current parent
                 draggedPanel.Parent.Controls.Remove(draggedPanel);
-
-                // Reposition the dragged panel within the new main panel
-                draggedPanel.Parent = targetPanel;
 
                 // Calculate the new position considering all controls (labels and panels)
                 int y = GetNextPanelYPosition(targetPanel);
@@ -90,10 +89,15 @@ namespace Kanban_Tracker
                 // Calculate the centered X position
                 int x = (targetPanel.Width - draggedPanel.Width) / 2;
 
+                // Reposition the dragged panel within the new main panel
+                draggedPanel.Parent = targetPanel;
                 draggedPanel.Location = new Point(x, y);
 
-                // Add the panel to the target panel's controls and sort them
+                // Add the panel to the target panel's controls
                 targetPanel.Controls.Add(draggedPanel);
+
+                // Sort the panels in both the original and target panels
+                SortPanels(originalPanel);
                 SortPanels(targetPanel);
             }
         }
