@@ -18,28 +18,26 @@ namespace Kanban_Tracker.User__Control
     public partial class projects_ : UserControl
     {
         private string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
-        public User user { get; set; }
+        MainBoard parentForm;
+
         public projects_()
         {
             InitializeComponent();
-            projelerDataGrid.Rows.Add("Proje 1", "aciklama", "10.05.2024", "10.05.2025");
-            projelerDataGrid.Rows.Add("Proje 1", "aciklama", "10.05.2024", "10.05.2025");
             this.Load += UserControlLoad;
         }
         private void UserControlLoad(object sender, EventArgs e)
         {
-            MainBoard parentForm = (MainBoard) this.FindForm();
-            this.user = parentForm.user;
-            getUserProjects(user, projelerDataGrid);
+            try
+            {
+                parentForm = (MainBoard)this.FindForm();
+                getUserProjects(parentForm.user, projelerDataGrid);
+            }catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+            }
+            
         }
 
-        //This method used to add data to DataGridView and send them to database
-        public void addData(string ad, string aciklama, string baslangicTarihi, string bitisTarihi)
-        {
-            projelerDataGrid.Rows.Add(ad, aciklama, baslangicTarihi, bitisTarihi);
-
-            //send to database
-        }
         private void yeniProjeBtn_Click(object sender, EventArgs e)
         {
             yeniProjePnl.Visible = true;
@@ -67,8 +65,8 @@ namespace Kanban_Tracker.User__Control
                 DateTime bitis = endDate.Value;
                 string bitisTarihi = bitis.ToString("dd.MM.yyyy");
 
-                createProjectByUser(user, new Project(projeismi, projeAciklamasi, bitis));
-                getUserProjects(user, projelerDataGrid);
+                createProjectByUser(parentForm.user, new Project(projeismi, projeAciklamasi, bitis));
+                getUserProjects(parentForm.user, projelerDataGrid);
                 yeniProjePnl.Visible = false;
                 projeName.Text = "";
                 aciklama.Text = "";
@@ -77,15 +75,19 @@ namespace Kanban_Tracker.User__Control
 
         private void projelerDataGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if(e.RowIndex != -1) { 
             this.Visible = false;
-            TaskBoardControl t = new TaskBoardControl();
-            t.BringToFront();
-            t.Visible = true;
+            this.parentForm.selectedProjectIndex = e.RowIndex;
+            this.parentForm.boardUserControl = new TaskBoardControl();
+            this.parentForm.boardUserControl.BringToFront();
+            this.parentForm.boardUserControl.Visible = true;
+            }
         }
 
         private void getUserProjects(User user, Guna2DataGridView gridView)
         {
             gridView.Rows.Clear();
+            parentForm.userProjects = new List<Project>();
             using (SqlConnection connection = new SqlConnection(connectionStr))
             {
                 try
@@ -104,10 +106,12 @@ namespace Kanban_Tracker.User__Control
                         {
                             while (reader.Read())
                             {
-                                string projeAd = reader.GetValue(0).ToString();
-                                string projeAciklama = reader.GetValue(1).ToString();
-                                DateTime baslangicTarih = (DateTime) reader.GetValue(2);
-                                DateTime bitisTarih = (DateTime) reader.GetValue(3);
+                                string projeID = reader.GetString(0).ToString();
+                                string projeAd = reader.GetValue(1).ToString();
+                                string projeAciklama = reader.GetValue(2).ToString();
+                                DateTime baslangicTarih = (DateTime) reader.GetValue(3);
+                                DateTime bitisTarih = (DateTime) reader.GetValue(4);
+                                parentForm.userProjects.Add(new Project(projeID , projeAd, projeAciklama, baslangicTarih, bitisTarih));
                                 gridView.Rows.Add(projeAd, projeAciklama, baslangicTarih.ToString("dd.MM.yyyy"), bitisTarih.ToString("dd.MM.yyyy"));
                             }
                         }

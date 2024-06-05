@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using Kanban_Tracker.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +15,8 @@ namespace Kanban_Tracker.User_Control
 {
     public partial class Liste : UserControl
     {
+        private string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        MainBoard parentForm;
         public Liste()
         {
             InitializeComponent();
