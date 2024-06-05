@@ -68,10 +68,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             container = new Panel();
-            ListeUserControl = new User_Control.Liste();
-            TakimListesiUserControl = new User__Control.takimListesi();
-            KapsamListeuserControl = new User__Control.KapsamListe();
             boardUserControl = new TaskBoardControl();
+            KapsamListeuserControl = new User__Control.KapsamListe();
+            TakimListesiUserControl = new User__Control.takimListesi();
+            ListeUserControl = new User_Control.Liste();
             sidebarPnl = new Guna.UI2.WinForms.Guna2Panel();
             backBtn = new Guna.UI2.WinForms.Guna2Button();
             kapsamBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -111,10 +111,10 @@
             // 
             container.BackColor = SystemColors.Control;
             container.BorderStyle = BorderStyle.FixedSingle;
-            container.Controls.Add(ListeUserControl);
-            container.Controls.Add(TakimListesiUserControl);
-            container.Controls.Add(KapsamListeuserControl);
             container.Controls.Add(boardUserControl);
+            container.Controls.Add(KapsamListeuserControl);
+            container.Controls.Add(TakimListesiUserControl);
+            container.Controls.Add(ListeUserControl);
             container.Controls.Add(sidebarPnl);
             container.Controls.Add(headerPnl);
             container.Controls.Add(issueOlusturPnl);
@@ -126,36 +126,6 @@
             container.Size = new Size(1654, 1055);
             container.TabIndex = 2;
             // 
-            // ListeUserControl
-            // 
-            ListeUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            ListeUserControl.BackColor = Color.White;
-            ListeUserControl.Location = new Point(146, 116);
-            ListeUserControl.Name = "ListeUserControl";
-            ListeUserControl.Size = new Size(1479, 1060);
-            ListeUserControl.TabIndex = 5;
-            ListeUserControl.Visible = false;
-            // 
-            // TakimListesiUserControl
-            // 
-            TakimListesiUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            TakimListesiUserControl.BackColor = Color.White;
-            TakimListesiUserControl.Location = new Point(146, 116);
-            TakimListesiUserControl.Name = "TakimListesiUserControl";
-            TakimListesiUserControl.Size = new Size(1479, 934);
-            TakimListesiUserControl.TabIndex = 9;
-            TakimListesiUserControl.Visible = false;
-            // 
-            // KapsamListeuserControl
-            // 
-            KapsamListeuserControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            KapsamListeuserControl.BackColor = Color.White;
-            KapsamListeuserControl.Location = new Point(147, 116);
-            KapsamListeuserControl.Name = "KapsamListeuserControl";
-            KapsamListeuserControl.Size = new Size(1478, 934);
-            KapsamListeuserControl.TabIndex = 6;
-            KapsamListeuserControl.Visible = false;
-            // 
             // boardUserControl
             // 
             boardUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -164,13 +134,43 @@
             boardUserControl.Location = new Point(150, 116);
             boardUserControl.Margin = new Padding(3, 4, 3, 4);
             boardUserControl.Name = "boardUserControl";
-            boardUserControl.Size = new Size(1475, 937);
+            boardUserControl.Size = new Size(1499, 937);
             boardUserControl.TabIndex = 8;
+            // 
+            // KapsamListeuserControl
+            // 
+            KapsamListeuserControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            KapsamListeuserControl.BackColor = Color.White;
+            KapsamListeuserControl.Location = new Point(147, 116);
+            KapsamListeuserControl.Name = "KapsamListeuserControl";
+            KapsamListeuserControl.Size = new Size(1502, 934);
+            KapsamListeuserControl.TabIndex = 6;
+            KapsamListeuserControl.Visible = false;
+            // 
+            // TakimListesiUserControl
+            // 
+            TakimListesiUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            TakimListesiUserControl.BackColor = Color.White;
+            TakimListesiUserControl.Location = new Point(146, 116);
+            TakimListesiUserControl.Name = "TakimListesiUserControl";
+            TakimListesiUserControl.Size = new Size(1503, 934);
+            TakimListesiUserControl.TabIndex = 9;
+            TakimListesiUserControl.Visible = false;
+            // 
+            // ListeUserControl
+            // 
+            ListeUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            ListeUserControl.BackColor = Color.White;
+            ListeUserControl.Location = new Point(146, 116);
+            ListeUserControl.Name = "ListeUserControl";
+            ListeUserControl.Size = new Size(1503, 1060);
+            ListeUserControl.TabIndex = 5;
+            ListeUserControl.Visible = false;
             // 
             // sidebarPnl
             // 
             sidebarPnl.BackColor = SystemColors.Window;
-            sidebarPnl.BorderThickness = 2;
+            sidebarPnl.BorderColor = Color.Black;
             sidebarPnl.Controls.Add(backBtn);
             sidebarPnl.Controls.Add(kapsamBtn);
             sidebarPnl.Controls.Add(takimBtn);
@@ -229,7 +229,7 @@
             kapsamBtn.Location = new Point(3, 616);
             kapsamBtn.Name = "kapsamBtn";
             kapsamBtn.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            kapsamBtn.Size = new Size(165, 129);
+            kapsamBtn.Size = new Size(141, 129);
             kapsamBtn.TabIndex = 4;
             kapsamBtn.Text = "Kapsam";
             kapsamBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -256,7 +256,7 @@
             takimBtn.Location = new Point(3, 471);
             takimBtn.Name = "takimBtn";
             takimBtn.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            takimBtn.Size = new Size(165, 129);
+            takimBtn.Size = new Size(141, 129);
             takimBtn.TabIndex = 3;
             takimBtn.Text = "TAKIM";
             takimBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -283,7 +283,7 @@
             listBtn.Location = new Point(0, 327);
             listBtn.Name = "listBtn";
             listBtn.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            listBtn.Size = new Size(165, 129);
+            listBtn.Size = new Size(144, 129);
             listBtn.TabIndex = 2;
             listBtn.Text = "LISTE";
             listBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -310,7 +310,7 @@
             boardBtn.Location = new Point(0, 183);
             boardBtn.Name = "boardBtn";
             boardBtn.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            boardBtn.Size = new Size(165, 129);
+            boardBtn.Size = new Size(144, 129);
             boardBtn.TabIndex = 1;
             boardBtn.Text = "Board";
             boardBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -336,7 +336,7 @@
             timeBtn.Location = new Point(0, 39);
             timeBtn.Name = "timeBtn";
             timeBtn.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            timeBtn.Size = new Size(165, 129);
+            timeBtn.Size = new Size(144, 129);
             timeBtn.TabIndex = 0;
             timeBtn.Text = "Zaman Çizelgesi";
             timeBtn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
