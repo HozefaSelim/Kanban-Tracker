@@ -1,7 +1,11 @@
+<<<<<<< HEAD
+﻿using System;
+=======
 ﻿using Guna.UI2.WinForms;
 using Kanban_Tracker.Classes;
 using Kanban_Tracker.Resources;
 using System;
+>>>>>>> main
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

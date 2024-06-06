@@ -22,9 +22,6 @@
     <Compile Update="User__Control\TaskBoardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User__Control\yeniProje.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>

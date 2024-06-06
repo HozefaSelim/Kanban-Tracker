@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(projects_));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             projelerDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             projeAdi = new DataGridViewTextBoxColumn();
             projeAciklama = new DataGridViewTextBoxColumn();
@@ -74,28 +74,28 @@
             // 
             projelerDataGrid.AllowUserToAddRows = false;
             projelerDataGrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = Color.White;
-            projelerDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = Color.White;
+            projelerDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             projelerDataGrid.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            projelerDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle5.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.ForeColor = Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            projelerDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             projelerDataGrid.ColumnHeadersHeight = 40;
             projelerDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             projelerDataGrid.Columns.AddRange(new DataGridViewColumn[] { projeAdi, projeAciklama, baslangicTarih, bitistarih });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            projelerDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = Color.White;
+            dataGridViewCellStyle6.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle6.ForeColor = Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle6.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            projelerDataGrid.DefaultCellStyle = dataGridViewCellStyle6;
             projelerDataGrid.GridColor = Color.FromArgb(231, 229, 255);
             projelerDataGrid.Location = new Point(38, 91);
             projelerDataGrid.Name = "projelerDataGrid";
@@ -160,7 +160,7 @@
             yeniProjeBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             yeniProjeBtn.BorderRadius = 10;
             yeniProjeBtn.BorderThickness = 1;
-            yeniProjeBtn.CustomizableEdges = customizableEdges1;
+            yeniProjeBtn.CustomizableEdges = customizableEdges17;
             yeniProjeBtn.DisabledState.BorderColor = Color.DarkGray;
             yeniProjeBtn.DisabledState.CustomBorderColor = Color.DarkGray;
             yeniProjeBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -171,7 +171,7 @@
             yeniProjeBtn.Location = new Point(1423, 26);
             yeniProjeBtn.Name = "yeniProjeBtn";
             yeniProjeBtn.PressedColor = SystemColors.GradientActiveCaption;
-            yeniProjeBtn.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            yeniProjeBtn.ShadowDecoration.CustomizableEdges = customizableEdges18;
             yeniProjeBtn.Size = new Size(184, 45);
             yeniProjeBtn.TabIndex = 4;
             yeniProjeBtn.Text = "Yeni Proje";
@@ -196,10 +196,10 @@
             yeniProjePnl.Controls.Add(aciklama);
             yeniProjePnl.Controls.Add(projeName);
             yeniProjePnl.Controls.Add(label2);
-            yeniProjePnl.CustomizableEdges = customizableEdges15;
+            yeniProjePnl.CustomizableEdges = customizableEdges31;
             yeniProjePnl.Location = new Point(541, 0);
             yeniProjePnl.Name = "yeniProjePnl";
-            yeniProjePnl.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            yeniProjePnl.ShadowDecoration.CustomizableEdges = customizableEdges32;
             yeniProjePnl.Size = new Size(579, 850);
             yeniProjePnl.TabIndex = 8;
             yeniProjePnl.Visible = false;
@@ -207,7 +207,7 @@
             // closeBtn
             // 
             closeBtn.Cursor = Cursors.Hand;
-            closeBtn.CustomizableEdges = customizableEdges3;
+            closeBtn.CustomizableEdges = customizableEdges19;
             closeBtn.DisabledState.BorderColor = Color.DarkGray;
             closeBtn.DisabledState.CustomBorderColor = Color.DarkGray;
             closeBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -221,14 +221,14 @@
             closeBtn.Location = new Point(516, 13);
             closeBtn.Name = "closeBtn";
             closeBtn.PressedColor = Color.White;
-            closeBtn.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            closeBtn.ShadowDecoration.CustomizableEdges = customizableEdges20;
             closeBtn.Size = new Size(50, 50);
             closeBtn.TabIndex = 22;
             closeBtn.Click += closeBtn_Click;
             // 
             // projeEkleBtni
             // 
-            projeEkleBtni.CustomizableEdges = customizableEdges5;
+            projeEkleBtni.CustomizableEdges = customizableEdges21;
             projeEkleBtni.DisabledState.BorderColor = Color.DarkGray;
             projeEkleBtni.DisabledState.CustomBorderColor = Color.DarkGray;
             projeEkleBtni.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -238,7 +238,7 @@
             projeEkleBtni.ForeColor = Color.Black;
             projeEkleBtni.Location = new Point(188, 730);
             projeEkleBtni.Name = "projeEkleBtni";
-            projeEkleBtni.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            projeEkleBtni.ShadowDecoration.CustomizableEdges = customizableEdges22;
             projeEkleBtni.Size = new Size(225, 56);
             projeEkleBtni.TabIndex = 21;
             projeEkleBtni.Text = "Ekle";
@@ -267,7 +267,7 @@
             // endDate
             // 
             endDate.Checked = true;
-            endDate.CustomizableEdges = customizableEdges7;
+            endDate.CustomizableEdges = customizableEdges23;
             endDate.FillColor = SystemColors.GradientActiveCaption;
             endDate.Font = new Font("Segoe UI", 9F);
             endDate.Format = DateTimePickerFormat.Long;
@@ -275,7 +275,7 @@
             endDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             endDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             endDate.Name = "endDate";
-            endDate.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            endDate.ShadowDecoration.CustomizableEdges = customizableEdges24;
             endDate.Size = new Size(250, 45);
             endDate.TabIndex = 18;
             endDate.Value = new DateTime(2024, 5, 23, 19, 52, 5, 568);
@@ -283,7 +283,7 @@
             // startDate
             // 
             startDate.Checked = true;
-            startDate.CustomizableEdges = customizableEdges9;
+            startDate.CustomizableEdges = customizableEdges25;
             startDate.FillColor = SystemColors.GradientActiveCaption;
             startDate.Font = new Font("Segoe UI", 9F);
             startDate.Format = DateTimePickerFormat.Long;
@@ -291,7 +291,7 @@
             startDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             startDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             startDate.Name = "startDate";
-            startDate.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            startDate.ShadowDecoration.CustomizableEdges = customizableEdges26;
             startDate.Size = new Size(250, 45);
             startDate.TabIndex = 17;
             startDate.Value = new DateTime(2024, 5, 23, 19, 52, 5, 568);
@@ -321,7 +321,7 @@
             aciklama.Anchor = AnchorStyles.Left;
             aciklama.BorderColor = Color.Black;
             aciklama.BorderRadius = 9;
-            aciklama.CustomizableEdges = customizableEdges11;
+            aciklama.CustomizableEdges = customizableEdges27;
             aciklama.DefaultText = "";
             aciklama.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             aciklama.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -340,7 +340,7 @@
             aciklama.PlaceholderText = "";
             aciklama.RightToLeft = RightToLeft.No;
             aciklama.SelectedText = "";
-            aciklama.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            aciklama.ShadowDecoration.CustomizableEdges = customizableEdges28;
             aciklama.Size = new Size(406, 132);
             aciklama.TabIndex = 14;
             // 
@@ -349,7 +349,7 @@
             projeName.Anchor = AnchorStyles.Left;
             projeName.BorderColor = Color.Black;
             projeName.BorderRadius = 9;
-            projeName.CustomizableEdges = customizableEdges13;
+            projeName.CustomizableEdges = customizableEdges29;
             projeName.DefaultText = "";
             projeName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             projeName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -368,7 +368,7 @@
             projeName.PlaceholderText = "";
             projeName.RightToLeft = RightToLeft.No;
             projeName.SelectedText = "";
-            projeName.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            projeName.ShadowDecoration.CustomizableEdges = customizableEdges30;
             projeName.Size = new Size(406, 41);
             projeName.TabIndex = 13;
             // 
@@ -389,8 +389,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(projelerDataGrid);
-            Controls.Add(yeniProjePnl);
             Controls.Add(yeniProjeBtn);
+            Controls.Add(yeniProjePnl);
             Name = "projects_";
             Size = new Size(1652, 937);
             ((System.ComponentModel.ISupportInitialize)projelerDataGrid).EndInit();
