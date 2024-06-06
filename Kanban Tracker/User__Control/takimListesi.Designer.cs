@@ -33,10 +33,10 @@
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             takimDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
+            label1 = new Label();
             kullaniciAdi = new DataGridViewTextBoxColumn();
             eposta = new DataGridViewTextBoxColumn();
             kullaniciRolu = new DataGridViewTextBoxColumn();
-            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)takimDataGrid).BeginInit();
             SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.Font = new Font("Microsoft Sans Serif", 11F);
             dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             takimDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -71,7 +71,7 @@
             takimDataGrid.Name = "takimDataGrid";
             takimDataGrid.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.BackColor = SystemColors.Highlight;
             dataGridViewCellStyle4.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
@@ -104,6 +104,17 @@
             takimDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             takimDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.GradientActiveCaption;
+            label1.Location = new Point(58, 41);
+            label1.Name = "label1";
+            label1.Size = new Size(110, 39);
+            label1.TabIndex = 3;
+            label1.Text = "Takım";
+            // 
             // kullaniciAdi
             // 
             kullaniciAdi.HeaderText = "Ad";
@@ -125,17 +136,6 @@
             kullaniciRolu.Name = "kullaniciRolu";
             kullaniciRolu.ReadOnly = true;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.GradientActiveCaption;
-            label1.Location = new Point(58, 41);
-            label1.Name = "label1";
-            label1.Size = new Size(110, 39);
-            label1.TabIndex = 3;
-            label1.Text = "Takım";
-            // 
             // takimListesi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -151,10 +151,10 @@
         }
 
         #endregion
+        private Label label1;
+        public Guna.UI2.WinForms.Guna2DataGridView takimDataGrid;
         private DataGridViewTextBoxColumn kullaniciAdi;
         private DataGridViewTextBoxColumn eposta;
         private DataGridViewTextBoxColumn kullaniciRolu;
-        private Label label1;
-        public Guna.UI2.WinForms.Guna2DataGridView takimDataGrid;
     }
 }

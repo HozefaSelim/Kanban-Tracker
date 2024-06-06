@@ -17,7 +17,7 @@ namespace Kanban_Tracker
 {
     public partial class MainBoard : Form
     {
-        private string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        private string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
 
         public User user { get; set; }
         public IList<Project> userProjects { get; set; }
@@ -35,6 +35,12 @@ namespace Kanban_Tracker
             userName.Text = user.Username;
             selectedProjectIndex = -1;
         }
+
+        public void showButtons()
+        {
+            olusturBtn.Visible = true;
+            kisiEkleBtn.Visible = true;
+        }
         private void AbrirFormEnPanel(object Formhijo)
         {
             if (this.container.Controls.Count > 0)
@@ -47,20 +53,10 @@ namespace Kanban_Tracker
             fh.Show();
         }
         //This method used to show yeniProje UserControl
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
         private void MainBoard_Load(object sender, EventArgs e)
         {
-            olusturBtn.Visible = true;
             ProjectsUserControl.BringToFront();
             ProjectsUserControl.Visible = true;
-        }
-
-        private void projeOlusturBtn_Click(object sender, EventArgs e)
-        {
         }
 
         private void olusturBtn_Click(object sender, EventArgs e)
@@ -68,21 +64,15 @@ namespace Kanban_Tracker
             issueOlusturPnl.Visible = true;
             issueOlusturPnl.BringToFront();
         }
-        private void sidebarPnl_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void boardBtn_Click(object sender, EventArgs e)
         {
-            boardUserControl.Visible = true;
+            MessageBox.Show("borad görüntülendi");
             boardUserControl.BringToFront();
-            //boardBtn.Checked = true;
+            boardUserControl.Visible = true;
         }
 
         private void listBtn_Click(object sender, EventArgs e)
         {
-            // listBtn.Checked = true;
             getProjectEpics(userProjects[selectedProjectIndex], ListeUserControl.ListeDataGrid);
             ListeUserControl.Visible = true;
             ListeUserControl.BringToFront();
@@ -90,7 +80,6 @@ namespace Kanban_Tracker
 
         private void takimBtn_Click(object sender, EventArgs e)
         {
-            //takimBtn.Checked = true;
             getProjectUsers(userProjects[selectedProjectIndex], TakimListesiUserControl.takimDataGrid);
             TakimListesiUserControl.Visible = true;
             TakimListesiUserControl.BringToFront();
@@ -117,6 +106,8 @@ namespace Kanban_Tracker
 
         private void backBtn_Click(object sender, EventArgs e)
         {
+            olusturBtn.Visible = false;
+            kisiEkleBtn.Visible = true;
             sidebarPnl.BringToFront();
             selectedProjectIndex = -1;
             ProjectsUserControl.BringToFront();
@@ -227,7 +218,7 @@ namespace Kanban_Tracker
                                 string issueAd = reader.GetValue(1).ToString();
                                 string epicAd = reader.GetValue(2).ToString();
                                 string issueDurum = reader.GetValue(3).ToString();
-                                DateTime issueTarih = (DateTime) reader.GetValue(4);
+                                DateTime issueTarih = (DateTime)reader.GetValue(4);
                                 gridView.Rows.Add(issueID, issueAd, epicAd, issueDurum, issueTarih.ToString("dd.MM.yyyy"));
                             }
                         }
@@ -238,6 +229,37 @@ namespace Kanban_Tracker
                     MessageBox.Show("An error occurred: " + ex.Message);
                 }
             }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            kisiEklePnl.Visible = false;
+        }
+
+        private void kisiEkleBtn_Click(object sender, EventArgs e)
+        {
+            kisiEklePnl.BringToFront();
+            kisiEklePnl.Visible = true;
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            string ad = kullaniciAdi.Text;
+            string rol = rolComboBox.SelectedText;
+
+            kullaniciAdi.Text = "";
+            rolComboBox.SelectedIndex = -1;
+
+        }
+
+        private void MainBoard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
