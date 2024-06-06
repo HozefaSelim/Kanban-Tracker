@@ -1,5 +1,4 @@
-﻿using Kanban_Tracker.Resources;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,13 +29,7 @@ namespace Kanban_Tracker
             fh.Show();
         }
         //This method used to show yeniProje UserControl
-        public void LoadYeniProje()
-        {
-            yeniProje yp = new yeniProje();
-            yp.BringToFront();
-            yp.Visible = true;
-            Debug.WriteLine("hhhsd");
-        }
+
         private void button1_Click(object sender, EventArgs e)
         {
 

@@ -112,13 +112,13 @@
             container.BackColor = SystemColors.Control;
             container.BorderStyle = BorderStyle.FixedSingle;
             container.Controls.Add(boardUserControl);
+            container.Controls.Add(ProjectsUserControl);
             container.Controls.Add(KapsamListeuserControl);
             container.Controls.Add(TakimListesiUserControl);
             container.Controls.Add(ListeUserControl);
             container.Controls.Add(sidebarPnl);
             container.Controls.Add(headerPnl);
             container.Controls.Add(issueOlusturPnl);
-            container.Controls.Add(ProjectsUserControl);
             container.Dock = DockStyle.Fill;
             container.Location = new Point(0, 0);
             container.Margin = new Padding(3, 4, 3, 4);
