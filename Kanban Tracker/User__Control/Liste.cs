@@ -15,7 +15,7 @@ namespace Kanban_Tracker.User_Control
 {
     public partial class Liste : UserControl
     {
-        private string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        private string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
         MainBoard parentForm;
         public Liste()
         {

@@ -17,7 +17,7 @@ namespace Kanban_Tracker.User__Control
 {
     public partial class projects_ : UserControl
     {
-        private string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        private string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
         MainBoard parentForm;
 
         public projects_()
@@ -59,7 +59,7 @@ namespace Kanban_Tracker.User__Control
             else
             {
                 string projeismi = projeName.Text;
-                string projeAciklamasi = aciklama.Text;
+                string projeAciklamasi = aciklamaTxtBox.Text;
                 DateTime baslangic = startDate.Value;
                 string baslangicTarihi = baslangic.ToString("dd.MM.yyyy");
                 DateTime bitis = endDate.Value;
@@ -69,18 +69,19 @@ namespace Kanban_Tracker.User__Control
                 getUserProjects(parentForm.user, projelerDataGrid);
                 yeniProjePnl.Visible = false;
                 projeName.Text = "";
-                aciklama.Text = "";
+                aciklamaTxtBox.Text = "";
             }
         }
 
         private void projelerDataGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if(e.RowIndex != -1) { 
-            this.Visible = false;
-            this.parentForm.selectedProjectIndex = e.RowIndex;
-            this.parentForm.boardUserControl = new TaskBoardControl();
-            this.parentForm.boardUserControl.BringToFront();
-            this.parentForm.boardUserControl.Visible = true;
+                this.Visible = false;
+                this.parentForm.selectedProjectIndex = e.RowIndex;
+                this.parentForm.boardUserControl = new TaskBoardControl();
+                this.parentForm.boardUserControl.BringToFront();
+                this.parentForm.boardUserControl.Visible = true;
+                this.parentForm.showButtons();
             }
         }
 

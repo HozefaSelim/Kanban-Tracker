@@ -8,7 +8,7 @@ namespace Kanban_Tracker
 {
     public partial class SignIn : Form
     {
-        private string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        private string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
         public SignIn()
         {
             InitializeComponent();
@@ -91,6 +91,8 @@ namespace Kanban_Tracker
                     MainBoard m = new MainBoard(getUserByEmail(mailTxtBox.Text.Trim()));
                     m.Show();
                     this.Hide();
+
+
                 }
                 else
                 {
@@ -269,6 +271,11 @@ namespace Kanban_Tracker
                     return false;
                 }
             }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            sifreTxtBox.UseSystemPasswordChar = !sifreTxtBox.UseSystemPasswordChar;
         }
     }
 }
