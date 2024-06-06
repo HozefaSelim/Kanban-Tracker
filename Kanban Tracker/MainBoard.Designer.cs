@@ -69,6 +69,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             container = new Panel();
             boardUserControl = new TaskBoardControl();
+            ProjectsUserControl = new User__Control.projects_();
             KapsamListeuserControl = new User__Control.KapsamListe();
             TakimListesiUserControl = new User__Control.takimListesi();
             ListeUserControl = new User_Control.Liste();
@@ -99,7 +100,6 @@
             label3 = new Label();
             aciklamaTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
             label2 = new Label();
-            ProjectsUserControl = new User__Control.projects_();
             container.SuspendLayout();
             sidebarPnl.SuspendLayout();
             headerPnl.SuspendLayout();
@@ -111,12 +111,12 @@
             // 
             container.BackColor = SystemColors.Control;
             container.BorderStyle = BorderStyle.FixedSingle;
+            container.Controls.Add(sidebarPnl);
             container.Controls.Add(boardUserControl);
             container.Controls.Add(ProjectsUserControl);
             container.Controls.Add(KapsamListeuserControl);
             container.Controls.Add(TakimListesiUserControl);
             container.Controls.Add(ListeUserControl);
-            container.Controls.Add(sidebarPnl);
             container.Controls.Add(headerPnl);
             container.Controls.Add(issueOlusturPnl);
             container.Dock = DockStyle.Fill;
@@ -136,6 +136,15 @@
             boardUserControl.Name = "boardUserControl";
             boardUserControl.Size = new Size(1499, 937);
             boardUserControl.TabIndex = 8;
+            // 
+            // ProjectsUserControl
+            // 
+            ProjectsUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            ProjectsUserControl.BackColor = Color.White;
+            ProjectsUserControl.Location = new Point(0, 116);
+            ProjectsUserControl.Name = "ProjectsUserControl";
+            ProjectsUserControl.Size = new Size(1649, 1055);
+            ProjectsUserControl.TabIndex = 7;
             // 
             // KapsamListeuserControl
             // 
@@ -196,7 +205,7 @@
             backBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             backBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             backBtn.FillColor = Color.White;
-            backBtn.Font = new Font("Arial Rounded MT Bold", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            backBtn.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             backBtn.ForeColor = SystemColors.GradientActiveCaption;
             backBtn.Image = Properties.Resources.icons8_arrow_50__1_;
             backBtn.ImageSize = new Size(40, 40);
@@ -220,7 +229,7 @@
             kapsamBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             kapsamBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             kapsamBtn.FillColor = Color.White;
-            kapsamBtn.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            kapsamBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kapsamBtn.ForeColor = SystemColors.GradientActiveCaption;
             kapsamBtn.HoverState.CustomBorderColor = Color.White;
             kapsamBtn.Image = (Image)resources.GetObject("kapsamBtn.Image");
@@ -247,7 +256,7 @@
             takimBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             takimBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             takimBtn.FillColor = Color.White;
-            takimBtn.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            takimBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             takimBtn.ForeColor = SystemColors.GradientActiveCaption;
             takimBtn.HoverState.CustomBorderColor = Color.White;
             takimBtn.Image = (Image)resources.GetObject("takimBtn.Image");
@@ -274,7 +283,7 @@
             listBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             listBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             listBtn.FillColor = Color.White;
-            listBtn.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listBtn.ForeColor = SystemColors.GradientActiveCaption;
             listBtn.HoverState.CustomBorderColor = Color.White;
             listBtn.Image = (Image)resources.GetObject("listBtn.Image");
@@ -301,7 +310,7 @@
             boardBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             boardBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             boardBtn.FillColor = Color.White;
-            boardBtn.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            boardBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             boardBtn.ForeColor = SystemColors.GradientActiveCaption;
             boardBtn.HoverState.CustomBorderColor = Color.White;
             boardBtn.Image = (Image)resources.GetObject("boardBtn.Image");
@@ -327,7 +336,7 @@
             timeBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             timeBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             timeBtn.FillColor = Color.White;
-            timeBtn.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            timeBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             timeBtn.ForeColor = SystemColors.GradientActiveCaption;
             timeBtn.HoverState.CustomBorderColor = Color.White;
             timeBtn.Image = (Image)resources.GetObject("timeBtn.Image");
@@ -384,10 +393,10 @@
             // 
             userName.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             userName.AutoSize = true;
-            userName.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            userName.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             userName.Location = new Point(1425, 51);
             userName.Name = "userName";
-            userName.Size = new Size(130, 23);
+            userName.Size = new Size(119, 25);
             userName.TabIndex = 5;
             userName.Text = "Kullanıcı Adı";
             // 
@@ -492,7 +501,7 @@
             issueAdi.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             issueAdi.FillColor = SystemColors.GradientActiveCaption;
             issueAdi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            issueAdi.Font = new Font("Arial Rounded MT Bold", 9F);
+            issueAdi.Font = new Font("Microsoft Sans Serif", 9F);
             issueAdi.ForeColor = Color.Black;
             issueAdi.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             issueAdi.Location = new Point(89, 484);
@@ -517,7 +526,7 @@
             durum.FillColor = SystemColors.GradientActiveCaption;
             durum.FocusedColor = Color.FromArgb(94, 148, 255);
             durum.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            durum.Font = new Font("Arial Rounded MT Bold", 9F);
+            durum.Font = new Font("Microsoft Sans Serif", 9F);
             durum.ForeColor = Color.Black;
             durum.ItemHeight = 30;
             durum.Items.AddRange(new object[] { "Done", "in progress" });
@@ -532,7 +541,7 @@
             // projeAdiLbl
             // 
             projeAdiLbl.BackColor = SystemColors.GradientActiveCaption;
-            projeAdiLbl.Font = new Font("Arial Rounded MT Bold", 9F);
+            projeAdiLbl.Font = new Font("Microsoft Sans Serif", 9F);
             projeAdiLbl.Location = new Point(87, 177);
             projeAdiLbl.Name = "projeAdiLbl";
             projeAdiLbl.Size = new Size(361, 48);
@@ -570,7 +579,7 @@
             issueType.FillColor = SystemColors.GradientActiveCaption;
             issueType.FocusedColor = Color.FromArgb(94, 148, 255);
             issueType.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            issueType.Font = new Font("Arial Rounded MT Bold", 9F);
+            issueType.Font = new Font("Microsoft Sans Serif", 9F);
             issueType.ForeColor = Color.Black;
             issueType.ItemHeight = 30;
             issueType.Items.AddRange(new object[] { "task", "epik", "story" });
@@ -591,7 +600,7 @@
             projeEkleBtni.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             projeEkleBtni.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             projeEkleBtni.FillColor = SystemColors.GradientActiveCaption;
-            projeEkleBtni.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            projeEkleBtni.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             projeEkleBtni.ForeColor = Color.Black;
             projeEkleBtni.Location = new Point(197, 729);
             projeEkleBtni.Name = "projeEkleBtni";
@@ -655,7 +664,7 @@
             aciklamaTxtBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             aciklamaTxtBox.FillColor = SystemColors.GradientActiveCaption;
             aciklamaTxtBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            aciklamaTxtBox.Font = new Font("Arial Rounded MT Bold", 9F);
+            aciklamaTxtBox.Font = new Font("Microsoft Sans Serif", 9F);
             aciklamaTxtBox.ForeColor = Color.Black;
             aciklamaTxtBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             aciklamaTxtBox.Location = new Point(87, 600);
@@ -673,22 +682,13 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.GradientActiveCaption;
             label2.Location = new Point(87, 60);
             label2.Name = "label2";
-            label2.Size = new Size(236, 39);
+            label2.Size = new Size(217, 39);
             label2.TabIndex = 43;
             label2.Text = "Issue Oluştur";
-            // 
-            // ProjectsUserControl
-            // 
-            ProjectsUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            ProjectsUserControl.BackColor = Color.White;
-            ProjectsUserControl.Location = new Point(-1, 116);
-            ProjectsUserControl.Name = "ProjectsUserControl";
-            ProjectsUserControl.Size = new Size(1654, 1171);
-            ProjectsUserControl.TabIndex = 7;
             // 
             // MainBoard
             // 
@@ -728,7 +728,6 @@
         private Guna.UI2.WinForms.Guna2Button olusturBtn;
         private User_Control.Liste liste1;
         private User__Control.projects_ ProjectsUserControl;
-        private TaskBoardControl boardUserControl;
         private User_Control.Liste ListeUserControl;
         private User__Control.takimListesi TakimListesiUserControl;
         private Label userName;
@@ -748,5 +747,6 @@
         private Guna.UI2.WinForms.Guna2TextBox issueAdi;
         private Guna.UI2.WinForms.Guna2Button backBtn;
         private User__Control.KapsamListe KapsamListeuserControl;
+        public TaskBoardControl boardUserControl;
     }
 }

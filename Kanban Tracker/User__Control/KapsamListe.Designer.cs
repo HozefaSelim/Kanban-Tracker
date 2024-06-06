@@ -33,12 +33,12 @@
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             ListeDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
-            label1 = new Label();
             epicID = new DataGridViewTextBoxColumn();
             issueAdi = new DataGridViewTextBoxColumn();
             epicAdi = new DataGridViewTextBoxColumn();
             epicDurumu = new DataGridViewTextBoxColumn();
             tarih = new DataGridViewTextBoxColumn();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)ListeDataGrid).BeginInit();
             SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             ListeDataGrid.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Arial Rounded MT Bold", 11F);
+            dataGridViewCellStyle2.Font = new Font("Microsoft Sans Serif", 11F);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
@@ -62,7 +62,7 @@
             ListeDataGrid.Columns.AddRange(new DataGridViewColumn[] { epicID, issueAdi, epicAdi, epicDurumu, tarih });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
@@ -74,7 +74,7 @@
             ListeDataGrid.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = SystemColors.Control;
-            dataGridViewCellStyle4.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
@@ -93,29 +93,18 @@
             ListeDataGrid.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
             ListeDataGrid.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
             ListeDataGrid.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            ListeDataGrid.ThemeStyle.HeaderStyle.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ListeDataGrid.ThemeStyle.HeaderStyle.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ListeDataGrid.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             ListeDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             ListeDataGrid.ThemeStyle.HeaderStyle.Height = 40;
             ListeDataGrid.ThemeStyle.ReadOnly = true;
             ListeDataGrid.ThemeStyle.RowsStyle.BackColor = Color.White;
             ListeDataGrid.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            ListeDataGrid.ThemeStyle.RowsStyle.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ListeDataGrid.ThemeStyle.RowsStyle.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ListeDataGrid.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
             ListeDataGrid.ThemeStyle.RowsStyle.Height = 29;
             ListeDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             ListeDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.GradientActiveCaption;
-            label1.Location = new Point(58, 41);
-            label1.Name = "label1";
-            label1.Size = new Size(102, 39);
-            label1.TabIndex = 3;
-            label1.Text = "Pano";
             // 
             // epicID
             // 
@@ -152,6 +141,17 @@
             tarih.Name = "tarih";
             tarih.ReadOnly = true;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.GradientActiveCaption;
+            label1.Location = new Point(58, 41);
+            label1.Name = "label1";
+            label1.Size = new Size(97, 39);
+            label1.TabIndex = 3;
+            label1.Text = "Pano";
+            // 
             // KapsamListe
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -167,13 +167,12 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2DataGridView ListeDataGrid;
         private Label label1;
         private DataGridViewTextBoxColumn epicID;
         private DataGridViewTextBoxColumn issueAdi;
         private DataGridViewTextBoxColumn epicAdi;
         private DataGridViewTextBoxColumn epicDurumu;
         private DataGridViewTextBoxColumn tarih;
+        public Guna.UI2.WinForms.Guna2DataGridView ListeDataGrid;
     }
 }

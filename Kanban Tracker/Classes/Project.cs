@@ -8,20 +8,24 @@ namespace Kanban_Tracker.Classes
 {
     public class Project
     {   
-        public int ProjectID { get; set; }
+        public string ProjectID { get; set; }
         public string ProjectName { get; set; }
         public string ProjectDescription { get; set; }
-        public string Status { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
 
-        public Project(int projectID, string projectName, string projectDescription, string status, DateTime? startDate, DateTime? endDate)
+        public Project(string projectID, string projectName, string projectDescription, DateTime? startDate, DateTime? endDate)
         {
             ProjectID = projectID;
             ProjectName = projectName;
             ProjectDescription = projectDescription;
-            Status = status;
             StartDate = startDate;
+            EndDate = endDate;
+        }
+        public Project(string projectName, string projectDescription, DateTime? endDate)
+        {
+            ProjectName = projectName;
+            ProjectDescription = projectDescription;
             EndDate = endDate;
         }
     }
