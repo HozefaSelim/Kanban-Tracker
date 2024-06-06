@@ -17,7 +17,7 @@ namespace Kanban_Tracker
 {
     public partial class MainBoard : Form
     {
-        private string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        public string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
 
         public User user { get; set; }
         public IList<Project> userProjects { get; set; }
@@ -231,6 +231,78 @@ namespace Kanban_Tracker
             }
         }
 
+        private void AddUserToProject(Project project, string userEmail, string userRole)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand("AddUserToProject", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.Add(new SqlParameter("@userEmail", userEmail));
+                        command.Parameters.Add(new SqlParameter("@projectID", project.ProjectID));
+                        command.Parameters.Add(new SqlParameter("@userRole", userRole));
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+        }
+
+        private bool checkUserEmail(string email)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand("getUserByEmail", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.Add(new SqlParameter("@userEmail", email));
+
+                        command.ExecuteNonQuery();
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            int hesapSayisi = 0;
+                            while (reader.Read())
+                            {
+                                hesapSayisi++;
+                            }
+                            if (hesapSayisi == 1) return true;
+                            else if (hesapSayisi == 0)
+                            {
+                                MessageBox.Show("Öyle bir hesap yok");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Ayni mail'e sahip birden fazla hesap var - " + hesapSayisi);
+                            }
+                            return false;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("An error occurred: " + ex.Message);
+                    return false;
+                }
+            }
+
+        }
+
+
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             kisiEklePnl.Visible = false;
@@ -244,11 +316,24 @@ namespace Kanban_Tracker
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string ad = kullaniciAdi.Text;
-            string rol = rolComboBox.SelectedText;
+            string email = kullaniciAdi.Text;
+            string rol = rolComboBox.SelectedItem.ToString();
+            MessageBox.Show("."+rol +".");
+            if (checkUserEmail(email) & rolComboBox.SelectedIndex != -1)
+            {
+                AddUserToProject(userProjects[selectedProjectIndex], email, rol);
+                kullaniciAdi.Text = "";
+                rolComboBox.SelectedIndex = -1; 
+                kisiEklePnl.Visible = false;
+                kisiEklePnl.SendToBack();
+            }
+            else
+            {
+                MessageBox.Show("email not found error ( no such user )");
+                //email not found error ( no such user )
+            }
 
-            kullaniciAdi.Text = "";
-            rolComboBox.SelectedIndex = -1;
+            
 
         }
 

@@ -208,7 +208,7 @@
             addUserBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             addUserBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             addUserBtn.FillColor = SystemColors.GradientActiveCaption;
-            addUserBtn.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            addUserBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             addUserBtn.ForeColor = Color.White;
             addUserBtn.Location = new Point(182, 325);
             addUserBtn.Name = "addUserBtn";
@@ -221,33 +221,33 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label11.ForeColor = SystemColors.GradientActiveCaption;
             label11.Location = new Point(155, 35);
             label11.Name = "label11";
-            label11.Size = new Size(138, 34);
+            label11.Size = new Size(130, 36);
             label11.TabIndex = 8;
             label11.Text = "Kişi Ekle";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.ForeColor = SystemColors.GradientActiveCaption;
             label9.Location = new Point(93, 218);
             label9.Name = "label9";
-            label9.Size = new Size(41, 23);
+            label9.Size = new Size(40, 25);
             label9.TabIndex = 7;
             label9.Text = "Rol";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label10.ForeColor = SystemColors.GradientActiveCaption;
             label10.Location = new Point(95, 117);
             label10.Name = "label10";
-            label10.Size = new Size(130, 23);
+            label10.Size = new Size(119, 25);
             label10.TabIndex = 6;
             label10.Text = "Kullanıcı Adı\r\n";
             // 
@@ -280,7 +280,7 @@
             kullaniciAdi.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             kullaniciAdi.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             kullaniciAdi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            kullaniciAdi.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            kullaniciAdi.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kullaniciAdi.ForeColor = Color.Black;
             kullaniciAdi.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             kullaniciAdi.Location = new Point(95, 144);
@@ -908,7 +908,6 @@
         private User__Control.KapsamListe KapsamListeuserControl;
         public TaskBoardControl boardUserControl;
         private Guna.UI2.WinForms.Guna2Button kisiEkleBtn;
-        private Guna.UI2.WinForms.Guna2Panel kisiEklePnl;
         private Label label6;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Label label8;
@@ -921,5 +920,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button timeBtn;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        public Guna.UI2.WinForms.Guna2Panel kisiEklePnl;
     }
 }

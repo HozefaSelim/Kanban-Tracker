@@ -17,7 +17,7 @@ namespace Kanban_Tracker.User__Control
 {
     public partial class projects_ : UserControl
     {
-        private string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        protected string connectionStr;
         MainBoard parentForm;
 
         public projects_()
@@ -30,6 +30,7 @@ namespace Kanban_Tracker.User__Control
             try
             {
                 parentForm = (MainBoard)this.FindForm();
+                this.connectionStr = parentForm.connectionStr;
                 getUserProjects(parentForm.user, projelerDataGrid);
             }catch (Exception ex)
             {
