@@ -90,6 +90,10 @@ namespace Kanban_Tracker
             string issueTipi = issueType.SelectedText;
             string issueDurum = durum.SelectedText;
             string issueAciklama = aciklamaTxtBox.Text;
+            if (issueType.SelectedItem.ToString() == "Task" || issueType.SelectedItem.ToString() == "Story")
+            {
+                // add new opanel on board
+            }
 
             issueAdi.Text = "";
             aciklamaTxtBox.Text = "";

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace Kanban_Tracker
 {
@@ -171,5 +172,36 @@ namespace Kanban_Tracker
                 y = panel.Bottom + 10;
             }
         }
+        private void CreateAndAddPanelToBacklog(string panelText)
+        {
+            // Küçük panel oluştur
+            Guna.UI2.WinForms.Guna2Panel newPanel = new Guna.UI2.WinForms.Guna2Panel();
+            newPanel.Size = new Size(200, 100); // Panelin boyutları, ihtiyacınıza göre ayarlayın
+            newPanel.BorderThickness = 1; // Kenarlık kalınlığı
+            newPanel.BorderColor = Color.Black; // Kenarlık rengi
+
+            // Panelin içine yazı ekle
+            Label label = new Label();
+            label.Text = panelText;
+            label.AutoSize = true;
+            label.Location = new Point(10, 10); // Panel içindeki yazının konumu
+            newPanel.Controls.Add(label);
+
+            // Panelin MouseDown olayını ayarla
+            newPanel.MouseDown += new MouseEventHandler(panel_MouseDown);
+
+            // Paneli backlog içine ekle
+            backlog.Controls.Add(newPanel);
+
+            // Yeni panelin konumunu ayarla
+            int y = GetNextPanelYPosition(backlog);
+            int x = (backlog.Width - newPanel.Width) / 2;
+            newPanel.Location = new Point(x, y);
+
+            // Panelleri sırala
+            SortPanels(backlog);
+        }
+
+
     }
 }
