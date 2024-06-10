@@ -1,5 +1,6 @@
 ﻿using System;
-﻿using Guna.UI2.WinForms;
+using System.Drawing;
+using Guna.UI2.WinForms;
 using Kanban_Tracker.Classes;
 using System;
 using System.Collections.Generic;
@@ -12,12 +13,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Kanban_Tracker
 {
     public partial class MainBoard : Form
     {
-        public string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
+        private Guna2TextBox extraTextBox = null;
+        SignIn s = new SignIn();
+        public string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
 
         public User user { get; set; }
         public IList<Project> userProjects { get; set; }
@@ -26,6 +30,7 @@ namespace Kanban_Tracker
         public MainBoard()
         {
             InitializeComponent();
+            issueType.SelectedIndexChanged += new EventHandler(issueType_SelectedIndexChanged);
         }
 
         public MainBoard(User user)
@@ -40,6 +45,8 @@ namespace Kanban_Tracker
         {
             olusturBtn.Visible = true;
             kisiEkleBtn.Visible = true;
+            boardUserControl.Visible = true;
+            boardUserControl.BringToFront();
         }
         private void AbrirFormEnPanel(object Formhijo)
         {
@@ -64,13 +71,6 @@ namespace Kanban_Tracker
             issueOlusturPnl.Visible = true;
             issueOlusturPnl.BringToFront();
         }
-        private void boardBtn_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("borad görüntülendi");
-            boardUserControl.BringToFront();
-            boardUserControl.Visible = true;
-        }
-
         private void listBtn_Click(object sender, EventArgs e)
         {
             getProjectEpics(userProjects[selectedProjectIndex], ListeUserControl.ListeDataGrid);
@@ -86,7 +86,6 @@ namespace Kanban_Tracker
         }
         private void projeEkleBtni_Click(object sender, EventArgs e)
         {
-            string projeAdi = projeAdiLbl.Text;
             string ad = issueAdi.Text;
             string issueTipi = issueType.SelectedText;
             string issueDurum = durum.SelectedText;
@@ -96,7 +95,6 @@ namespace Kanban_Tracker
             aciklamaTxtBox.Text = "";
             issueType.SelectedIndex = -1;
             durum.SelectedIndex = -1;
-            projeAdiLbl.Text = "";
         }
 
         private void closeBtn_Click(object sender, EventArgs e)
@@ -318,12 +316,12 @@ namespace Kanban_Tracker
         {
             string email = kullaniciAdi.Text;
             string rol = rolComboBox.SelectedItem.ToString();
-            MessageBox.Show("."+rol +".");
+            MessageBox.Show("." + rol + ".");
             if (checkUserEmail(email) & rolComboBox.SelectedIndex != -1)
             {
                 AddUserToProject(userProjects[selectedProjectIndex], email, rol);
                 kullaniciAdi.Text = "";
-                rolComboBox.SelectedIndex = -1; 
+                rolComboBox.SelectedIndex = -1;
                 kisiEklePnl.Visible = false;
                 kisiEklePnl.SendToBack();
             }
@@ -333,7 +331,7 @@ namespace Kanban_Tracker
                 //email not found error ( no such user )
             }
 
-            
+
 
         }
 
@@ -344,7 +342,44 @@ namespace Kanban_Tracker
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            s.Visible = true;
+        }
+
+        private void boardBtn_Click(object sender, EventArgs e)
+        {
+            boardUserControl.BringToFront();
+            boardUserControl.Visible = true;
+        }
+
+        private void issueType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedItem = issueType.SelectedItem.ToString();
+            // Eğer "Story" veya "Task" seçildiyse ekstra TextBox ekle
+            if (selectedItem == "Story" || selectedItem == "Task")
+            {
+                label7.Visible = true;
+                projeEpicComboBox.Visible = true;
+                //Locations
+                label4.Location = new Point(label4.Location.X, 330);
+                durum.Location = new Point(durum.Location.X, 362);
+                label5.Location = new Point(label5.Location.X, 423);
+                issueAdi.Location = new Point(issueAdi.Location.X, 455);
+                label1.Location = new Point(label1.Location.X, 518);
+                aciklamaTxtBox.Location = new Point(aciklamaTxtBox.Location.X, 550);
+            }
+            else
+            {
+                label7.Visible = false;
+                projeEpicComboBox.Visible = false;
+                //location
+                label4.Location = new Point(label4.Location.X, 238);
+                durum.Location = new Point(durum.Location.X, 270);
+                label5.Location = new Point(label5.Location.X, 331);
+                issueAdi.Location = new Point(issueAdi.Location.X, 363);
+                label1.Location = new Point(label1.Location.X, 426);
+                aciklamaTxtBox.Location = new Point(aciklamaTxtBox.Location.X, 458);
+            }
         }
     }
 }

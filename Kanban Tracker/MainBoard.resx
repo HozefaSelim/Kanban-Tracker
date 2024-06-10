@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="guna2Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="closeBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAA0BJREFUaEPtWctu00AUjXgtWPJY8fgLEHwIagUfAmLDjrCHKiD+IBUgAQ1OgpQ1
@@ -138,7 +138,7 @@
         /nuUSn8Byt3f4PTkThwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="closeBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="guna2Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAA0BJREFUaEPtWctu00AUjXgtWPJY8fgLEHwIagUfAmLDjrCHKiD+IBUgAQ1OgpQ1
@@ -1354,7 +1354,7 @@
   <data name="guna2ImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAABNlJREFUaEPtWUmMFFUYHveoxH05CC6JBox6IvHi1SUejIknuBBNPBi4uBPQMIlK
+        DAAACwwBP0AiyAAABNlJREFUaEPtWUmMFFUYHveoxH05CC6JBox6IvHi1SUejIknuBBNPBi4uBPQMIlK
         CAeCQ1AzdFcNMJGEYul51Z0OmDit9LxXM9IsRhIFccEFSFATjMIBsf3+qr/Hnpq/uqt7qmomOl/yJTNV
         37/V+9+req97ZvF/gOMcudJWumop81uI+/r7a1ewbOZjoODdbbumLjFf0nexbOajVSF0j2UzH7OFTCdo
         8ubdkcf73dotfCl2IVt36dvson5iWhcAWpks17yE1elHP0lldvKt2IXAdjdds1z9A1a0F8kn38oGNAJI
