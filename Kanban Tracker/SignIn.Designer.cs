@@ -529,6 +529,7 @@
             RightToLeft = RightToLeft.Yes;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Kanban Tracker";
+            FormClosed += SignIn_FormClosed;
             Load += SignIn_Load;
             panel1.ResumeLayout(false);
             girisPnl.ResumeLayout(false);
