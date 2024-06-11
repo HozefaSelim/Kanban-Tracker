@@ -131,8 +131,8 @@
             // 
             container.BackColor = SystemColors.Control;
             container.BorderStyle = BorderStyle.FixedSingle;
-            container.Controls.Add(issueOlusturPnl);
             container.Controls.Add(boardUserControl);
+            container.Controls.Add(issueOlusturPnl);
             container.Controls.Add(TakimListesiUserControl);
             container.Controls.Add(kisiEklePnl);
             container.Controls.Add(sidebarPnl);

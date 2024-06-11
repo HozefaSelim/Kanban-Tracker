@@ -19,8 +19,8 @@ namespace Kanban_Tracker
 {
     public partial class MainBoard : Form
     {
-        private Guna2TextBox extraTextBox = null;
         SignIn s = new SignIn();
+        private TaskBoardControl board;
         public string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
 
         public User user { get; set; }
@@ -92,8 +92,11 @@ namespace Kanban_Tracker
             string issueAciklama = aciklamaTxtBox.Text;
             if (issueType.SelectedItem.ToString() == "Task" || issueType.SelectedItem.ToString() == "Story")
             {
-                // add new opanel on board
+                // add panel to the board
             }
+            
+            //database connection codes
+
 
             issueAdi.Text = "";
             aciklamaTxtBox.Text = "";
