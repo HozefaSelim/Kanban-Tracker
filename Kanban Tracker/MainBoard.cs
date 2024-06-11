@@ -21,7 +21,7 @@ namespace Kanban_Tracker
     {
         SignIn s = new SignIn();
         private TaskBoardControl board;
-        public string connectionStr = "Data Source = HOZEFA-PC\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
+        public string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
 
         public User user { get; set; }
         public IList<Project> userProjects { get; set; }
@@ -71,6 +71,7 @@ namespace Kanban_Tracker
             issueOlusturPnl.Visible = true;
             issueOlusturPnl.BringToFront();
         }
+
         private void listBtn_Click(object sender, EventArgs e)
         {
             getProjectEpics(userProjects[selectedProjectIndex], ListeUserControl.ListeDataGrid);
@@ -84,20 +85,26 @@ namespace Kanban_Tracker
             TakimListesiUserControl.Visible = true;
             TakimListesiUserControl.BringToFront();
         }
+
         private void projeEkleBtni_Click(object sender, EventArgs e)
         {
             string ad = issueAdi.Text;
-            string issueTipi = issueType.SelectedText;
-            string issueDurum = durum.SelectedText;
+            string issueTipi = issueType.SelectedItem.ToString();
+            string issueDurum = durum.SelectedItem.ToString();
             string issueAciklama = aciklamaTxtBox.Text;
             if (issueType.SelectedItem.ToString() == "Task" || issueType.SelectedItem.ToString() == "Story")
             {
-                // add panel to the board
+                AddIssueToProject(userProjects[selectedProjectIndex], userProjects[selectedProjectIndex].Epics[projeEpicComboBox.SelectedIndex], new Issue(ad, issueTipi, issueAciklama, issueDurum));
+            }
+            else if(issueType.SelectedItem.ToString() == "Epic")
+            {
+                AddEpicToProject(userProjects[selectedProjectIndex], new Epic(ad, issueAciklama, issueDurum));
             }
             
             //database connection codes
 
-
+            issueOlusturPnl.Visible = false;
+            issueOlusturPnl.SendToBack();
             issueAdi.Text = "";
             aciklamaTxtBox.Text = "";
             issueType.SelectedIndex = -1;
@@ -159,6 +166,46 @@ namespace Kanban_Tracker
                 {
                     MessageBox.Show("An error occurred: " + ex.Message);
                 }
+            }
+        }
+
+        private void loadProjectEpics(Project project, Guna2ComboBox comboBox)
+        {
+            comboBox.Items.Clear();
+            userProjects[selectedProjectIndex].Epics.Clear();
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand("ListProjectEpics", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.Add(new SqlParameter("@projectID", project.ProjectID));
+
+                        command.ExecuteNonQuery();
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string epicID = reader.GetString(0).ToString();
+                                string epicAd = reader.GetValue(1).ToString();
+                                userProjects[selectedProjectIndex].Epics.Add(new Epic(epicID, epicAd));
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+            foreach(Epic e in userProjects[selectedProjectIndex].Epics)
+            {
+                comboBox.Items.Add(e.EpicName);
             }
         }
 
@@ -262,6 +309,62 @@ namespace Kanban_Tracker
             }
         }
 
+        private void AddEpicToProject(Project project, Epic epic)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand("AddEpic", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.Add(new SqlParameter("@projectID ", project.ProjectID));
+                        command.Parameters.Add(new SqlParameter("@epicName ", epic.EpicName));
+                        command.Parameters.Add(new SqlParameter("@epicDescription ", epic.EpicDescription));
+                        command.Parameters.Add(new SqlParameter("@status_ ", epic.Status));
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+        }
+
+        private void AddIssueToProject(Project project, Epic epic, Issue issue)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand("AddIssue", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.Add(new SqlParameter("@epicID ", epic.EpicID));
+                        command.Parameters.Add(new SqlParameter("@issueName ", issue.IssueName));
+                        command.Parameters.Add(new SqlParameter("@issueType ", issue.IssueType));
+                        command.Parameters.Add(new SqlParameter("@issueDescription ", issue.IssueDescription));
+                        MessageBox.Show("-"+issue.Status+"-");
+                        command.Parameters.Add(new SqlParameter("@status_ ", issue.Status));
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+        }
+
         private bool checkUserEmail(string email)
         {
             using (SqlConnection connection = new SqlConnection(connectionStr))
@@ -304,9 +407,7 @@ namespace Kanban_Tracker
                     return false;
                 }
             }
-
         }
-
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
@@ -323,7 +424,6 @@ namespace Kanban_Tracker
         {
             string email = kullaniciAdi.Text;
             string rol = rolComboBox.SelectedItem.ToString();
-            MessageBox.Show("." + rol + ".");
             if (checkUserEmail(email) & rolComboBox.SelectedIndex != -1)
             {
                 AddUserToProject(userProjects[selectedProjectIndex], email, rol);
@@ -337,9 +437,6 @@ namespace Kanban_Tracker
                 MessageBox.Show("email not found error ( no such user )");
                 //email not found error ( no such user )
             }
-
-
-
         }
 
         private void MainBoard_FormClosed(object sender, FormClosedEventArgs e)
@@ -361,12 +458,19 @@ namespace Kanban_Tracker
 
         private void issueType_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (issueType.SelectedIndex != -1) { 
             string selectedItem = issueType.SelectedItem.ToString();
             // Eğer "Story" veya "Task" seçildiyse ekstra TextBox ekle
             if (selectedItem == "Story" || selectedItem == "Task")
             {
                 label7.Visible = true;
+                durum.Items.Clear();
+                durum.Items.Add("To Do");
+                durum.Items.Add("Backlog");
+                durum.Items.Add("Doing");
+                durum.Items.Add("Done");
                 projeEpicComboBox.Visible = true;
+                loadProjectEpics(userProjects[selectedProjectIndex], projeEpicComboBox);
                 //Locations
                 label4.Location = new Point(label4.Location.X, 330);
                 durum.Location = new Point(durum.Location.X, 362);
@@ -375,10 +479,13 @@ namespace Kanban_Tracker
                 label1.Location = new Point(label1.Location.X, 518);
                 aciklamaTxtBox.Location = new Point(aciklamaTxtBox.Location.X, 550);
             }
-            else
+            else if (selectedItem == "Epic")
             {
                 label7.Visible = false;
-                projeEpicComboBox.Visible = false;
+                durum.Items.Clear();
+                durum.Items.Add("In Progress");
+                durum.Items.Add("Done");
+                    projeEpicComboBox.Visible = false;
                 //location
                 label4.Location = new Point(label4.Location.X, 238);
                 durum.Location = new Point(durum.Location.X, 270);
@@ -387,6 +494,7 @@ namespace Kanban_Tracker
                 label1.Location = new Point(label1.Location.X, 426);
                 aciklamaTxtBox.Location = new Point(aciklamaTxtBox.Location.X, 458);
             }
+        }
         }
     }
 }

@@ -79,6 +79,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges47 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             container = new Panel();
+            boardUserControl = new TaskBoardControl();
             issueOlusturPnl = new Guna.UI2.WinForms.Guna2Panel();
             durum = new Guna.UI2.WinForms.Guna2ComboBox();
             projeEpicComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -93,7 +94,6 @@
             label3 = new Label();
             aciklamaTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
             label2 = new Label();
-            boardUserControl = new TaskBoardControl();
             TakimListesiUserControl = new User__Control.takimListesi();
             kisiEklePnl = new Guna.UI2.WinForms.Guna2Panel();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -147,6 +147,16 @@
             container.Size = new Size(1654, 1055);
             container.TabIndex = 2;
             // 
+            // boardUserControl
+            // 
+            boardUserControl.AutoScroll = true;
+            boardUserControl.BackColor = Color.White;
+            boardUserControl.Location = new Point(146, 116);
+            boardUserControl.Margin = new Padding(3, 4, 3, 4);
+            boardUserControl.Name = "boardUserControl";
+            boardUserControl.Size = new Size(1925, 1171);
+            boardUserControl.TabIndex = 11;
+            // 
             // issueOlusturPnl
             // 
             issueOlusturPnl.BackColor = Color.White;
@@ -188,9 +198,9 @@
             durum.Font = new Font("Microsoft Sans Serif", 9F);
             durum.ForeColor = Color.Black;
             durum.ItemHeight = 30;
-            durum.Items.AddRange(new object[] { "In progress", "Done" });
+            durum.Items.AddRange(new object[] { "In Progress", "Done" });
             durum.ItemsAppearance.BackColor = Color.White;
-            durum.ItemsAppearance.Font = new Font("Arial Rounded MT Bold", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            durum.ItemsAppearance.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             durum.Location = new Point(87, 270);
             durum.Margin = new Padding(3, 4, 3, 4);
             durum.Name = "durum";
@@ -213,7 +223,7 @@
             projeEpicComboBox.ForeColor = Color.Black;
             projeEpicComboBox.ItemHeight = 30;
             projeEpicComboBox.ItemsAppearance.BackColor = Color.White;
-            projeEpicComboBox.ItemsAppearance.Font = new Font("Arial Rounded MT Bold", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            projeEpicComboBox.ItemsAppearance.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             projeEpicComboBox.Location = new Point(87, 270);
             projeEpicComboBox.Margin = new Padding(3, 4, 3, 4);
             projeEpicComboBox.Name = "projeEpicComboBox";
@@ -306,7 +316,7 @@
             issueType.ItemHeight = 30;
             issueType.Items.AddRange(new object[] { "Epic", "Story", "Task" });
             issueType.ItemsAppearance.BackColor = Color.White;
-            issueType.ItemsAppearance.Font = new Font("Arial Rounded MT Bold", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            issueType.ItemsAppearance.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             issueType.Location = new Point(87, 177);
             issueType.Margin = new Padding(3, 4, 3, 4);
             issueType.Name = "issueType";
@@ -404,16 +414,6 @@
             label2.Size = new Size(217, 39);
             label2.TabIndex = 43;
             label2.Text = "Issue Oluştur";
-            // 
-            // boardUserControl
-            // 
-            boardUserControl.AutoScroll = true;
-            boardUserControl.BackColor = Color.White;
-            boardUserControl.Location = new Point(146, 116);
-            boardUserControl.Margin = new Padding(3, 4, 3, 4);
-            boardUserControl.Name = "boardUserControl";
-            boardUserControl.Size = new Size(1925, 1171);
-            boardUserControl.TabIndex = 11;
             // 
             // TakimListesiUserControl
             // 
