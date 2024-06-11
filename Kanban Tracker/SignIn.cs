@@ -8,18 +8,27 @@ namespace Kanban_Tracker
 {
     public partial class SignIn : Form
     {
-        protected string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        protected string connectionStr = "Data Source = HOZEFA-PC\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
         public SignIn()
         {
             InitializeComponent();
             olusturPnl.Visible = false;
             girisPnl.Visible = true;
-        }
+            timer1.Interval = 2000; // Set the interval to 2 seconds
+            timer1.Tick += new EventHandler(timer1_Tick);
 
-        private void checkBoxP_CheckedChanged(object sender, EventArgs e)
+
+
+        }
+        private void timer1_Tick(object sender, EventArgs e)
         {
-
+            // Clear the sifreError text
+            emailError.Text = "";
+            sifreError.Text = "";
+            // Stop the timer
+            timer1.Stop();
         }
+
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
@@ -35,32 +44,35 @@ namespace Kanban_Tracker
                             if (AddUser(newUser))
                             {
                                 olusturPnl.Visible = false;
-                                girisPnl.Visible = true;
-                                //User created sucessfuly
+                                girisPnl.Visible = false;
+                                MessageBox.Show("Kullancı Başarıyla Eklendi");
+                                MainBoard m = new MainBoard(getUserByEmail(mailTxtBox.Text.Trim()));
+                                m.Show();
+                                this.Hide();
                             }
                             else
                             {
-                                //User did not get created
+
                             }
                         }
                         else
                         {
-                            //Password does not match
+                            MessageBox.Show("Şifrler eşleşmiyor");
                         }
                     }
                     else
                     {
-                        //Email already exsists
+                        MessageBox.Show("Kullanılmış Email");
                     }
                 }
                 else
                 {
-                    //Email Typing Error
+                    MessageBox.Show("Yanlış Email");
                 }
             }
             else
             {
-                //Name Surname Typing Error
+                MessageBox.Show("Yanlış Isim");
             }
         }
 
@@ -96,12 +108,18 @@ namespace Kanban_Tracker
                 }
                 else
                 {
-                    //Password error
+                    sifreError.Text = "Yalnış Şifre girdiniz";
+                    mailTxtBox.Text = "";
+                    sifreTxtBox.Text = "";
+                    timer1.Start();
                 }
             }
             else
             {
-                // Email error
+                emailError.Text = "Yalnış Email girdiniz";
+                mailTxtBox.Text = "";
+                sifreTxtBox.Text = "";
+                timer1.Start();
             }
         }
 
@@ -136,7 +154,7 @@ namespace Kanban_Tracker
                             if (hesapSayisi == 1) return true;
                             else if (hesapSayisi == 0)
                             {
-                                MessageBox.Show("Öyle bir hesap yok");
+                                //
                             }
                             else
                             {
@@ -281,6 +299,11 @@ namespace Kanban_Tracker
         private void SignIn_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void girisPnl_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

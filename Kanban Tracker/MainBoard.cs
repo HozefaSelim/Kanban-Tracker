@@ -21,7 +21,7 @@ namespace Kanban_Tracker
     {
         SignIn s = new SignIn();
         private TaskBoardControl board;
-        public string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
+        public string connectionStr = "Data Source = HOZEFA-PC\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
 
         public User user { get; set; }
         public IList<Project> userProjects { get; set; }
