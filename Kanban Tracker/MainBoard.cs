@@ -20,11 +20,11 @@ namespace Kanban_Tracker
     public partial class MainBoard : Form
     {
         SignIn sign;
-        private TaskBoardControl board;
-        public string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
+        public string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
 
         public User user { get; set; }
         public IList<Project> userProjects { get; set; }
+        public IList<Issue> projectIssues { get; set; }
         public int selectedProjectIndex;
 
         public MainBoard()
@@ -38,7 +38,8 @@ namespace Kanban_Tracker
             InitializeComponent();
             this.user = user;
             userName.Text = user.Username;
-            selectedProjectIndex = -1;
+            selectedProjectIndex = -1; 
+            issueType.SelectedIndexChanged += new EventHandler(issueType_SelectedIndexChanged);
         }
 
         public void showButtons()
@@ -48,17 +49,7 @@ namespace Kanban_Tracker
             boardUserControl.Visible = true;
             boardUserControl.BringToFront();
         }
-        private void AbrirFormEnPanel(object Formhijo)
-        {
-            if (this.container.Controls.Count > 0)
-                this.container.Controls.RemoveAt(0);
-            Form fh = Formhijo as Form;
-            fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
-            this.container.Controls.Add(fh);
-            this.container.Tag = fh;
-            fh.Show();
-        }
+       
         //This method used to show yeniProje UserControl
         private void MainBoard_Load(object sender, EventArgs e)
         {
@@ -453,6 +444,7 @@ namespace Kanban_Tracker
 
         private void boardBtn_Click(object sender, EventArgs e)
         {
+            getIssues(userProjects[selectedProjectIndex]);
             boardUserControl.BringToFront();
             boardUserControl.Visible = true;
         }
@@ -501,7 +493,74 @@ namespace Kanban_Tracker
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            board.CreateAndAddPanelToBacklog("sddsdsfdsfds");
+            boardUserControl.CreateAndAddPanel(boardUserControl.todo ,"Malik");
+        }
+
+        private void getIssues(Project project)
+        {
+            projectIssues = new List<Issue>();
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand("GetIssuesByProjectID", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.Add(new SqlParameter("@projectID", project.ProjectID));
+
+                        command.ExecuteNonQuery();
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string issueID = reader.GetString(0).ToString();
+                                string issueName = reader.GetString(1).ToString();
+                                string epicID = reader.GetValue(2).ToString();
+                                string epicName = reader.GetValue(3).ToString();
+                                string issueType = reader.GetValue(4).ToString();
+                                string issueStatus = reader.GetValue(5).ToString();
+                                projectIssues.Add(new Issue(issueID, issueName, issueType, issueStatus, new Epic(epicID, epicName)));
+                            }
+                        }
+                    }
+                    loadIssuesToBoard();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("An error occurred: " + ex.Message);
+                }
+            }
+        }
+
+        private void loadIssuesToBoard()
+        {
+            boardUserControl.ClearPanels();
+            foreach (Issue issue in projectIssues)
+            {
+                if(issue.Status == "Backlog")
+                {
+                    boardUserControl.CreateAndAddPanel(boardUserControl.backlog, (issue.IssueID));
+                }
+                else if(issue.Status == "To Do")
+                {
+                    boardUserControl.CreateAndAddPanel(boardUserControl.todo, (issue.IssueID));
+                }
+                else if (issue.Status == "Doing")
+                {
+                    boardUserControl.CreateAndAddPanel(boardUserControl.doing, (issue.IssueID));
+                }
+                else if (issue.Status == "Done")
+                {
+                    boardUserControl.CreateAndAddPanel(boardUserControl.done, (issue.IssueID));
+                }
+                else
+                {
+                    MessageBox.Show("BIG FAIL " + issue.Status);
+                }
+            }
         }
     }
 }

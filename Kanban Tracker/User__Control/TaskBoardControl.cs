@@ -1,6 +1,10 @@
-﻿using Kanban_Tracker.Classes;
+﻿using Guna.UI2.WinForms;
+using Guna.UI2.WinForms.Suite;
+using Kanban_Tracker.Classes;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -9,6 +13,7 @@ namespace Kanban_Tracker
 {
     public partial class TaskBoardControl : UserControl
     {
+        string connectionStr;
         MainBoard parentForm;
 
         public TaskBoardControl()
@@ -23,6 +28,7 @@ namespace Kanban_Tracker
             try
             {
                 parentForm = (MainBoard)this.FindForm();
+                this.connectionStr = parentForm.connectionStr;
             }
             catch (Exception ex)
             {
@@ -119,6 +125,23 @@ namespace Kanban_Tracker
                 // Sort the panels in both the original and target panels
                 SortPanels(originalPanel);
                 SortPanels(targetPanel);
+
+                switch (targetPanel.Name)
+                {
+                    case "backlog":
+                        updateIssueStatus(draggedPanel.Name.Trim(), "Backlog");
+                        break;
+                    case "todo":
+                        updateIssueStatus(draggedPanel.Name.Trim(), "To Do");
+                        break;
+                    case "doing":
+                        updateIssueStatus(draggedPanel.Name.Trim(), "Doing");
+                        break;
+                    case "done":
+                        updateIssueStatus(draggedPanel.Name.Trim(), "Done");
+                        break;
+
+                }
             }
         }
 
@@ -191,18 +214,33 @@ namespace Kanban_Tracker
             }
         }
 
-        public void CreateAndAddPanelToBacklog(string panelText)
+        public void CreateAndAddPanel(Guna2Panel panel, string panelText)
         {
-            if (backlog == null)
+            if (panel == null)
             {
                 MessageBox.Show("Backlog paneli başlatılmadı.");
                 return;
             }
 
             Guna.UI2.WinForms.Guna2Panel newPanel = new Guna.UI2.WinForms.Guna2Panel();
-            newPanel.Size = new Size(31, 138);
-            newPanel.BorderThickness = 1;
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            newPanel.BackColor = Color.White;
             newPanel.BorderColor = Color.Black;
+            newPanel.BorderRadius = 8;
+            newPanel.BorderThickness = 2;
+            newPanel.CustomBorderColor = Color.White;
+            newPanel.CustomizableEdges = customizableEdges3;
+            newPanel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            customizableEdges4.BottomLeft = false;
+            customizableEdges4.BottomRight = false;
+            customizableEdges4.TopLeft = false;
+            customizableEdges4.TopRight = false;
+            newPanel.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            newPanel.Size = new Size(311, 138);
+            newPanel.BorderThickness = 2;
+            newPanel.BorderColor = Color.Black;
+            newPanel.Name = panelText;
 
             Label label = new Label();
             label.Text = panelText;
@@ -212,13 +250,89 @@ namespace Kanban_Tracker
 
             newPanel.MouseDown += new MouseEventHandler(panel_MouseDown);
 
-            backlog.Controls.Add(newPanel);
+            panel.Controls.Add(newPanel);
 
-            int y = GetNextPanelYPosition(backlog);
-            int x = (backlog.Width - newPanel.Width) / 2;
+            int y = GetNextPanelYPosition(panel);
+            int x = (panel.Width - newPanel.Width) / 2;
             newPanel.Location = new Point(x, y);
 
-            SortPanels(backlog);
+            SortPanels(panel);
+        }
+
+        public void ClearPanels()
+        {
+            //Backlog clear
+            backlog.Controls.Clear();
+            label7 = new Label();
+            label7.BackColor = Color.WhiteSmoke;
+            label7.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(101, 20);
+            label7.Name = "label7";
+            label7.Size = new Size(128, 50);
+            label7.TabIndex = 39;
+            label7.Text = "Backlog";
+            backlog.Controls.Add(label7);
+
+            //To Do clear
+            todo.Controls.Clear();
+            label4 = new Label();
+            label4.BackColor = Color.WhiteSmoke;
+            label4.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(124, 20);
+            label4.Name = "label4";
+            label4.Size = new Size(94, 50);
+            label4.TabIndex = 38;
+            label4.Text = "To Do";
+            todo.Controls.Add(label4);
+
+
+            //Doing clear
+            doing.Controls.Clear();
+            label5 = new Label();
+            label5.BackColor = Color.WhiteSmoke;
+            label5.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(121, 20);
+            label5.Name = "label5";
+            label5.Size = new Size(95, 50);
+            label5.TabIndex = 39;
+            label5.Text = "Doing";
+            doing.Controls.Add(label5);
+
+
+            done.Controls.Clear();
+            label6 = new Label();
+            label6.BackColor = Color.WhiteSmoke;
+            label6.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(137, 20);
+            label6.Name = "label6";
+            label6.Size = new Size(86, 50);
+            label6.TabIndex = 40;
+            label6.Text = "Done";
+            done.Controls.Add(label6);
+        }
+
+        private void updateIssueStatus(string issueID, string newStatus)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand("UpdateIssueStatus", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.Add(new SqlParameter("@issueID", issueID));
+                        command.Parameters.Add(new SqlParameter("@newStatus", newStatus));
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("An error occurred: " + ex.Message);
+                }
+            }
         }
     }
 }

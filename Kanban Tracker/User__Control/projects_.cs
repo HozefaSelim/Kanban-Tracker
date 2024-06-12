@@ -17,7 +17,7 @@ namespace Kanban_Tracker.User__Control
 {
     public partial class projects_ : UserControl
     {
-        protected string connectionStr;
+        string connectionStr;
         MainBoard parentForm;
 
         public projects_()

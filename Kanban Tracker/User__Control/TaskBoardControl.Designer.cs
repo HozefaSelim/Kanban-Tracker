@@ -86,7 +86,7 @@ namespace Kanban_Tracker
             guna2Panel1.Controls.Add(label2);
             guna2Panel1.CustomBorderColor = Color.White;
             guna2Panel1.CustomizableEdges = customizableEdges1;
-            guna2Panel1.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2Panel1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2Panel1.Location = new Point(18, 217);
             guna2Panel1.Name = "guna2Panel1";
             customizableEdges2.BottomLeft = false;
@@ -103,7 +103,7 @@ namespace Kanban_Tracker
             label1.BackColor = Color.FromArgb(128, 128, 255);
             label1.Location = new Point(18, 92);
             label1.Name = "label1";
-            label1.Size = new Size(65, 17);
+            label1.Size = new Size(58, 18);
             label1.TabIndex = 1;
             label1.Text = "Sidebar";
             label1.TextAlign = ContentAlignment.MiddleLeft;
@@ -127,7 +127,7 @@ namespace Kanban_Tracker
             guna2Panel6.Controls.Add(issueAdi);
             guna2Panel6.CustomBorderColor = Color.White;
             guna2Panel6.CustomizableEdges = customizableEdges3;
-            guna2Panel6.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2Panel6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2Panel6.Location = new Point(18, 73);
             guna2Panel6.Name = "guna2Panel6";
             customizableEdges4.BottomLeft = false;
@@ -144,7 +144,7 @@ namespace Kanban_Tracker
             EpicAdi.BackColor = Color.FromArgb(128, 255, 128);
             EpicAdi.Location = new Point(18, 92);
             EpicAdi.Name = "EpicAdi";
-            EpicAdi.Size = new Size(62, 17);
+            EpicAdi.Size = new Size(56, 18);
             EpicAdi.TabIndex = 1;
             EpicAdi.Text = "Header";
             EpicAdi.TextAlign = ContentAlignment.MiddleLeft;
@@ -161,7 +161,7 @@ namespace Kanban_Tracker
             // label7
             // 
             label7.BackColor = Color.WhiteSmoke;
-            label7.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.Location = new Point(101, 20);
             label7.Name = "label7";
             label7.Size = new Size(128, 50);
@@ -188,7 +188,7 @@ namespace Kanban_Tracker
             // label4
             // 
             label4.BackColor = Color.WhiteSmoke;
-            label4.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.Location = new Point(124, 20);
             label4.Name = "label4";
             label4.Size = new Size(94, 50);
@@ -215,7 +215,7 @@ namespace Kanban_Tracker
             // label5
             // 
             label5.BackColor = Color.WhiteSmoke;
-            label5.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.Location = new Point(121, 20);
             label5.Name = "label5";
             label5.Size = new Size(95, 50);
@@ -242,7 +242,7 @@ namespace Kanban_Tracker
             // label6
             // 
             label6.BackColor = Color.WhiteSmoke;
-            label6.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.Location = new Point(137, 20);
             label6.Name = "label6";
             label6.Size = new Size(86, 50);
@@ -273,10 +273,6 @@ namespace Kanban_Tracker
             ResumeLayout(false);
         }
 
-        private Guna.UI2.WinForms.Guna2Panel backlog;
-        private Guna.UI2.WinForms.Guna2Panel todo;
-        private Guna.UI2.WinForms.Guna2Panel doing;
-        private Guna.UI2.WinForms.Guna2Panel done;
         private Label label4;
         private Label label5;
         private Label label6;
@@ -287,5 +283,9 @@ namespace Kanban_Tracker
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Label label1;
         private Label label2;
+        public Guna2Panel backlog;
+        public Guna2Panel todo;
+        public Guna2Panel doing;
+        public Guna2Panel done;
     }
 }

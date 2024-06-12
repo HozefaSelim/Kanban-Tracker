@@ -8,12 +8,10 @@ namespace Kanban_Tracker.Classes
 {
     public class Issue
     {
-        public int IssueID { get; set; }
+        public string IssueID { get; set; }
         public string IssueName { get; set; }
         public string IssueDescription { get; set; }
-
         public string IssueType { get; set; }
-
         public string Status { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
@@ -26,6 +24,15 @@ namespace Kanban_Tracker.Classes
             IssueType = issueType;
             IssueDescription = issueDescription;
             Status = status;
+        }
+
+        public Issue(string issueID, string issueName, string issueType, string issueStatus, Epic epic)
+        {
+            IssueID = issueID;
+            IssueName = issueName;
+            IssueType = issueType;
+            Status = issueStatus;
+            this.Epic = epic;
         }
     }
 }

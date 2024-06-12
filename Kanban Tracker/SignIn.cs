@@ -8,7 +8,7 @@ namespace Kanban_Tracker
 {
     public partial class SignIn : Form
     {
-        protected string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
         public SignIn()
         {
             InitializeComponent();
