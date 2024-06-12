@@ -35,11 +35,14 @@
             label5 = new Label();
             done = new Guna.UI2.WinForms.Guna2Panel();
             label6 = new Label();
+            newChildPanel = new Guna.UI2.WinForms.Guna2Panel();
+            label11 = new Label();
             backlog.SuspendLayout();
             guna2Panel6.SuspendLayout();
             todo.SuspendLayout();
             doing.SuspendLayout();
             done.SuspendLayout();
+            newChildPanel.SuspendLayout();
             SuspendLayout();
             // 
             // backlog
@@ -50,6 +53,7 @@
             backlog.BorderRadius = 10;
             backlog.BorderThickness = 1;
             backlog.Controls.Add(guna2Panel6);
+            backlog.Controls.Add(newChildPanel);
             backlog.Controls.Add(label7);
             backlog.CustomizableEdges = customizableEdges3;
             backlog.FillColor = Color.FromArgb(237, 245, 252);
@@ -69,6 +73,7 @@
             guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Panel6.Size = new Size(250, 125);
             guna2Panel6.TabIndex = 43;
+            guna2Panel6.BackColor = Color.Black;  // Set background color to black
             // 
             // label10
             // 
@@ -78,6 +83,27 @@
             label10.TabIndex = 1;
             label10.Text = "label10";
             label10.TextAlign = ContentAlignment.MiddleCenter;
+            label10.ForeColor = Color.White;  // Set label text color to white for better contrast
+            // 
+            // newChildPanel
+            // 
+            newChildPanel.Controls.Add(label11);
+            newChildPanel.CustomizableEdges = customizableEdges1;
+            newChildPanel.Location = new Point(32, 220);
+            newChildPanel.Name = "newChildPanel";
+            newChildPanel.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            newChildPanel.Size = new Size(250, 125);
+            newChildPanel.TabIndex = 44;
+            newChildPanel.BackColor = Color.LightGray;  // Set background color of new panel
+            // 
+            // label11
+            // 
+            label11.Location = new Point(53, 33);
+            label11.Name = "label11";
+            label11.Size = new Size(128, 54);
+            label11.TabIndex = 1;
+            label11.Text = "newChildPanel";
+            label11.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -141,7 +167,7 @@
             label5.Name = "label5";
             label5.Size = new Size(95, 61);
             label5.TabIndex = 39;
-            label5.Text = "Donig";
+            label5.Text = "Doing";
             // 
             // done
             // 
@@ -188,6 +214,7 @@
             todo.ResumeLayout(false);
             doing.ResumeLayout(false);
             done.ResumeLayout(false);
+            newChildPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -201,5 +228,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private Label label10;
         private Label label7;
+        private Guna.UI2.WinForms.Guna2Panel newChildPanel;
+        private Label label11;
     }
 }

@@ -21,7 +21,7 @@ namespace Kanban_Tracker
     {
         SignIn s = new SignIn();
         private TaskBoardControl board;
-        public string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
+        public string connectionStr = "Data Source = HOZEFA-PC\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
 
         public User user { get; set; }
         public IList<Project> userProjects { get; set; }
@@ -96,11 +96,11 @@ namespace Kanban_Tracker
             {
                 AddIssueToProject(userProjects[selectedProjectIndex], userProjects[selectedProjectIndex].Epics[projeEpicComboBox.SelectedIndex], new Issue(ad, issueTipi, issueAciklama, issueDurum));
             }
-            else if(issueType.SelectedItem.ToString() == "Epic")
+            else if (issueType.SelectedItem.ToString() == "Epic")
             {
                 AddEpicToProject(userProjects[selectedProjectIndex], new Epic(ad, issueAciklama, issueDurum));
             }
-            
+
             //database connection codes
 
             issueOlusturPnl.Visible = false;
@@ -203,7 +203,7 @@ namespace Kanban_Tracker
                     MessageBox.Show("An error occurred: " + ex.Message);
                 }
             }
-            foreach(Epic e in userProjects[selectedProjectIndex].Epics)
+            foreach (Epic e in userProjects[selectedProjectIndex].Epics)
             {
                 comboBox.Items.Add(e.EpicName);
             }
@@ -352,7 +352,7 @@ namespace Kanban_Tracker
                         command.Parameters.Add(new SqlParameter("@issueName ", issue.IssueName));
                         command.Parameters.Add(new SqlParameter("@issueType ", issue.IssueType));
                         command.Parameters.Add(new SqlParameter("@issueDescription ", issue.IssueDescription));
-                        MessageBox.Show("-"+issue.Status+"-");
+                        MessageBox.Show("-" + issue.Status + "-");
                         command.Parameters.Add(new SqlParameter("@status_ ", issue.Status));
 
                         command.ExecuteNonQuery();
@@ -458,43 +458,44 @@ namespace Kanban_Tracker
 
         private void issueType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (issueType.SelectedIndex != -1) { 
-            string selectedItem = issueType.SelectedItem.ToString();
-            // Eğer "Story" veya "Task" seçildiyse ekstra TextBox ekle
-            if (selectedItem == "Story" || selectedItem == "Task")
+            if (issueType.SelectedIndex != -1)
             {
-                label7.Visible = true;
-                durum.Items.Clear();
-                durum.Items.Add("To Do");
-                durum.Items.Add("Backlog");
-                durum.Items.Add("Doing");
-                durum.Items.Add("Done");
-                projeEpicComboBox.Visible = true;
-                loadProjectEpics(userProjects[selectedProjectIndex], projeEpicComboBox);
-                //Locations
-                label4.Location = new Point(label4.Location.X, 330);
-                durum.Location = new Point(durum.Location.X, 362);
-                label5.Location = new Point(label5.Location.X, 423);
-                issueAdi.Location = new Point(issueAdi.Location.X, 455);
-                label1.Location = new Point(label1.Location.X, 518);
-                aciklamaTxtBox.Location = new Point(aciklamaTxtBox.Location.X, 550);
-            }
-            else if (selectedItem == "Epic")
-            {
-                label7.Visible = false;
-                durum.Items.Clear();
-                durum.Items.Add("In Progress");
-                durum.Items.Add("Done");
+                string selectedItem = issueType.SelectedItem.ToString();
+                // Eğer "Story" veya "Task" seçildiyse ekstra TextBox ekle
+                if (selectedItem == "Story" || selectedItem == "Task")
+                {
+                    label7.Visible = true;
+                    durum.Items.Clear();
+                    durum.Items.Add("To Do");
+                    durum.Items.Add("Backlog");
+                    durum.Items.Add("Doing");
+                    durum.Items.Add("Done");
+                    projeEpicComboBox.Visible = true;
+                    loadProjectEpics(userProjects[selectedProjectIndex], projeEpicComboBox);
+                    //Locations
+                    label4.Location = new Point(label4.Location.X, 330);
+                    durum.Location = new Point(durum.Location.X, 362);
+                    label5.Location = new Point(label5.Location.X, 423);
+                    issueAdi.Location = new Point(issueAdi.Location.X, 455);
+                    label1.Location = new Point(label1.Location.X, 518);
+                    aciklamaTxtBox.Location = new Point(aciklamaTxtBox.Location.X, 550);
+                }
+                else if (selectedItem == "Epic")
+                {
+                    label7.Visible = false;
+                    durum.Items.Clear();
+                    durum.Items.Add("In Progress");
+                    durum.Items.Add("Done");
                     projeEpicComboBox.Visible = false;
-                //location
-                label4.Location = new Point(label4.Location.X, 238);
-                durum.Location = new Point(durum.Location.X, 270);
-                label5.Location = new Point(label5.Location.X, 331);
-                issueAdi.Location = new Point(issueAdi.Location.X, 363);
-                label1.Location = new Point(label1.Location.X, 426);
-                aciklamaTxtBox.Location = new Point(aciklamaTxtBox.Location.X, 458);
+                    //location
+                    label4.Location = new Point(label4.Location.X, 238);
+                    durum.Location = new Point(durum.Location.X, 270);
+                    label5.Location = new Point(label5.Location.X, 331);
+                    issueAdi.Location = new Point(issueAdi.Location.X, 363);
+                    label1.Location = new Point(label1.Location.X, 426);
+                    aciklamaTxtBox.Location = new Point(aciklamaTxtBox.Location.X, 458);
+                }
             }
-        }
         }
     }
 }

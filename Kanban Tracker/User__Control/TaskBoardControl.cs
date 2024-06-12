@@ -1,17 +1,14 @@
 ﻿using Kanban_Tracker.Classes;
-using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
 
 namespace Kanban_Tracker
 {
     public partial class TaskBoardControl : UserControl
     {
-        //private string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
         MainBoard parentForm;
 
         public TaskBoardControl()
@@ -20,6 +17,7 @@ namespace Kanban_Tracker
             this.Load += UserControlLoad;
             InitializeDragDrop();
         }
+
         private void UserControlLoad(object sender, EventArgs e)
         {
             try
@@ -28,7 +26,7 @@ namespace Kanban_Tracker
             }
             catch (Exception ex)
             {
-                //MessageBox.Show(ex.Message);
+                // Handle exception if necessary
             }
         }
 
@@ -56,6 +54,7 @@ namespace Kanban_Tracker
             done.DragEnter += new DragEventHandler(mainPanel_DragEnter);
             done.DragDrop += new DragEventHandler(mainPanel_DragDrop);
         }
+
         private void panel_MouseDown(object sender, MouseEventArgs e)
         {
             Guna.UI2.WinForms.Guna2Panel pnl = sender as Guna.UI2.WinForms.Guna2Panel;
@@ -65,6 +64,7 @@ namespace Kanban_Tracker
                 DoDragDrop(pnl, DragDropEffects.Move);
             }
         }
+
         private void mainPanel_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(typeof(Guna.UI2.WinForms.Guna2Panel)))
@@ -86,6 +86,7 @@ namespace Kanban_Tracker
                 e.Effect = DragDropEffects.None;
             }
         }
+
         private void mainPanel_DragDrop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(typeof(Guna.UI2.WinForms.Guna2Panel)))
@@ -112,11 +113,28 @@ namespace Kanban_Tracker
                 // Add the panel to the target panel's controls
                 targetPanel.Controls.Add(draggedPanel);
 
+                // Update the second label with the parent panel's name
+                UpdateParentPanelNameLabel(draggedPanel, targetPanel.Name);
+
                 // Sort the panels in both the original and target panels
                 SortPanels(originalPanel);
                 SortPanels(targetPanel);
             }
         }
+
+        private void UpdateParentPanelNameLabel(Guna.UI2.WinForms.Guna2Panel panel, string parentPanelName)
+        {
+            foreach (Label label in panel.Controls.OfType<Label>())
+            {
+                // Update the label with the parent panel's name
+                if (label.Tag != null && label.Tag.ToString() == "ParentPanelName")
+                {
+                    label.Text = parentPanelName;
+                }
+            }
+        }
+
+
         private int GetNextPanelYPosition(Panel targetPanel)
         {
             // Calculate the starting y position considering any existing labels at the top
@@ -140,6 +158,7 @@ namespace Kanban_Tracker
 
             return y;
         }
+
         private void SortPanels(Panel targetPanel)
         {
             // Create a list of panels excluding labels
@@ -172,36 +191,30 @@ namespace Kanban_Tracker
                 y = panel.Bottom + 10;
             }
         }
+
         private void CreateAndAddPanelToBacklog(string panelText)
         {
-            // Küçük panel oluştur
+            // Create a new panel
             Guna.UI2.WinForms.Guna2Panel newPanel = new Guna.UI2.WinForms.Guna2Panel();
-            newPanel.Size = new Size(200, 100); // Panelin boyutları, ihtiyacınıza göre ayarlayın
-            newPanel.BorderThickness = 1; // Kenarlık kalınlığı
-            newPanel.BorderColor = Color.Black; // Kenarlık rengi
+            newPanel.Size = new Size(200, 100); // Set panel size as needed
+            newPanel.BorderThickness = 1; // Set border thickness
+            newPanel.BorderColor = Color.Black; // Set border color
 
-            // Panelin içine yazı ekle
-            Label label = new Label();
-            label.Text = panelText;
-            label.AutoSize = true;
-            label.Location = new Point(10, 10); // Panel içindeki yazının konumu
-            newPanel.Controls.Add(label);
+            // Add label for panel name
+            Label nameLabel = new Label();
+            nameLabel.Text = panelText;
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new Point(10, 10); // Set label position inside the panel
+            nameLabel.Tag = "PanelName"; // Tag to identify this label
+            newPanel.Controls.Add(nameLabel);
 
-            // Panelin MouseDown olayını ayarla
-            newPanel.MouseDown += new MouseEventHandler(panel_MouseDown);
-
-            // Paneli backlog içine ekle
-            backlog.Controls.Add(newPanel);
-
-            // Yeni panelin konumunu ayarla
-            int y = GetNextPanelYPosition(backlog);
-            int x = (backlog.Width - newPanel.Width) / 2;
-            newPanel.Location = new Point(x, y);
-
-            // Panelleri sırala
+            // Add label for parent panel name
+            Label parentLabel = new Label();
+            parentLabel.Text = backlog.Name; // Default to backlog
+            parentLabel.AutoSize = true;
+            parentLabel.Location = new Point(10, 30); // Set label position inside the panel
+            // Sort the panels
             SortPanels(backlog);
         }
-
-
     }
 }
