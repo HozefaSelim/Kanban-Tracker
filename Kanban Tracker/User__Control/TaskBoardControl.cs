@@ -134,7 +134,6 @@ namespace Kanban_Tracker
             }
         }
 
-
         private int GetNextPanelYPosition(Panel targetPanel)
         {
             // Calculate the starting y position considering any existing labels at the top
@@ -192,28 +191,33 @@ namespace Kanban_Tracker
             }
         }
 
-        private void CreateAndAddPanelToBacklog(string panelText)
+        public void CreateAndAddPanelToBacklog(string panelText)
         {
-            // Create a new panel
+            if (backlog == null)
+            {
+                MessageBox.Show("Backlog paneli başlatılmadı.");
+                return;
+            }
+
             Guna.UI2.WinForms.Guna2Panel newPanel = new Guna.UI2.WinForms.Guna2Panel();
-            newPanel.Size = new Size(200, 100); // Set panel size as needed
-            newPanel.BorderThickness = 1; // Set border thickness
-            newPanel.BorderColor = Color.Black; // Set border color
+            newPanel.Size = new Size(31, 138);
+            newPanel.BorderThickness = 1;
+            newPanel.BorderColor = Color.Black;
 
-            // Add label for panel name
-            Label nameLabel = new Label();
-            nameLabel.Text = panelText;
-            nameLabel.AutoSize = true;
-            nameLabel.Location = new Point(10, 10); // Set label position inside the panel
-            nameLabel.Tag = "PanelName"; // Tag to identify this label
-            newPanel.Controls.Add(nameLabel);
+            Label label = new Label();
+            label.Text = panelText;
+            label.AutoSize = true;
+            label.Location = new Point(18, 23);
+            newPanel.Controls.Add(label);
 
-            // Add label for parent panel name
-            Label parentLabel = new Label();
-            parentLabel.Text = backlog.Name; // Default to backlog
-            parentLabel.AutoSize = true;
-            parentLabel.Location = new Point(10, 30); // Set label position inside the panel
-            // Sort the panels
+            newPanel.MouseDown += new MouseEventHandler(panel_MouseDown);
+
+            backlog.Controls.Add(newPanel);
+
+            int y = GetNextPanelYPosition(backlog);
+            int x = (backlog.Width - newPanel.Width) / 2;
+            newPanel.Location = new Point(x, y);
+
             SortPanels(backlog);
         }
     }

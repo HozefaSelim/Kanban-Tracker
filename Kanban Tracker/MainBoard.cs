@@ -19,9 +19,9 @@ namespace Kanban_Tracker
 {
     public partial class MainBoard : Form
     {
-        SignIn s = new SignIn();
+        SignIn sign;
         private TaskBoardControl board;
-        public string connectionStr = "Data Source = HOZEFA-PC\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
+        public string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker; Integrated Security=true";
 
         public User user { get; set; }
         public IList<Project> userProjects { get; set; }
@@ -119,7 +119,7 @@ namespace Kanban_Tracker
         private void backBtn_Click(object sender, EventArgs e)
         {
             olusturBtn.Visible = false;
-            kisiEkleBtn.Visible = true;
+            kisiEkleBtn.Visible = false;
             sidebarPnl.BringToFront();
             selectedProjectIndex = -1;
             ProjectsUserControl.BringToFront();
@@ -447,7 +447,8 @@ namespace Kanban_Tracker
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            s.Visible = true;
+            sign = new SignIn();
+            sign.Visible = true;
         }
 
         private void boardBtn_Click(object sender, EventArgs e)
@@ -496,6 +497,11 @@ namespace Kanban_Tracker
                     aciklamaTxtBox.Location = new Point(aciklamaTxtBox.Location.X, 458);
                 }
             }
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            board.CreateAndAddPanelToBacklog("sddsdsfdsfds");
         }
     }
 }
