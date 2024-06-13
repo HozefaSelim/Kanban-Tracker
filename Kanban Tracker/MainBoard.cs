@@ -79,9 +79,21 @@ namespace Kanban_Tracker
 
         private void projeEkleBtni_Click(object sender, EventArgs e)
         {
+            try
+            {
+
             string ad = issueAdi.Text;
-            string issueTipi = issueType.SelectedItem.ToString();
-            string issueDurum = durum.SelectedItem.ToString();
+            string issueTipi = "";
+            string issueDurum = "";
+
+                if (issueType.SelectedIndex != -1)
+                    issueTipi = issueType.SelectedItem.ToString();
+                else throw new Exception();
+
+                if (durum.SelectedIndex != -1)
+                    issueDurum = durum.SelectedItem.ToString();
+                else throw new Exception();
+
             string issueAciklama = aciklamaTxtBox.Text;
             if (issueType.SelectedItem.ToString() == "Task" || issueType.SelectedItem.ToString() == "Story")
             {
@@ -94,9 +106,13 @@ namespace Kanban_Tracker
                 AddEpicToProject(userProjects[selectedProjectIndex], new Epic(ad, issueAciklama, issueDurum));
                 getProjectEpics(userProjects[selectedProjectIndex], ListeUserControl.ListeDataGrid);
             }
+            }catch (Exception ex)
+            {
+                MessageBox.Show("Bir hata oluştu. Lütfen Tekrar Deneyiniz.");
+            }
+
 
             //database connection codes
-
             issueOlusturPnl.Visible = false;
             issueOlusturPnl.SendToBack();
             issueAdi.Text = "";
@@ -385,7 +401,6 @@ namespace Kanban_Tracker
                             if (hesapSayisi == 1) return true;
                             else if (hesapSayisi == 0)
                             {
-                                MessageBox.Show("Öyle bir hesap yok");
                             }
                             else
                             {
@@ -416,8 +431,13 @@ namespace Kanban_Tracker
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            try
+            {
             string email = kullaniciAdi.Text;
-            string rol = rolComboBox.SelectedItem.ToString();
+                string rol = "";
+            if (rolComboBox.SelectedIndex != -1)
+                 rol = rolComboBox.SelectedItem.ToString();
+
             if (checkUserEmail(email) & rolComboBox.SelectedIndex != -1)
             {
                 AddUserToProject(userProjects[selectedProjectIndex], email, rol);
@@ -429,8 +449,11 @@ namespace Kanban_Tracker
             }
             else
             {
-                MessageBox.Show("email not found error ( no such user )");
-                //email not found error ( no such user )
+                MessageBox.Show("Bir hata oluştu. Lütfen Tekrar Deneyiniz.");
+            }
+            }catch(NullReferenceException ex)
+            {
+                MessageBox.Show("Bir hata oluştu. Lütfen Tekrar Deneyiniz.");
             }
         }
 
