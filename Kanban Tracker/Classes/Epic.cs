@@ -12,9 +12,6 @@ namespace Kanban_Tracker.Classes
         public string EpicName { get; set; }
         public string EpicDescription { get; set; }
         public string Status { get; set; }
-        public Project Project { get; set; }
-        public IList<Issue> Issues { get; set; }
-
 
         public Epic(string epicID, string epicName)
         {

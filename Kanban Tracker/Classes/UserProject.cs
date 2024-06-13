@@ -11,12 +11,5 @@ namespace Kanban_Tracker.Classes
         public Project Project { get; set; }
         public string UserRole { get; set; }
         public IList<Issue> UserIssues { get; set; }
-
-        public UserProject(Project project, string userRole)
-        {
-            this.Project = project;
-            this.UserRole = userRole;
-            UserIssues = new List<Issue>();
-        }
     }
 }

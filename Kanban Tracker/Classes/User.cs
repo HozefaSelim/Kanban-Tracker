@@ -13,9 +13,8 @@ namespace Kanban_Tracker.Classes
         public string Username { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string? UserRole { get; set; }
-        public Project? Project { get; set; }
         public IList<UserProject> UserProjects { get; set; }
+
         public User(string userID, string username, string email, string password)
         {
             UserID = userID;

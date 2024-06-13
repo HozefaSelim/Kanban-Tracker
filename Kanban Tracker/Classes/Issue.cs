@@ -13,10 +13,7 @@ namespace Kanban_Tracker.Classes
         public string IssueDescription { get; set; }
         public string IssueType { get; set; }
         public string Status { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
         public Epic Epic { get; set; }
-        public User AssignedUser { get; set; }
 
         public Issue(string issueName, string issueType,string issueDescription, string status)
         {
