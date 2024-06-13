@@ -8,7 +8,7 @@ namespace Kanban_Tracker
 {
     public partial class SignIn : Form
     {
-        string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
         public SignIn()
         {
             InitializeComponent();
@@ -16,9 +16,9 @@ namespace Kanban_Tracker
             girisPnl.Visible = true;
             timer1.Interval = 2000; // Set the interval to 2 seconds
             timer1.Tick += new EventHandler(timer1_Tick);
-
-
-
+            sifreTxtBox.UseSystemPasswordChar = true;
+            olusturSifreTxtBox.UseSystemPasswordChar = true;
+            sifreTekrarTxtBox.UseSystemPasswordChar = true;
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -28,59 +28,6 @@ namespace Kanban_Tracker
             // Stop the timer
             timer1.Stop();
         }
-
-
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            if (checkNameSurnameField(adSoyadTxtBox.Text.Trim()))
-            {
-                if (checkEmailField(olusturMailTxtBox.Text))
-                {
-                    if (!checkUserEmail(olusturMailTxtBox.Text))
-                    {
-                        if (olusturSifreTxtBox.Text == sifreTekrarTxtBox.Text)
-                        {
-                            User newUser = new User(adSoyadTxtBox.Text.Trim(), olusturMailTxtBox.Text, olusturSifreTxtBox.Text);
-                            if (AddUser(newUser))
-                            {
-                                olusturPnl.Visible = false;
-                                girisPnl.Visible = false;
-                                MessageBox.Show("Kullancı Başarıyla Eklendi");
-                                MainBoard m = new MainBoard(getUserByEmail(mailTxtBox.Text.Trim()));
-                                m.Show();
-                                this.Hide();
-                            }
-                            else
-                            {
-
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("Şifrler eşleşmiyor");
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Kullanılmış Email");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Yanlış Email");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Yanlış Isim");
-            }
-        }
-
-        private void SignIn_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void label6_Click(object sender, EventArgs e)
         {
             olusturPnl.Visible = true;
@@ -121,11 +68,6 @@ namespace Kanban_Tracker
                 sifreTxtBox.Text = "";
                 timer1.Start();
             }
-        }
-
-        private void mailTxtBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private bool checkUserEmail(string email)
@@ -301,8 +243,61 @@ namespace Kanban_Tracker
             Application.Exit();
         }
 
-        private void girisPnl_Paint(object sender, PaintEventArgs e)
+        private void sifreGoster_CheckedChanged_1(object sender, EventArgs e)
         {
+            sifreTxtBox.UseSystemPasswordChar = !sifreTxtBox.UseSystemPasswordChar;
+        }
+
+        private void olusturBtn_Click(object sender, EventArgs e)
+        {
+            if (checkNameSurnameField(adSoyadTxtBox.Text.Trim()))
+            {
+                if (checkEmailField(olusturMailTxtBox.Text))
+                {
+                    if (!checkUserEmail(olusturMailTxtBox.Text))
+                    {
+                        if (olusturSifreTxtBox.Text == sifreTekrarTxtBox.Text)
+                        {
+                            User newUser = new User(adSoyadTxtBox.Text.Trim(), olusturMailTxtBox.Text, olusturSifreTxtBox.Text);
+                            if (AddUser(newUser))
+                            {
+                                olusturPnl.Visible = false;
+                                girisPnl.Visible = false;
+                                MessageBox.Show("Kullancı Başarıyla Eklendi");
+                                MainBoard m = new MainBoard(getUserByEmail(mailTxtBox.Text.Trim()));
+                                m.Show();
+                                this.Hide();
+                            }
+                            else
+                            {
+
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Şifrler eşleşmiyor");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Kullanılmış Email");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Yanlış Email");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Yanlış Isim");
+            }
+        }
+
+        private void olusturSifreGoster_CheckedChanged(object sender, EventArgs e)
+        {
+            olusturSifreTxtBox.UseSystemPasswordChar = !olusturSifreTxtBox.UseSystemPasswordChar;
+            sifreTekrarTxtBox.UseSystemPasswordChar = !sifreTekrarTxtBox.UseSystemPasswordChar;
 
         }
     }
