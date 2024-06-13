@@ -9,28 +9,29 @@ namespace Kanban_Tracker
     public partial class SignIn : Form
     {
         string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+
         public SignIn()
         {
             InitializeComponent();
             olusturPnl.Visible = false;
             girisPnl.Visible = true;
-            timer1.Interval = 2000; // Set the interval to 2 seconds
-            timer1.Tick += new EventHandler(timer1_Tick);
+            timer.Interval = 2000; // Set the interval to 2 seconds
+            timer.Tick += new EventHandler(timer_Tick);
             sifreTxtBox.UseSystemPasswordChar = true;
             olusturSifreTxtBox.UseSystemPasswordChar = true;
             sifreTekrarTxtBox.UseSystemPasswordChar = true;
         }
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer_Tick(object sender, EventArgs e)
         {
             // Clear the sifreError text
             emailError.Text = "";
             sifreError.Text = "";
             // Stop the timer
-            timer1.Stop();
+            timer.Stop();
         }
-        private void label6_Click(object sender, EventArgs e)
+        private void hesapOlusturLbl_Click(object sender, EventArgs e)
         {
-            adSoyadTxtBox.Text = string.Empty;
+            olusturAdSoyadTxtBox.Text = string.Empty;
             olusturMailTxtBox.Text = string.Empty;
             olusturSifreTxtBox.Text= string.Empty;
             sifreTekrarTxtBox.Text = string.Empty ;
@@ -38,7 +39,6 @@ namespace Kanban_Tracker
             olusturPnl.Visible = true;
             girisPnl.Visible = false;
         }
-
         private void img_Click(object sender, EventArgs e)
         {
             mailTxtBox.Text = string.Empty;
@@ -47,7 +47,6 @@ namespace Kanban_Tracker
             olusturPnl.Visible = false;
             girisPnl.Visible = true;
         }
-
         private void girisBtn_Click(object sender, EventArgs e)
         {
 
@@ -64,7 +63,7 @@ namespace Kanban_Tracker
                     sifreError.Text = "Yalnış Şifre girdiniz";
                     mailTxtBox.Text = "";
                     sifreTxtBox.Text = "";
-                    timer1.Start();
+                    timer.Start();
                 }
             }
             else
@@ -72,10 +71,9 @@ namespace Kanban_Tracker
                 emailError.Text = "Yalnış Email girdiniz";
                 mailTxtBox.Text = "";
                 sifreTxtBox.Text = "";
-                timer1.Start();
+                timer.Start();
             }
         }
-
         private bool checkUserEmail(string email)
         {
             using (SqlConnection connection = new SqlConnection(connectionStr))
@@ -120,7 +118,6 @@ namespace Kanban_Tracker
             }
 
         }
-
         private User getUserByEmail(string email)
         {
             using (SqlConnection connection = new SqlConnection(connectionStr))
@@ -159,7 +156,6 @@ namespace Kanban_Tracker
             }
 
         }
-
         private bool checkUserPassword(string email, string password)
         {
             using (SqlConnection connection = new SqlConnection(connectionStr))
@@ -196,21 +192,18 @@ namespace Kanban_Tracker
                 }
             }
         }
-
         private bool checkNameSurnameField(string nameSurname)
         {
             if (nameSurname.Length <= 0) return false;
             string nameSurnamePattern = @"^[a-zA-Z\s\-]+$";
             return Regex.IsMatch(nameSurname, nameSurnamePattern);
         }
-
         private bool checkEmailField(string email)
         {
             if (email.Length <= 0) return false;
             string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
             return Regex.IsMatch(email, emailPattern);
         }
-
         private bool AddUser(User newUser)
         {
             using (SqlConnection connection = new SqlConnection(connectionStr))
@@ -238,25 +231,17 @@ namespace Kanban_Tracker
                 }
             }
         }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            sifreTxtBox.UseSystemPasswordChar = !sifreTxtBox.UseSystemPasswordChar;
-        }
-
         private void SignIn_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
-
         private void sifreGoster_CheckedChanged_1(object sender, EventArgs e)
         {
             sifreTxtBox.UseSystemPasswordChar = !sifreTxtBox.UseSystemPasswordChar;
         }
-
         private void olusturBtn_Click(object sender, EventArgs e)
         {
-            if (checkNameSurnameField(adSoyadTxtBox.Text.Trim()))
+            if (checkNameSurnameField(olusturAdSoyadTxtBox.Text.Trim()))
             {
                 if (checkEmailField(olusturMailTxtBox.Text))
                 {
@@ -264,7 +249,7 @@ namespace Kanban_Tracker
                     {
                         if (olusturSifreTxtBox.Text == sifreTekrarTxtBox.Text)
                         {
-                            User newUser = new User(adSoyadTxtBox.Text.Trim(), olusturMailTxtBox.Text, olusturSifreTxtBox.Text);
+                            User newUser = new User(olusturAdSoyadTxtBox.Text.Trim(), olusturMailTxtBox.Text, olusturSifreTxtBox.Text);
                             if (AddUser(newUser))
                             {
                                 MessageBox.Show("Kullancı Başarıyla Eklendi");
@@ -296,7 +281,6 @@ namespace Kanban_Tracker
                 MessageBox.Show("Yanlış Isim");
             }
         }
-
         private void olusturSifreGoster_CheckedChanged(object sender, EventArgs e)
         {
             olusturSifreTxtBox.UseSystemPasswordChar = !olusturSifreTxtBox.UseSystemPasswordChar;
