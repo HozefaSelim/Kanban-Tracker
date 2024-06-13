@@ -27,12 +27,6 @@ namespace Kanban_Tracker
         public IList<Issue> projectIssues { get; set; }
         public int selectedProjectIndex;
 
-        public MainBoard()
-        {
-            InitializeComponent();
-            issueType.SelectedIndexChanged += new EventHandler(issueType_SelectedIndexChanged);
-        }
-
         public MainBoard(User user)
         {
             InitializeComponent();
@@ -41,7 +35,6 @@ namespace Kanban_Tracker
             selectedProjectIndex = -1; 
             issueType.SelectedIndexChanged += new EventHandler(issueType_SelectedIndexChanged);
         }
-
         public void showButtons()
         {
             olusturBtn.Visible = true;
@@ -49,40 +42,34 @@ namespace Kanban_Tracker
             boardUserControl.Visible = true;
             boardUserControl.BringToFront();
         }
-       
-        //This method used to show yeniProje UserControl
         private void MainBoard_Load(object sender, EventArgs e)
         {
             ProjectsUserControl.BringToFront();
             ProjectsUserControl.Visible = true;
         }
-
         private void olusturBtn_Click(object sender, EventArgs e)
         {
             issueOlusturPnl.Visible = true;
             issueOlusturPnl.BringToFront();
         }
-
         private void listBtn_Click(object sender, EventArgs e)
         {
             getProjectEpics(userProjects[selectedProjectIndex], ListeUserControl.ListeDataGrid);
             ListeUserControl.Visible = true;
             ListeUserControl.BringToFront();
         }
-
         private void takimBtn_Click(object sender, EventArgs e)
         {
             getProjectUsers(userProjects[selectedProjectIndex], TakimListesiUserControl.takimDataGrid);
             TakimListesiUserControl.Visible = true;
             TakimListesiUserControl.BringToFront();
         }
-
         private void projeEkleBtni_Click(object sender, EventArgs e)
         {
             try
             {
 
-            string ad = issueAdi.Text;
+            string ad = issueAdiTextBox.Text;
             string issueTipi = "";
             string issueDurum = "";
 
@@ -115,18 +102,16 @@ namespace Kanban_Tracker
             //database connection codes
             issueOlusturPnl.Visible = false;
             issueOlusturPnl.SendToBack();
-            issueAdi.Text = "";
+            issueAdiTextBox.Text = "";
             projeEpicComboBox.Items.Clear();
             aciklamaTxtBox.Text = "";
             issueType.SelectedIndex = -1;
             durum.SelectedIndex = -1;
         }
-
         private void closeBtn_Click(object sender, EventArgs e)
         {
             issueOlusturPnl.Visible = false;
         }
-
         private void backBtn_Click(object sender, EventArgs e)
         {
             olusturBtn.Visible = false;
@@ -136,14 +121,12 @@ namespace Kanban_Tracker
             ProjectsUserControl.BringToFront();
             ProjectsUserControl.Visible = true;
         }
-
         private void kapsamBtn_Click(object sender, EventArgs e)
         {
             getProjectIssues(userProjects[selectedProjectIndex], KapsamListeuserControl.ListeDataGrid);
             KapsamListeuserControl.Visible = true;
             KapsamListeuserControl.BringToFront();
         }
-
         private void getProjectEpics(Project project, Guna2DataGridView gridView)
         {
             gridView.Rows.Clear();
@@ -179,7 +162,6 @@ namespace Kanban_Tracker
                 }
             }
         }
-
         private void loadProjectEpics(Project project, Guna2ComboBox comboBox)
         {
             comboBox.Items.Clear();
@@ -219,7 +201,6 @@ namespace Kanban_Tracker
                 comboBox.Items.Add(e.EpicName);
             }
         }
-
         private void getProjectUsers(Project project, Guna2DataGridView gridView)
         {
             gridView.Rows.Clear();
@@ -255,7 +236,6 @@ namespace Kanban_Tracker
                 }
             }
         }
-
         private void getProjectIssues(Project project, Guna2DataGridView gridView)
         {
             gridView.Rows.Clear();
@@ -293,7 +273,6 @@ namespace Kanban_Tracker
                 }
             }
         }
-
         private void AddUserToProject(Project project, string userEmail, string userRole)
         {
             using (SqlConnection connection = new SqlConnection(connectionStr))
@@ -319,7 +298,6 @@ namespace Kanban_Tracker
                 }
             }
         }
-
         private void AddEpicToProject(Project project, Epic epic)
         {
             using (SqlConnection connection = new SqlConnection(connectionStr))
@@ -346,7 +324,6 @@ namespace Kanban_Tracker
                 }
             }
         }
-
         private void AddIssueToProject(Project project, Epic epic, Issue issue)
         {
             using (SqlConnection connection = new SqlConnection(connectionStr))
@@ -374,7 +351,6 @@ namespace Kanban_Tracker
                 }
             }
         }
-
         private bool checkUserEmail(string email)
         {
             using (SqlConnection connection = new SqlConnection(connectionStr))
@@ -417,19 +393,16 @@ namespace Kanban_Tracker
                 }
             }
         }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void kisiPnlCloseButton_Click(object sender, EventArgs e)
         {
             kisiEklePnl.Visible = false;
         }
-
         private void kisiEkleBtn_Click(object sender, EventArgs e)
         {
             kisiEklePnl.BringToFront();
             kisiEklePnl.Visible = true;
         }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void addUserBtn_Click(object sender, EventArgs e)
         {
             try
             {
@@ -456,26 +429,22 @@ namespace Kanban_Tracker
                 MessageBox.Show("Bir hata oluştu. Lütfen Tekrar Deneyiniz.");
             }
         }
-
         private void MainBoard_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
-
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private void logOutButton_Click(object sender, EventArgs e)
         {
             this.Hide();
             sign = new SignIn();
             sign.Visible = true;
         }
-
         private void boardBtn_Click(object sender, EventArgs e)
         {
             getIssues(userProjects[selectedProjectIndex]);
             boardUserControl.BringToFront();
             boardUserControl.Visible = true;
         }
-
         private void issueType_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (issueType.SelectedIndex != -1)
@@ -484,7 +453,7 @@ namespace Kanban_Tracker
                 // Eğer "Story" veya "Task" seçildiyse ekstra TextBox ekle
                 if (selectedItem == "Story" || selectedItem == "Task")
                 {
-                    label7.Visible = true;
+                    epicLabel.Visible = true;
                     durum.Items.Clear();
                     durum.Items.Add("Backlog");
                     durum.Items.Add("To Do");
@@ -493,35 +462,30 @@ namespace Kanban_Tracker
                     projeEpicComboBox.Visible = true;
                     loadProjectEpics(userProjects[selectedProjectIndex], projeEpicComboBox);
                     //Locations
-                    label4.Location = new Point(label4.Location.X, 330);
+                    issueStatusLabel.Location = new Point(issueStatusLabel.Location.X, 330);
                     durum.Location = new Point(durum.Location.X, 362);
-                    label5.Location = new Point(label5.Location.X, 423);
-                    issueAdi.Location = new Point(issueAdi.Location.X, 455);
-                    label1.Location = new Point(label1.Location.X, 518);
+                    issueLabel.Location = new Point(issueLabel.Location.X, 423);
+                    issueAdiTextBox.Location = new Point(issueAdiTextBox.Location.X, 455);
+                    issueDescriptionLabel.Location = new Point(issueDescriptionLabel.Location.X, 518);
                     aciklamaTxtBox.Location = new Point(aciklamaTxtBox.Location.X, 550);
                 }
                 else if (selectedItem == "Epic")
                 {
-                    label7.Visible = false;
+                    epicLabel.Visible = false;
                     durum.Items.Clear();
                     durum.Items.Add("In Progress");
                     durum.Items.Add("Done");
                     projeEpicComboBox.Visible = false;
                     //location
-                    label4.Location = new Point(label4.Location.X, 238);
+                    issueStatusLabel.Location = new Point(issueStatusLabel.Location.X, 238);
                     durum.Location = new Point(durum.Location.X, 270);
-                    label5.Location = new Point(label5.Location.X, 331);
-                    issueAdi.Location = new Point(issueAdi.Location.X, 363);
-                    label1.Location = new Point(label1.Location.X, 426);
+                    issueLabel.Location = new Point(issueLabel.Location.X, 331);
+                    issueAdiTextBox.Location = new Point(issueAdiTextBox.Location.X, 363);
+                    issueDescriptionLabel.Location = new Point(issueDescriptionLabel.Location.X, 426);
                     aciklamaTxtBox.Location = new Point(aciklamaTxtBox.Location.X, 458);
                 }
             }
         }
-
-        private void guna2Button1_Click_1(object sender, EventArgs e)
-        {
-        }
-
         public void getIssues(Project project)
         {
             projectIssues = new List<Issue>();
@@ -560,7 +524,6 @@ namespace Kanban_Tracker
                 }
             }
         }
-
         private void loadIssuesToBoard()
         {
             boardUserControl.ClearPanels();
