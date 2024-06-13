@@ -79,9 +79,7 @@ namespace Kanban_Tracker.User__Control
             if(e.RowIndex != -1) { 
                 this.Visible = false;
                 this.parentForm.selectedProjectIndex = e.RowIndex;
-/*                this.parentForm.boardUserControl = new TaskBoardControl();
-                this.parentForm.boardUserControl.BringToFront();
-                this.parentForm.boardUserControl.Visible = true;*/
+                this.parentForm.getIssues(parentForm.userProjects[parentForm.selectedProjectIndex]);
                 this.parentForm.showButtons();
             }
         }

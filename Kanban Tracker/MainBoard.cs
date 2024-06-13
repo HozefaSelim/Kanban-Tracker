@@ -20,7 +20,7 @@ namespace Kanban_Tracker
     public partial class MainBoard : Form
     {
         SignIn sign;
-        public string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        public string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
 
         public User user { get; set; }
         public IList<Project> userProjects { get; set; }
@@ -86,10 +86,13 @@ namespace Kanban_Tracker
             if (issueType.SelectedItem.ToString() == "Task" || issueType.SelectedItem.ToString() == "Story")
             {
                 AddIssueToProject(userProjects[selectedProjectIndex], userProjects[selectedProjectIndex].Epics[projeEpicComboBox.SelectedIndex], new Issue(ad, issueTipi, issueAciklama, issueDurum));
+                getProjectIssues(userProjects[selectedProjectIndex], KapsamListeuserControl.ListeDataGrid);
+                getIssues(userProjects[selectedProjectIndex]);
             }
             else if (issueType.SelectedItem.ToString() == "Epic")
             {
                 AddEpicToProject(userProjects[selectedProjectIndex], new Epic(ad, issueAciklama, issueDurum));
+                getProjectEpics(userProjects[selectedProjectIndex], ListeUserControl.ListeDataGrid);
             }
 
             //database connection codes
@@ -422,6 +425,7 @@ namespace Kanban_Tracker
                 rolComboBox.SelectedIndex = -1;
                 kisiEklePnl.Visible = false;
                 kisiEklePnl.SendToBack();
+                getProjectUsers(userProjects[selectedProjectIndex], TakimListesiUserControl.takimDataGrid);
             }
             else
             {
@@ -493,10 +497,9 @@ namespace Kanban_Tracker
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            boardUserControl.CreateAndAddPanel(boardUserControl.todo ,"Malik");
         }
 
-        private void getIssues(Project project)
+        public void getIssues(Project project)
         {
             projectIssues = new List<Issue>();
             using (SqlConnection connection = new SqlConnection(connectionStr))
@@ -542,19 +545,19 @@ namespace Kanban_Tracker
             {
                 if(issue.Status == "Backlog")
                 {
-                    boardUserControl.CreateAndAddPanel(boardUserControl.backlog, (issue.IssueID));
+                    boardUserControl.CreateAndAddPanel(boardUserControl.backlog, issue);
                 }
                 else if(issue.Status == "To Do")
                 {
-                    boardUserControl.CreateAndAddPanel(boardUserControl.todo, (issue.IssueID));
+                    boardUserControl.CreateAndAddPanel(boardUserControl.todo, issue);
                 }
                 else if (issue.Status == "Doing")
                 {
-                    boardUserControl.CreateAndAddPanel(boardUserControl.doing, (issue.IssueID));
+                    boardUserControl.CreateAndAddPanel(boardUserControl.doing, issue);
                 }
                 else if (issue.Status == "Done")
                 {
-                    boardUserControl.CreateAndAddPanel(boardUserControl.done, (issue.IssueID));
+                    boardUserControl.CreateAndAddPanel(boardUserControl.done, issue);
                 }
                 else
                 {
