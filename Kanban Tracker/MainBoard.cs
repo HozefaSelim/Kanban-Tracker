@@ -20,7 +20,7 @@ namespace Kanban_Tracker
     public partial class MainBoard : Form
     {
         SignIn sign;
-        public string connectionStr = "Data Source = DESKTOP-GKGSCQS\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
+        public string connectionStr = "Data Source = MALIK-S-LAPTOP\\SQLEXPRESS; Initial Catalog=KanbanTracker;Integrated Security=true";
 
         public User user { get; set; }
         public IList<Project> userProjects { get; set; }
@@ -79,24 +79,44 @@ namespace Kanban_Tracker
 
         private void projeEkleBtni_Click(object sender, EventArgs e)
         {
+            try
+            {
+
             string ad = issueAdi.Text;
-            string issueTipi = issueType.SelectedItem.ToString();
-            string issueDurum = durum.SelectedItem.ToString();
+            string issueTipi = "";
+            string issueDurum = "";
+
+                if (issueType.SelectedIndex != -1)
+                    issueTipi = issueType.SelectedItem.ToString();
+                else throw new Exception();
+
+                if (durum.SelectedIndex != -1)
+                    issueDurum = durum.SelectedItem.ToString();
+                else throw new Exception();
+
             string issueAciklama = aciklamaTxtBox.Text;
             if (issueType.SelectedItem.ToString() == "Task" || issueType.SelectedItem.ToString() == "Story")
             {
                 AddIssueToProject(userProjects[selectedProjectIndex], userProjects[selectedProjectIndex].Epics[projeEpicComboBox.SelectedIndex], new Issue(ad, issueTipi, issueAciklama, issueDurum));
+                getProjectIssues(userProjects[selectedProjectIndex], KapsamListeuserControl.ListeDataGrid);
+                getIssues(userProjects[selectedProjectIndex]);
             }
             else if (issueType.SelectedItem.ToString() == "Epic")
             {
                 AddEpicToProject(userProjects[selectedProjectIndex], new Epic(ad, issueAciklama, issueDurum));
+                getProjectEpics(userProjects[selectedProjectIndex], ListeUserControl.ListeDataGrid);
+            }
+            }catch (Exception ex)
+            {
+                MessageBox.Show("Bir hata oluştu. Lütfen Tekrar Deneyiniz.");
             }
 
-            //database connection codes
 
+            //database connection codes
             issueOlusturPnl.Visible = false;
             issueOlusturPnl.SendToBack();
             issueAdi.Text = "";
+            projeEpicComboBox.Items.Clear();
             aciklamaTxtBox.Text = "";
             issueType.SelectedIndex = -1;
             durum.SelectedIndex = -1;
@@ -343,7 +363,6 @@ namespace Kanban_Tracker
                         command.Parameters.Add(new SqlParameter("@issueName ", issue.IssueName));
                         command.Parameters.Add(new SqlParameter("@issueType ", issue.IssueType));
                         command.Parameters.Add(new SqlParameter("@issueDescription ", issue.IssueDescription));
-                        MessageBox.Show("-" + issue.Status + "-");
                         command.Parameters.Add(new SqlParameter("@status_ ", issue.Status));
 
                         command.ExecuteNonQuery();
@@ -382,7 +401,6 @@ namespace Kanban_Tracker
                             if (hesapSayisi == 1) return true;
                             else if (hesapSayisi == 0)
                             {
-                                MessageBox.Show("Öyle bir hesap yok");
                             }
                             else
                             {
@@ -413,8 +431,13 @@ namespace Kanban_Tracker
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            try
+            {
             string email = kullaniciAdi.Text;
-            string rol = rolComboBox.SelectedItem.ToString();
+                string rol = "";
+            if (rolComboBox.SelectedIndex != -1)
+                 rol = rolComboBox.SelectedItem.ToString();
+
             if (checkUserEmail(email) & rolComboBox.SelectedIndex != -1)
             {
                 AddUserToProject(userProjects[selectedProjectIndex], email, rol);
@@ -422,11 +445,15 @@ namespace Kanban_Tracker
                 rolComboBox.SelectedIndex = -1;
                 kisiEklePnl.Visible = false;
                 kisiEklePnl.SendToBack();
+                getProjectUsers(userProjects[selectedProjectIndex], TakimListesiUserControl.takimDataGrid);
             }
             else
             {
-                MessageBox.Show("email not found error ( no such user )");
-                //email not found error ( no such user )
+                MessageBox.Show("Bir hata oluştu. Lütfen Tekrar Deneyiniz.");
+            }
+            }catch(NullReferenceException ex)
+            {
+                MessageBox.Show("Bir hata oluştu. Lütfen Tekrar Deneyiniz.");
             }
         }
 
@@ -459,8 +486,8 @@ namespace Kanban_Tracker
                 {
                     label7.Visible = true;
                     durum.Items.Clear();
-                    durum.Items.Add("To Do");
                     durum.Items.Add("Backlog");
+                    durum.Items.Add("To Do");
                     durum.Items.Add("Doing");
                     durum.Items.Add("Done");
                     projeEpicComboBox.Visible = true;
@@ -493,10 +520,9 @@ namespace Kanban_Tracker
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            boardUserControl.CreateAndAddPanel(boardUserControl.todo ,"Malik");
         }
 
-        private void getIssues(Project project)
+        public void getIssues(Project project)
         {
             projectIssues = new List<Issue>();
             using (SqlConnection connection = new SqlConnection(connectionStr))
@@ -542,19 +568,19 @@ namespace Kanban_Tracker
             {
                 if(issue.Status == "Backlog")
                 {
-                    boardUserControl.CreateAndAddPanel(boardUserControl.backlog, (issue.IssueID));
+                    boardUserControl.CreateAndAddPanel(boardUserControl.backlog, issue);
                 }
                 else if(issue.Status == "To Do")
                 {
-                    boardUserControl.CreateAndAddPanel(boardUserControl.todo, (issue.IssueID));
+                    boardUserControl.CreateAndAddPanel(boardUserControl.todo, issue);
                 }
                 else if (issue.Status == "Doing")
                 {
-                    boardUserControl.CreateAndAddPanel(boardUserControl.doing, (issue.IssueID));
+                    boardUserControl.CreateAndAddPanel(boardUserControl.doing, issue);
                 }
                 else if (issue.Status == "Done")
                 {
-                    boardUserControl.CreateAndAddPanel(boardUserControl.done, (issue.IssueID));
+                    boardUserControl.CreateAndAddPanel(boardUserControl.done, issue);
                 }
                 else
                 {

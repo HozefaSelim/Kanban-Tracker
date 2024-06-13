@@ -61,8 +61,6 @@ namespace Kanban_Tracker.User__Control
             {
                 string projeismi = projeName.Text;
                 string projeAciklamasi = aciklamaTxtBox.Text;
-                DateTime baslangic = startDate.Value;
-                string baslangicTarihi = baslangic.ToString("dd.MM.yyyy");
                 DateTime bitis = endDate.Value;
                 string bitisTarihi = bitis.ToString("dd.MM.yyyy");
 
@@ -79,9 +77,7 @@ namespace Kanban_Tracker.User__Control
             if(e.RowIndex != -1) { 
                 this.Visible = false;
                 this.parentForm.selectedProjectIndex = e.RowIndex;
-/*                this.parentForm.boardUserControl = new TaskBoardControl();
-                this.parentForm.boardUserControl.BringToFront();
-                this.parentForm.boardUserControl.Visible = true;*/
+                this.parentForm.getIssues(parentForm.userProjects[parentForm.selectedProjectIndex]);
                 this.parentForm.showButtons();
             }
         }

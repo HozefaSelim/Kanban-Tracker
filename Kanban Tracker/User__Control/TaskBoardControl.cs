@@ -214,7 +214,7 @@ namespace Kanban_Tracker
             }
         }
 
-        public void CreateAndAddPanel(Guna2Panel panel, string panelText)
+        public void CreateAndAddPanel(Guna2Panel panel, Issue issue)
         {
             if (panel == null)
             {
@@ -240,13 +240,38 @@ namespace Kanban_Tracker
             newPanel.Size = new Size(311, 138);
             newPanel.BorderThickness = 2;
             newPanel.BorderColor = Color.Black;
-            newPanel.Name = panelText;
+            newPanel.Name = issue.IssueID;
 
-            Label label = new Label();
-            label.Text = panelText;
-            label.AutoSize = true;
-            label.Location = new Point(18, 23);
-            newPanel.Controls.Add(label);
+            Label issueTipi = new Label();
+            issueTipi.AutoSize = true;
+            issueTipi.Location = new Point(18, 23);
+            issueTipi.Name = "issueTipi";
+            issueTipi.Size = new Size(98, 18);
+            issueTipi.TabIndex = 0;
+            issueTipi.Text = issue.IssueType;
+            issueTipi.TextAlign = ContentAlignment.MiddleLeft;
+            newPanel.Controls.Add(issueTipi);
+
+            Label issueAdi = new Label();
+            issueAdi.AutoSize = true;
+            issueAdi.Location = new Point(18, 56);
+            issueAdi.Name = "issueAdi";
+            issueAdi.Size = new Size(48, 18);
+            issueAdi.TabIndex = 2;
+            issueAdi.Text = issue.IssueName;
+            issueAdi.TextAlign = ContentAlignment.MiddleLeft;
+            newPanel.Controls.Add(issueAdi);
+
+            Label EpicAdi = new Label();
+            EpicAdi.AutoSize = true;
+            EpicAdi.BackColor = Color.FromArgb(128, 255, 128);
+            EpicAdi.Location = new Point(18, 92);
+            EpicAdi.Name = "EpicAdi";
+            EpicAdi.Size = new Size(56, 18);
+            EpicAdi.TabIndex = 1;
+            EpicAdi.Text = issue.Epic.EpicName;
+            EpicAdi.TextAlign = ContentAlignment.MiddleLeft;
+            newPanel.Controls.Add(EpicAdi);
 
             newPanel.MouseDown += new MouseEventHandler(panel_MouseDown);
 
