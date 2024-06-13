@@ -100,6 +100,7 @@ namespace Kanban_Tracker
             issueOlusturPnl.Visible = false;
             issueOlusturPnl.SendToBack();
             issueAdi.Text = "";
+            projeEpicComboBox.Items.Clear();
             aciklamaTxtBox.Text = "";
             issueType.SelectedIndex = -1;
             durum.SelectedIndex = -1;
@@ -346,7 +347,6 @@ namespace Kanban_Tracker
                         command.Parameters.Add(new SqlParameter("@issueName ", issue.IssueName));
                         command.Parameters.Add(new SqlParameter("@issueType ", issue.IssueType));
                         command.Parameters.Add(new SqlParameter("@issueDescription ", issue.IssueDescription));
-                        MessageBox.Show("-" + issue.Status + "-");
                         command.Parameters.Add(new SqlParameter("@status_ ", issue.Status));
 
                         command.ExecuteNonQuery();
@@ -463,8 +463,8 @@ namespace Kanban_Tracker
                 {
                     label7.Visible = true;
                     durum.Items.Clear();
-                    durum.Items.Add("To Do");
                     durum.Items.Add("Backlog");
+                    durum.Items.Add("To Do");
                     durum.Items.Add("Doing");
                     durum.Items.Add("Done");
                     projeEpicComboBox.Visible = true;

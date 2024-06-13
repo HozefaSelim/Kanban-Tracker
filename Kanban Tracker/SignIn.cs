@@ -30,12 +30,20 @@ namespace Kanban_Tracker
         }
         private void label6_Click(object sender, EventArgs e)
         {
+            adSoyadTxtBox.Text = string.Empty;
+            olusturMailTxtBox.Text = string.Empty;
+            olusturSifreTxtBox.Text= string.Empty;
+            sifreTekrarTxtBox.Text = string.Empty ;
+            olusturSifreGoster.Checked = false;
             olusturPnl.Visible = true;
             girisPnl.Visible = false;
         }
 
         private void img_Click(object sender, EventArgs e)
         {
+            mailTxtBox.Text = string.Empty;
+            sifreTxtBox.Text = string.Empty;
+            sifreGoster.Checked= false;
             olusturPnl.Visible = false;
             girisPnl.Visible = true;
         }
@@ -50,8 +58,6 @@ namespace Kanban_Tracker
                     MainBoard m = new MainBoard(getUserByEmail(mailTxtBox.Text.Trim()));
                     m.Show();
                     this.Hide();
-
-
                 }
                 else
                 {
@@ -261,12 +267,9 @@ namespace Kanban_Tracker
                             User newUser = new User(adSoyadTxtBox.Text.Trim(), olusturMailTxtBox.Text, olusturSifreTxtBox.Text);
                             if (AddUser(newUser))
                             {
-                                olusturPnl.Visible = false;
-                                girisPnl.Visible = false;
                                 MessageBox.Show("Kullancı Başarıyla Eklendi");
-                                MainBoard m = new MainBoard(getUserByEmail(mailTxtBox.Text.Trim()));
-                                m.Show();
-                                this.Hide();
+                                olusturPnl.Visible = false;
+                                girisPnl.Visible = true;
                             }
                             else
                             {

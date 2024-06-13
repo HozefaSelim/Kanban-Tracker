@@ -33,8 +33,8 @@
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(projects_));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -44,8 +44,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             projelerDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             projeAdi = new DataGridViewTextBoxColumn();
             projeAciklama = new DataGridViewTextBoxColumn();
@@ -57,9 +55,7 @@
             closeBtn = new Guna.UI2.WinForms.Guna2Button();
             projeEkleBtni = new Guna.UI2.WinForms.Guna2Button();
             label6 = new Label();
-            label5 = new Label();
             endDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            startDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             label4 = new Label();
             label3 = new Label();
             projeName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -79,7 +75,7 @@
             projelerDataGrid.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
@@ -90,7 +86,7 @@
             projelerDataGrid.Columns.AddRange(new DataGridViewColumn[] { projeAdi, projeAciklama, baslangicTarih, bitistarih });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle3.ForeColor = Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.Black;
@@ -166,7 +162,7 @@
             yeniProjeBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             yeniProjeBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             yeniProjeBtn.FillColor = SystemColors.GradientActiveCaption;
-            yeniProjeBtn.Font = new Font("Arial Rounded MT Bold", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            yeniProjeBtn.Font = new Font("Microsoft Sans Serif", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
             yeniProjeBtn.ForeColor = Color.Black;
             yeniProjeBtn.Location = new Point(1423, 26);
             yeniProjeBtn.Name = "yeniProjeBtn";
@@ -189,17 +185,15 @@
             yeniProjePnl.Controls.Add(closeBtn);
             yeniProjePnl.Controls.Add(projeEkleBtni);
             yeniProjePnl.Controls.Add(label6);
-            yeniProjePnl.Controls.Add(label5);
             yeniProjePnl.Controls.Add(endDate);
-            yeniProjePnl.Controls.Add(startDate);
             yeniProjePnl.Controls.Add(label4);
             yeniProjePnl.Controls.Add(label3);
             yeniProjePnl.Controls.Add(projeName);
             yeniProjePnl.Controls.Add(label2);
-            yeniProjePnl.CustomizableEdges = customizableEdges13;
+            yeniProjePnl.CustomizableEdges = customizableEdges11;
             yeniProjePnl.Location = new Point(541, 0);
             yeniProjePnl.Name = "yeniProjePnl";
-            yeniProjePnl.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            yeniProjePnl.ShadowDecoration.CustomizableEdges = customizableEdges12;
             yeniProjePnl.Size = new Size(579, 850);
             yeniProjePnl.TabIndex = 8;
             yeniProjePnl.Visible = false;
@@ -208,7 +202,7 @@
             // 
             aciklamaTxtBox.BackColor = SystemColors.GradientInactiveCaption;
             aciklamaTxtBox.BorderStyle = BorderStyle.FixedSingle;
-            aciklamaTxtBox.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            aciklamaTxtBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             aciklamaTxtBox.ForeColor = Color.Black;
             aciklamaTxtBox.Location = new Point(113, 277);
             aciklamaTxtBox.Name = "aciklamaTxtBox";
@@ -246,7 +240,7 @@
             projeEkleBtni.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             projeEkleBtni.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             projeEkleBtni.FillColor = SystemColors.GradientActiveCaption;
-            projeEkleBtni.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            projeEkleBtni.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             projeEkleBtni.ForeColor = Color.Black;
             projeEkleBtni.Location = new Point(188, 730);
             projeEkleBtni.Name = "projeEkleBtni";
@@ -260,21 +254,11 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label6.Location = new Point(113, 562);
+            label6.Location = new Point(113, 453);
             label6.Name = "label6";
             label6.Size = new Size(113, 28);
             label6.TabIndex = 20;
             label6.Text = "Bitiş Tarihi";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label5.Location = new Point(113, 452);
-            label5.Name = "label5";
-            label5.Size = new Size(161, 28);
-            label5.TabIndex = 19;
-            label5.Text = "Başlangıç Tarihi";
             // 
             // endDate
             // 
@@ -283,7 +267,7 @@
             endDate.FillColor = SystemColors.GradientActiveCaption;
             endDate.Font = new Font("Segoe UI", 9F);
             endDate.Format = DateTimePickerFormat.Long;
-            endDate.Location = new Point(113, 593);
+            endDate.Location = new Point(113, 484);
             endDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             endDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             endDate.Name = "endDate";
@@ -291,22 +275,6 @@
             endDate.Size = new Size(250, 45);
             endDate.TabIndex = 16;
             endDate.Value = new DateTime(2024, 5, 23, 19, 52, 5, 568);
-            // 
-            // startDate
-            // 
-            startDate.Checked = true;
-            startDate.CustomizableEdges = customizableEdges9;
-            startDate.FillColor = SystemColors.GradientActiveCaption;
-            startDate.Font = new Font("Segoe UI", 9F);
-            startDate.Format = DateTimePickerFormat.Long;
-            startDate.Location = new Point(113, 483);
-            startDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            startDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            startDate.Name = "startDate";
-            startDate.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            startDate.Size = new Size(250, 45);
-            startDate.TabIndex = 15;
-            startDate.Value = new DateTime(2024, 5, 23, 19, 52, 5, 568);
             // 
             // label4
             // 
@@ -333,7 +301,7 @@
             projeName.Anchor = AnchorStyles.Left;
             projeName.BorderColor = Color.Black;
             projeName.BorderRadius = 9;
-            projeName.CustomizableEdges = customizableEdges11;
+            projeName.CustomizableEdges = customizableEdges9;
             projeName.DefaultText = "";
             projeName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             projeName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -341,7 +309,7 @@
             projeName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             projeName.FillColor = SystemColors.GradientInactiveCaption;
             projeName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            projeName.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            projeName.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             projeName.ForeColor = Color.Black;
             projeName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             projeName.Location = new Point(113, 171);
@@ -352,18 +320,18 @@
             projeName.PlaceholderText = "";
             projeName.RightToLeft = RightToLeft.No;
             projeName.SelectedText = "";
-            projeName.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            projeName.ShadowDecoration.CustomizableEdges = customizableEdges10;
             projeName.Size = new Size(406, 41);
             projeName.TabIndex = 13;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.GradientActiveCaption;
             label2.Location = new Point(188, 49);
             label2.Name = "label2";
-            label2.Size = new Size(185, 39);
+            label2.Size = new Size(173, 39);
             label2.TabIndex = 0;
             label2.Text = "Proje Ekle";
             // 
@@ -391,9 +359,7 @@
         private Guna.UI2.WinForms.Guna2Button closeBtn;
         private Guna.UI2.WinForms.Guna2Button projeEkleBtni;
         private Label label6;
-        private Label label5;
         private Guna.UI2.WinForms.Guna2DateTimePicker endDate;
-        private Guna.UI2.WinForms.Guna2DateTimePicker startDate;
         private Label label4;
         private Label label3;
         private Guna.UI2.WinForms.Guna2TextBox projeName;

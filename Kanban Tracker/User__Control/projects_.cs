@@ -61,8 +61,6 @@ namespace Kanban_Tracker.User__Control
             {
                 string projeismi = projeName.Text;
                 string projeAciklamasi = aciklamaTxtBox.Text;
-                DateTime baslangic = startDate.Value;
-                string baslangicTarihi = baslangic.ToString("dd.MM.yyyy");
                 DateTime bitis = endDate.Value;
                 string bitisTarihi = bitis.ToString("dd.MM.yyyy");
 
