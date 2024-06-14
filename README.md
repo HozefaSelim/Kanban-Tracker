@@ -15,28 +15,28 @@ Kanban Tracker is a C# Windows Forms application designed to manage projects usi
 ## Screenshots
 
 ### Add Project
-![Add Project](kanban  tracker/images/add_project.jpg) <!-- Make sure to update the path -->
+![Add Project](Kanban%20Tracker/images/add_project.jpg) <!-- Make sure to update the path -->
 
 ### Add Person
-![Add Person](images/add_person.jpg) <!-- Make sure to update the path -->
+![Add Person](Kanban%20Tracker/images/add_person.jpg) <!-- Make sure to update the path -->
 
 ### Kanban Board
-![Kanban Board](images/kanban_board.jpg) <!-- Make sure to update the path -->
+![Kanban Board](Kanban%20Tracker/images/kanban_board.jpg) <!-- Make sure to update the path -->
 
 ### Projects
-![Projects](images/projects.jpg) <!-- Make sure to update the path -->
+![Projects](Kanban%20Tracker/images/projects.jpg) <!-- Make sure to update the path -->
 
 ### Create Issue
-![Create Issue](images/create_issue.jpg) <!-- Make sure to update the path -->
+![Create Issue](Kanban%20Tracker/images/create_issue.jpg) <!-- Make sure to update the path -->
 
 ### Create Account
-![Create Account](images/create_account.jpg) <!-- Make sure to update the path -->
+![Create Account](Kanban%20Tracker/images/create_account.jpg) <!-- Make sure to update the path -->
 
 ### Login
-![Login](images/login.jpg) <!-- Make sure to update the path -->
+![Login](Kanban%20Tracker/images/login.jpg) <!-- Make sure to update the path -->
 
 ### List
-![List](images/list.jpg) <!-- Make sure to update the path -->
+![List](Kanban%20Tracker/images/list.jpg) <!-- Make sure to update the path -->
 
 ## Getting Started
 
