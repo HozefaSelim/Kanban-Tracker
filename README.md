@@ -50,7 +50,7 @@ Kanban Tracker is a C# Windows Forms application designed to manage projects usi
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/kanban-tracker.git
+    git clone https://github.com/HozefaSelim/kanban-tracker.git
     ```
 
 2. Open the solution in Visual Studio.
