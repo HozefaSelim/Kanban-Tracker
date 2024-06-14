@@ -15,7 +15,7 @@ Kanban Tracker is a C# Windows Forms application designed to manage projects usi
 ## Screenshots
 
 ### Add Project
-![Add Project](images/add_project.jpg) <!-- Make sure to update the path -->
+![Add Project](kanban  tracker/images/add_project.jpg) <!-- Make sure to update the path -->
 
 ### Add Person
 ![Add Person](images/add_person.jpg) <!-- Make sure to update the path -->
