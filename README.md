@@ -3,7 +3,7 @@
 
 ## Overview
 
-Kanban Tracker is a C# Windows Forms application designed to manage projects using the Kanban methodology. This application allows you to add users and admins, create and manage issues, epics, stories, and tasks, and move tasks across different stages on a Kanban board.
+Kanban Tracker is a C# Windows Forms application designed to manage projects using the Kanban methodology. This application allows you to add users and admins, create and manage issues like epics, stories, and tasks, and move tasks across different stages on a Kanban board.
 
 ## Features
 
