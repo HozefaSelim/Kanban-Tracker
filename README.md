@@ -78,4 +78,4 @@ Kanban Tracker simplifies project management by providing a visual and interacti
 
 ## Acknowledgment
 
-This project was completed with the cooperation of Huzeyfe El Selim, Mutez Rahal, and Malik Muhammed.
+This project was completed with the cooperation of [Huzeyfe El Selim](https://github.com/HozefaSelim), [Mutez Rahal](https://github.com/Mutez-Rahal), and [Malik Muhammed](https://github.com/malikmaky).
